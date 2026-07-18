@@ -1,4 +1,6 @@
 [
+  "images/rabbitt-ears-logo.png",
+  "images/manual-under-construction.jpg",
   "images/tags-panel.png",
   "images/toolbar-configurations.png",
   "toolbar-icons/cust_52.png",
@@ -122,5 +124,11 @@
   "images/detail-designations-roof-rafter-result.png",
   "images/annotation-tool-toolbar.png",
   "images/annotation-tool-custom-field.png",
-  "images/annotation-tool-stair-output.png"
+  "images/annotation-tool-stair-output.png",
+  "images/install-update/pdf-image-12.jpg",
+  "images/install-update/pdf-image-18.png",
+  "images/install-update/pdf-image-23.jpg",
+  "images/install-update/pdf-image-3.jpg",
+  "images/install-update/pdf-image-4.jpg",
+  "images/install-update/pdf-image-5.jpg"
 ]
