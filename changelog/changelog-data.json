@@ -2,51 +2,20 @@
   {
     "version": "PPX18 260720",
     "status": "Unreleased development",
-    "groups": {
-      "Library": [
-        "Added a Time Tracker toolbar to the Rabbitt toolbar configurations.",
-        "Added an Extend Stile tool to the toolbar configurations.",
-        "Added an expanded Area Analysis Breakdown Tool for checking totals.",
-        "Layouts now derive walkout-basement settings, floor names, and other display preferences from the Project Information Tool."
-      ],
-      "Toolbars": [
-        "Added a Time Tracker toolbar to the Rabbitt toolbar configurations.",
-        "Added an Extend Stile tool to the toolbar configurations."
-      ],
-      "Plan Template": [
-        "Layouts now derive walkout-basement settings, floor names, and other display preferences from the Project Information Tool."
-      ],
-      "Layout Files": [
-        "Area Analysis headings now use global layout values so floor names such as Basement and Main Level remain consistent.",
-        "Layouts now derive walkout-basement settings, floor names, and other display preferences from the Project Information Tool.",
-        "Updated the manual and all layouts for the new layout designations, with improved cross-section callout accuracy."
-      ]
-    },
-    "changes": {
-      "New Features": [
-        "Added a Time Tracker toolbar to the Rabbitt toolbar configurations.",
-        "Added an Extend Stile tool to the toolbar configurations.",
-        "Added an expanded Area Analysis Breakdown Tool for checking totals.",
-        "Area Analysis headings now use global layout values so floor names such as Basement and Main Level remain consistent.",
-        "Layouts now derive walkout-basement settings, floor names, and other display preferences from the Project Information Tool."
-      ],
-      "Patches and Improvements": [
-        "Updated the manual and all layouts for the new layout designations, with improved cross-section callout accuracy."
-      ]
-    },
+    "groups": {},
+    "changes": {},
     "downloads": [
       "Pro Plan",
       "Library",
       "Toolbars"
     ],
     "safe": [
-      "Unchanged project-information fields, after checking the notes below",
-      "Saved Plan Views and layer sets only when imported as new items"
+      "Floor and ceiling platform defaults",
+      "Saved Plan Views (do not replace originals)",
+      "Layer sets (do not replace originals)"
     ],
     "avoid": [
-      "Framing and wall defaults",
-      "Window, door, room-label, room-type, and cabinet defaults",
-      "Replacing layout originals or project-information fields used by the updated layouts"
+      "Framing and wall defaults because layer-based fill styles are version-sensitive"
     ]
   },
   {
@@ -287,7 +256,21 @@
         "Cleaned up floor framing plan for better display.",
         "Rewrote the door macro for proper offset of RO labels in framing views.",
         "BWP tool changed draw order for better display in framing views.",
-        "MAJOR overhaul of all macro driven systems have led to a decrease in…18010 tokens truncated…ling that was missing from previous AI-generated code.",
+        "MAJOR overhaul of all macro driven systems have led to a decrease in drawing lag of approximately 350ms per click for drawing rooms and placing windows/doors/cabinets are as follows:",
+        "Window/Door/Cabinet label systems have all been turned into global methods and have been re-written to call other global methods. This reduces the time it takes for each window/door/cabinet to pass through their logical arguments.",
+        "Global helper macros were created to remove bottlenecks.",
+        "The roof and foundation NFA and the Area Analysis systems were all combined into single macros to reduce redundant calls.",
+        "Anno tool has been completely re-written for more easily customizable annotations and now automatically reports floor surface when not connected but inside of a room.",
+        "Most macro systems are now global lambdas with a reporting output so you can see the output but the call is done through a global which allows objects to retrieve values concurrently.",
+        "Removed lesser used or obscure macros for easier management in the TMM console.",
+        "Changed order of calls and dependencies to avoid macro checks that were unnecessary.",
+        "Rewrote the room and ceiling height macros again and now they automatically format themselves based on the room sizes. The truncate tool now will revert that formatting in the case that you want a full size label to place outside of a small room.",
+        "All objects now work by looking at a global label system to start parsing their individual values instead of one-by-one iterating through a macro in the TMM thus waiting its turn for the next.",
+        "Overhauled the Detail Designations Page. Added new categories for deck structural elements and others.",
+        "Removed the cadlabel fill-based designation system, rewrote details to remove this system.",
+        "Built a library of annotations for integrating into the system.",
+        "Redesigned the detail designations page to simplify it. The detail preview has now been removed.",
+   …17511 tokens truncated…ling that was missing from previous AI-generated code.",
         "- Added fallback values and safe property access for doors in non-standard spaces.",
         "- Note: This corrects an error introduced by previous AI-based coding that hardcoded door logic instead of using the configurable all options system.",
         "- Added enhanced label_Rab macro with comprehensive error handling and superscript fallbacks.",
