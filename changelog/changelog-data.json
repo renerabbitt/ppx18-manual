@@ -66,15 +66,15 @@
         "Added Designer License Number.",
         "Added a new text style \"schedule style\" and set all schedules to use and set to black. This helped split label style for window/door/cabinet labels for the new working light view.",
         "EXPORTED CHECK VERSION - VERSION NUMBER REMAINS THE SAME GOING FORWARD.",
-        "Rabbitt Design â€” 26/07/17 10:34 AM.",
-        "Rabbitt Design â€” 26/07/17 2:01 PM.",
-        "Rabbitt Design â€” 26/07/17 3:10 PM.",
+        "Rabbitt Design \u2014 26/07/17 10:34 AM.",
+        "Rabbitt Design \u2014 26/07/17 2:01 PM.",
+        "Rabbitt Design \u2014 26/07/17 3:10 PM.",
         "ProArch got a new color side bar that can be changed by the new Color Side Bar Layer Based Fill. ANSI and ARCH D have added spec on G001 and a rendered map.",
-        "Rabbitt Design â€” 26/07/18 11:47 AM.",
+        "Rabbitt Design \u2014 26/07/18 11:47 AM.",
         "Updated the ppx18 link for the new manual https://renerabbitt.github.io/ppx18-manual/.",
         "PPX18 Manual | Rabbitt Design.",
         "PPX18 manual by Rabbitt Design.",
-        "Rabbitt Design â€” 10:52 AM.",
+        "Rabbitt Design \u2014 10:52 AM.",
         "Rexel now has a layer fill controlled side bar."
       ],
       "Layout Files": [
@@ -91,14 +91,14 @@
         "Added detail designations for Gable and Eave Fascia and Sub-Fascia as well as roof soffit.",
         "Added a new text style \"schedule style\" and set all schedules to use and set to black. This helped split label style for window/door/cabinet labels for the new working light view.",
         "EXPORTED CHECK VERSION - VERSION NUMBER REMAINS THE SAME GOING FORWARD.",
-        "Rabbitt Design â€” 26/07/17 10:34 AM.",
-        "Rabbitt Design â€” 26/07/17 2:01 PM.",
+        "Rabbitt Design \u2014 26/07/17 10:34 AM.",
+        "Rabbitt Design \u2014 26/07/17 2:01 PM.",
         "Added Living Area Totals To Pro Plan Tools library for troubleshooting area totals.",
-        "Rabbitt Design â€” 26/07/17 3:10 PM.",
-        "Rabbitt Design â€” 26/07/18 11:47 AM.",
+        "Rabbitt Design \u2014 26/07/17 3:10 PM.",
+        "Rabbitt Design \u2014 26/07/18 11:47 AM.",
         "PPX18 Manual | Rabbitt Design.",
         "PPX18 manual by Rabbitt Design.",
-        "Rabbitt Design â€” 10:52 AM.",
+        "Rabbitt Design \u2014 10:52 AM.",
         "Rexel now has a layer fill controlled side bar."
       ],
       "Patches and Improvements": [
@@ -143,7 +143,7 @@
         "Add windows and door layers to RCP plan.",
         "Turned off Poche Fill On Landscape Plan.",
         "Turned furniture interior layer off on the landscape plan.",
-        "Title Block and Spec Plan updated to add Project Information â€œAHJâ€ input for inputting county. This is used for climate zone lookup alongside of zip code in some cases. This has been updated for NY MI AZ CO OR NV WA CA and ID.",
+        "Title Block and Spec Plan updated to add Project Information \u201cAHJ\u201d input for inputting county. This is used for climate zone lookup alongside of zip code in some cases. This has been updated for NY MI AZ CO OR NV WA CA and ID.",
         "Added a new Circuit Breaker Panel Creator System which includes toolbars linked to library objects. The system takes a note which automatically detects the room it is in. if you attached the note to an appliance or a cabinet with an appliance in it then it should automatically parse the name of the appliance into the panel creator. This generates an electrical panel schedule which is included in the ProArch + NCS Layouts. The existing garbage disposal/dishwasher/hood vent outlets also report to the panel schedule."
       ],
       "Layout Files": [
@@ -152,7 +152,7 @@
         "Window callouts were updated for the Kitchen Plan.",
         "Turned on cross section cameras in working framing view.",
         "Townsend ANSI D and ARCH E ProARC+NCS Layout Templates Added.",
-        "Title Block and Spec Plan updated to add Project Information â€œAHJâ€ input for inputting county. This is used for climate zone lookup alongside of zip code in some cases. This has been updated for NY MI AZ CO OR NV WA CA and ID.",
+        "Title Block and Spec Plan updated to add Project Information \u201cAHJ\u201d input for inputting county. This is used for climate zone lookup alongside of zip code in some cases. This has been updated for NY MI AZ CO OR NV WA CA and ID.",
         "Added a new Circuit Breaker Panel Creator System which includes toolbars linked to library objects. The system takes a note which automatically detects the room it is in. if you attached the note to an appliance or a cabinet with an appliance in it then it should automatically parse the name of the appliance into the panel creator. This generates an electrical panel schedule which is included in the ProArch + NCS Layouts. The existing garbage disposal/dishwasher/hood vent outlets also report to the panel schedule."
       ]
     },
@@ -171,7 +171,7 @@
         "Window callouts were updated for the Kitchen Plan.",
         "Fixed an error with the glass cabinet door painter with materials.",
         "The roof vent calcs were hardcoded. The all options macro has now been updated to drive those values.",
-        "Title Block and Spec Plan updated to add Project Information â€œAHJâ€ input for inputting county. This is used for climate zone lookup alongside of zip code in some cases. This has been updated for NY MI AZ CO OR NV WA CA and ID."
+        "Title Block and Spec Plan updated to add Project Information \u201cAHJ\u201d input for inputting county. This is used for climate zone lookup alongside of zip code in some cases. This has been updated for NY MI AZ CO OR NV WA CA and ID."
       ],
       "Removed or Replaced": [
         "Turned off Poche Fill On Landscape Plan."
@@ -206,7 +206,7 @@
       "Plan Template": [
         "RCP keynote is updated.",
         "Willow E had an incorrect SPV that was swapped out for the correct one.",
-        "Changed line offset to 14â€ on NC and remodel dimension defaults.",
+        "Changed line offset to 14\u201d on NC and remodel dimension defaults.",
         "Fixed Cut Off Standards on G1.",
         "Almost all Rich Text defaults were reporting to the wrong layer. These have been fixed."
       ],
@@ -225,7 +225,7 @@
       "Patches and Improvements": [
         "RCP keynote is updated.",
         "Willow E had an incorrect SPV that was swapped out for the correct one.",
-        "Changed line offset to 14â€ on NC and remodel dimension defaults.",
+        "Changed line offset to 14\u201d on NC and remodel dimension defaults.",
         "Fixed Cut Off Standards on G1.",
         "Almost all Rich Text defaults were reporting to the wrong layer. These have been fixed."
       ],
@@ -269,10 +269,10 @@
         "Built new library of fill styles for graphic real estate listing style overview.",
         "Anno tool options now live in the built-in Project Information Tool.",
         "Only schedule numbers are displayed in elevations for cabinets and fenestration.",
-        "Walls, roofs, hatching tool fill style driven by SPVâ€™s/Layer Sets.",
+        "Walls, roofs, hatching tool fill style driven by SPV\u2019s/Layer Sets.",
         "Room label abbreviates rooms less than 12 sq. ft and hides height label.",
         "Framing fill styles are view dependent. Adjusted colors and fills for better graphics.",
-        "Removed Redlines, small details, and working landscaping SPVâ€™s and added in default sets drop down menu to use small details or redlines.",
+        "Removed Redlines, small details, and working landscaping SPV\u2019s and added in default sets drop down menu to use small details or redlines.",
         "Footing follows fill style, set to angle hatch and follows layer color at 80% transparency.",
         "Turned on the ceiling beam and joist layer for the floor, framing plan SPV.",
         "Adjusted all framing fill styles for better framing views.",
@@ -287,7 +287,7 @@
         "Cleaned up floor framing plan for better display.",
         "Rewrote the door macro for proper offset of RO labels in framing views.",
         "BWP tool changed draw order for better display in framing views.",
-        "MAJOR overhaul of all macro driven s…18066 tokens truncated…hat was missing from previous AI-generated code.",
+        "MAJOR overhaul of all macro driven systems have led to a decrease in…18010 tokens truncated…ling that was missing from previous AI-generated code.",
         "- Added fallback values and safe property access for doors in non-standard spaces.",
         "- Note: This corrects an error introduced by previous AI-based coding that hardcoded door logic instead of using the configurable all options system.",
         "- Added enhanced label_Rab macro with comprehensive error handling and superscript fallbacks.",
@@ -300,7 +300,7 @@
         "Plumbing Keynotes CAD Detail Restoration.",
         "- Added back plumbing keynotes CAD detail to the system.",
         "- Restored plumbing annotation capabilities for detailed plumbing documentation.",
-        "Right click on a blank area of your toolbars and choose â€œCustomize Toolbarsâ€.",
+        "Right click on a blank area of your toolbars and choose \u201cCustomize Toolbars\u201d.",
         "Search for Place Library Object.",
         "Drage the Place Library Object onto your walls toolbar.",
         "Link the Library Object to the BWP Tool(Cabinet) in your Library.",
@@ -314,7 +314,7 @@
         "- Enhanced layout organization and door information display."
       ],
       "Toolbars": [
-        "Right click on a blank area of your toolbars and choose â€œCustomize Toolbarsâ€.",
+        "Right click on a blank area of your toolbars and choose \u201cCustomize Toolbars\u201d.",
         "Drage the Place Library Object onto your walls toolbar.",
         "Specify the Icon provided in the step 5 folder."
       ],
@@ -414,7 +414,7 @@
         "- **Action Required Before Printing:** Open the wall legend and check \"Include Walls\" option to populate the legend.",
         "- Performance optimization prevents potential slowdowns during plan development.",
         "- Wall legend will only update when manually enabled for final documentation.",
-        "Right click on a blank area of your toolbars and choose â€œCustomize Toolbarsâ€.",
+        "Right click on a blank area of your toolbars and choose \u201cCustomize Toolbars\u201d.",
         "Search for Place Library Object.",
         "Drage the Place Library Object onto your walls toolbar.",
         "Link the Library Object to the BWP Tool(Cabinet) in your Library.",
