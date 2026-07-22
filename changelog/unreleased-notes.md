@@ -7,5 +7,7 @@ Added Flood Zone and Map ID fields to Spec Plan Project Information
 -Improved the RabsBoxLabel macro for false positives as well as allowing more flexibility in Elevation camera labels. 
 -Patched Applicable codes label on all Layout files which was not using RabsBoxLabel as it should have been
 -Added a section explaining the 2 additional template pages in the manual
+-Removed invisible text boxes from all Layout files
+-Patched all spec writing labels to use rabsboxlabel
 ## Removed or Replaced
 Removed the Applicable Codes text box from the Spec files working plan view and moved it to the CAD block listed in patches and improvements
