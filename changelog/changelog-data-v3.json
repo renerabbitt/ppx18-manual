@@ -1,0 +1,1319 @@
+[
+  {
+    "version": "PPX18 260720",
+    "status": "Unreleased development",
+    "groups": {},
+    "changes": {},
+    "downloads": [
+      "Pro Plan",
+      "Library",
+      "Toolbars"
+    ],
+    "safe": [
+      "Floor and ceiling platform defaults",
+      "Saved Plan Views (do not replace originals)",
+      "Layer sets (do not replace originals)"
+    ],
+    "avoid": [
+      "Framing and wall defaults because layer-based fill styles are version-sensitive"
+    ]
+  },
+  {
+    "version": "PPX18 260714",
+    "status": "Current release",
+    "groups": {
+      "Library": [
+        "Added detail designations for Gable and Eave Fascia and Sub-Fascia as well as roof soffit.",
+        "Added a new text style \"schedule style\" and set all schedules to use and set to black. This helped split label style for window/door/cabinet labels for the new working light view.",
+        "Added a Living Area Totals tool to the Pro Plan Tools library for troubleshooting area calculations.",
+        "Updated the Rexel layout with a sidebar whose fill is controlled by a layer-based fill style."
+      ],
+      "Plan Template": [
+        "Added a new Saved Plan View named 0 Working Light. Labels, dimensions, roofs, and electrical items display in very light colors so congested working views remain easier to read.",
+        "Changed roof planes to derive their line color from the assigned layer and updated the Plot Plan to use that behavior.",
+        "Expanded Project Information to include setback requirements and maximum building height.",
+        "Added a Project Information field for the designer license number.",
+        "Added a new text style \"schedule style\" and set all schedules to use and set to black. This helped split label style for window/door/cabinet labels for the new working light view.",
+        "ProArch got a new color side bar that can be changed by the new Color Side Bar Layer Based Fill. ANSI and ARCH D have added spec on G001 and a rendered map.",
+        "Updated the ppx18 link for the new manual https://renerabbitt.github.io/ppx18-manual/.",
+        "Updated the Rexel layout with a sidebar whose fill is controlled by a layer-based fill style."
+      ],
+      "Layout Files": [
+        "Added an alternative method for adding applicable codes in the title block plan.",
+        "ProArch got a new color side bar that can be changed by the new Color Side Bar Layer Based Fill. ANSI and ARCH D have added spec on G001 and a rendered map.",
+        "Updated the Rexel layout with a sidebar whose fill is controlled by a layer-based fill style."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "Added a new Saved Plan View named 0 Working Light. Labels, dimensions, roofs, and electrical items display in very light colors so congested working views remain easier to read.",
+        "Expanded Project Information to include setback requirements and maximum building height.",
+        "Added an alternative method for adding applicable codes in the title block plan.",
+        "Added a Project Information field for the designer license number.",
+        "Added detail designations for Gable and Eave Fascia and Sub-Fascia as well as roof soffit.",
+        "Added a new text style \"schedule style\" and set all schedules to use and set to black. This helped split label style for window/door/cabinet labels for the new working light view.",
+        "Added a Living Area Totals tool to the Pro Plan Tools library for troubleshooting area calculations."
+      ],
+      "Patches and Improvements": [
+        "Changed roof planes to derive their line color from the assigned layer and updated the Plot Plan to use that behavior.",
+        "ProArch got a new color side bar that can be changed by the new Color Side Bar Layer Based Fill. ANSI and ARCH D have added spec on G001 and a rendered map.",
+        "Updated the ppx18 link for the new manual https://renerabbitt.github.io/ppx18-manual/.",
+        "Updated the Rexel layout with a sidebar whose fill is controlled by a layer-based fill style."
+      ]
+    },
+    "downloads": [
+      "Pro Plan",
+      "Library",
+      "Toolbars"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  },
+  {
+    "version": "PPX18 260709",
+    "status": "Previous release",
+    "groups": {
+      "Library": [
+        "Window callouts were updated for the Kitchen Plan.",
+        "Add windows and door layers to RCP plan.",
+        "Fixed an error with the glass cabinet door painter with materials.",
+        "Turned on cross section cameras in working framing view.",
+        "The roof vent calcs were hardcoded. The all options macro has now been updated to drive those values.",
+        "Added a new Circuit Breaker Panel Creator System which includes toolbars linked to library objects. The system takes a note which automatically detects the room it is in. if you attached the note to an appliance or a cabinet with an appliance in it then it should automatically parse the name of the appliance into the panel creator. This generates an electrical panel schedule which is included in the ProArch + NCS Layouts. The existing garbage disposal/dishwasher/hood vent outlets also report to the panel schedule."
+      ],
+      "Toolbars": [
+        "Added a new Circuit Breaker Panel Creator System which includes toolbars linked to library objects. The system takes a note which automatically detects the room it is in. if you attached the note to an appliance or a cabinet with an appliance in it then it should automatically parse the name of the appliance into the panel creator. This generates an electrical panel schedule which is included in the ProArch + NCS Layouts. The existing garbage disposal/dishwasher/hood vent outlets also report to the panel schedule."
+      ],
+      "Plan Template": [
+        "Kitchen Dimension defaults were update.",
+        "Add windows and door layers to RCP plan.",
+        "Turned off Poche Fill On Landscape Plan.",
+        "Turned furniture interior layer off on the landscape plan.",
+        "Title Block and Spec Plan updated to add Project Information \u201cAHJ\u201d input for inputting county. This is used for climate zone lookup alongside of zip code in some cases. This has been updated for NY MI AZ CO OR NV WA CA and ID.",
+        "Added a new Circuit Breaker Panel Creator System which includes toolbars linked to library objects. The system takes a note which automatically detects the room it is in. if you attached the note to an appliance or a cabinet with an appliance in it then it should automatically parse the name of the appliance into the panel creator. This generates an electrical panel schedule which is included in the ProArch + NCS Layouts. The existing garbage disposal/dishwasher/hood vent outlets also report to the panel schedule."
+      ],
+      "Layout Files": [
+        "A custom ANSI B 11x17 template is included for KITCHENS ONLY.",
+        "A drawing sheet reference was added to the working kitchen and bath view for automatic ANSI B Layout location.",
+        "Window callouts were updated for the Kitchen Plan.",
+        "Turned on cross section cameras in working framing view.",
+        "Townsend ANSI D and ARCH E ProARC+NCS Layout Templates Added.",
+        "Title Block and Spec Plan updated to add Project Information \u201cAHJ\u201d input for inputting county. This is used for climate zone lookup alongside of zip code in some cases. This has been updated for NY MI AZ CO OR NV WA CA and ID.",
+        "Added a new Circuit Breaker Panel Creator System which includes toolbars linked to library objects. The system takes a note which automatically detects the room it is in. if you attached the note to an appliance or a cabinet with an appliance in it then it should automatically parse the name of the appliance into the panel creator. This generates an electrical panel schedule which is included in the ProArch + NCS Layouts. The existing garbage disposal/dishwasher/hood vent outlets also report to the panel schedule."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "Kitchen Dimension defaults were update.",
+        "A custom ANSI B 11x17 template is included for KITCHENS ONLY.",
+        "A drawing sheet reference was added to the working kitchen and bath view for automatic ANSI B Layout location.",
+        "Add windows and door layers to RCP plan.",
+        "Turned on cross section cameras in working framing view.",
+        "Turned furniture interior layer off on the landscape plan.",
+        "Townsend ANSI D and ARCH E ProARC+NCS Layout Templates Added.",
+        "Added a new Circuit Breaker Panel Creator System which includes toolbars linked to library objects. The system takes a note which automatically detects the room it is in. if you attached the note to an appliance or a cabinet with an appliance in it then it should automatically parse the name of the appliance into the panel creator. This generates an electrical panel schedule which is included in the ProArch + NCS Layouts. The existing garbage disposal/dishwasher/hood vent outlets also report to the panel schedule."
+      ],
+      "Patches and Improvements": [
+        "Window callouts were updated for the Kitchen Plan.",
+        "Fixed an error with the glass cabinet door painter with materials.",
+        "The roof vent calcs were hardcoded. The all options macro has now been updated to drive those values.",
+        "Title Block and Spec Plan updated to add Project Information \u201cAHJ\u201d input for inputting county. This is used for climate zone lookup alongside of zip code in some cases. This has been updated for NY MI AZ CO OR NV WA CA and ID."
+      ],
+      "Removed or Replaced": [
+        "Turned off Poche Fill On Landscape Plan."
+      ]
+    },
+    "downloads": [
+      "Pro Plan",
+      "Library",
+      "Toolbars"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  },
+  {
+    "version": "PPX18 260703",
+    "status": "Previous release",
+    "groups": {
+      "Library": [
+        "Deleted duplicate sheet on Willow E floor framing.",
+        "Added the missing furred stepped foundation wall type.",
+        "Additional Spec has been added to the Title Block and Spec CAD Details.",
+        "All Cabinet library items have had their macros removed which will hopefully clear up a mismatch in macro versioning.",
+        "The fridge logic in the cabinet label has been removed. Add fridge with label replacement instead."
+      ],
+      "Plan Template": [
+        "RCP keynote is updated.",
+        "Willow E had an incorrect SPV that was swapped out for the correct one.",
+        "Changed line offset to 14\u201d on NC and remodel dimension defaults.",
+        "Fixed Cut Off Standards on G1.",
+        "Almost all Rich Text defaults were reporting to the wrong layer. These have been fixed."
+      ],
+      "Layout Files": [
+        "Deleted duplicate sheet on Willow E floor framing.",
+        "Added the new Townsend ProArch+NCS ARCH D Layout. This layout uses National CAD Standards for sheet enumeration and adds additional views such as Mechanical/Plumbing/RCP/Landscape as well as additional spec, Project Team and reorders the sheets according to the NCS standard. It is expected that more serious Architectural Design Submittals Be Done in This Set.",
+        "Additional Spec has been added to the Title Block and Spec CAD Details."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "Added the missing furred stepped foundation wall type.",
+        "Added the new Townsend ProArch+NCS ARCH D Layout. This layout uses National CAD Standards for sheet enumeration and adds additional views such as Mechanical/Plumbing/RCP/Landscape as well as additional spec, Project Team and reorders the sheets according to the NCS standard. It is expected that more serious Architectural Design Submittals Be Done in This Set.",
+        "Additional Spec has been added to the Title Block and Spec CAD Details."
+      ],
+      "Patches and Improvements": [
+        "RCP keynote is updated.",
+        "Willow E had an incorrect SPV that was swapped out for the correct one.",
+        "Changed line offset to 14\u201d on NC and remodel dimension defaults.",
+        "Fixed Cut Off Standards on G1.",
+        "Almost all Rich Text defaults were reporting to the wrong layer. These have been fixed."
+      ],
+      "Removed or Replaced": [
+        "Deleted duplicate sheet on Willow E floor framing.",
+        "All Cabinet library items have had their macros removed which will hopefully clear up a mismatch in macro versioning.",
+        "The fridge logic in the cabinet label has been removed. Add fridge with label replacement instead."
+      ]
+    },
+    "downloads": [
+      "Pro Plan",
+      "Library",
+      "Toolbars"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  },
+  {
+    "version": "PPX18 260626",
+    "status": "Previous release",
+    "groups": {
+      "Library": [
+        "Updated the pro plan transfer tool to include labels. Updated the selection schedules for updating windows/doors/walls.",
+        "Added new layers for display layers to drive the look of new wall types vs existing wall types.",
+        "Fixed a glitch with the default exterior wall type not following layers.",
+        "Fixed some of the Pro Plan Library Walls to follow PP layer settings.",
+        "Added an Ultrawide toolbar layout.",
+        "Broke up the kitchen tools for laptop screen compatibility.",
+        "Added an RCP saved plan view with text/notes layers and new keynote schedule. Converted all ceiling mounted lights in the library to the new custom electrical, RCP layer that is displayed in that saved plan view.",
+        "Added a new stem wall width designation and added the associated text library object in the pro plan tools library.",
+        "Every single detail in the Pro Plan has each component polyline mapped to neq unique layers which drive the fill styles. You can now globally change all fill styles colors and patterns for the entire detail system to match your standard.",
+        "Fixed room label and now properly abbreviates its name based on all options.",
+        "Changed Room fill style layer color to light grey.",
+        "Built new library of fill styles for graphic real estate listing style overview.",
+        "Anno tool options now live in the built-in Project Information Tool.",
+        "Only schedule numbers are displayed in elevations for cabinets and fenestration.",
+        "Walls, roofs, hatching tool fill style driven by SPV\u2019s/Layer Sets.",
+        "Room label abbreviates rooms less than 12 sq. ft and hides height label.",
+        "Framing fill styles are view dependent. Adjusted colors and fills for better graphics.",
+        "Removed Redlines, small details, and working landscaping SPV\u2019s and added in default sets drop down menu to use small details or redlines.",
+        "Footing follows fill style, set to angle hatch and follows layer color at 80% transparency.",
+        "Turned on the ceiling beam and joist layer for the floor, framing plan SPV.",
+        "Adjusted all framing fill styles for better framing views.",
+        "Walls were rebuilt to get their main layer line parameters from a new layer called Walls, Main Layer Lines. This gives the ability to quickly either show the framing lines in wall types or keep them hidden and make it view dependent.",
+        "With new wall type layer management, made new default sets for new construction which changes the dimension default and displays the main wall layer and hatches other wall layers.",
+        "Details now have some layer-based fill styles.",
+        "Rewrote the room label. Added the new style palette tool for proposed rooms.",
+        "Added the new style palette tool for additions. Will add to new conditioned area.",
+        "Added new side panel kitchen quick tools.",
+        "Added new tray divider quick tool.",
+        "New Pro Plan Transfer Tool reduces steps.",
+        "Cleaned up floor framing plan for better display.",
+        "Rewrote the door macro for proper offset of RO labels in framing views.",
+        "BWP tool changed draw order for better display in framing views.",
+        "MAJOR overhaul of all macro driven systems have led to a decrease in drawing lag of approximately 350ms per click for drawing rooms and placing windows/doors/cabinets are as follows:",
+        "Window/Door/Cabinet label systems have all been turned into global methods and have been re-written to call other global methods. This reduces the time it takes for each window/door/cabinet to pass through their logical arguments.",
+        "Global helper macros were created to remove bottlenecks.",
+        "The roof and foundation NFA and the Area Analysis systems were all combined into single macros to reduce redundant calls.",
+        "Anno tool has been completely re-written for more easily customizable annotations and now automatically reports floor surface when not connected but inside of a room.",
+        "Most macro systems are now global lambdas with a reporting output so you can see the output but the call is done through a global which allows objects to retrieve values concurrently.",
+        "Removed lesser used or obscure macros for easier management in the TMM console.",
+        "Changed order of calls and dependencies to avoid macro checks that were unnecessary.",
+        "Rewrote the room and ceiling height macros again and now they automatically format themselves based on the room sizes. The truncate tool now will revert that formatting in the case that you want a full size label to place outside of a small room.",
+        "All objects now work by looking at a global label system to start parsing their individual values instead of one-by-one iterating through a macro in the TMM thus waiting its turn for the next.",
+        "Overhauled the Detail Designations Page. Added new categories for deck structural elements and others.",
+        "Removed the cadlabel fill-based designation system, rewrote details to remove this system.",
+        "Built a library of annotations for integrating into the system.",
+        "Redesigned the detail designations page to simplify it. The detail preview has now been removed.",
+        "New Construction dimension defaults have now been set to centerline of door openings and single side of main wall layer.",
+        "Windows now have callouts in elevation and kitchen SPVs instead of labels. Labels exist in every other view type.",
+        "New callout tool drives details from being connected to a wall.",
+        "Overhaul of the roof settings for a new modern look and feel. Replaced the roof texture with a tintable comp shingle roof, Improved the bump map. Added new fried boards and gable end shadow board moldings. Removed z bar from gable end and changed the overhang. Changed default materials. Added a gutter guard.",
+        "Added new casings to windows and doors and a new custom sill profile for a clean look.",
+        "Added a new exterior siding texture that looks more realistic.",
+        "Added a new concrete texture with ao maps for pronounced shadows.",
+        "Aggregated plan materials and reduced some file sizes.",
+        "Added new framing back clip for easier cross sections.",
+        "Second overhaul of all layer based fill styles and layer sets including overhaul of all built in wall types.",
+        "Replaced png files with webp files in the library for better file sizes.",
+        "Updated helper macros for schedules that use alphanumeric labels.",
+        "Built-in wall types are now split by display layer and line styles as well as fill styles are derived from the display layers. Wall display of built in walls are now infinitely customizable from layer set to layer set."
+      ],
+      "Toolbars": [
+        "Added an Ultrawide toolbar layout.",
+        "Added new side panel kitchen quick tools.",
+        "Added new tray divider quick tool."
+      ],
+      "Plan Template": [
+        "Added insulation to the floor structure defaults.",
+        "Updated the pro plan transfer tool to include labels. Updated the selection schedules for updating windows/doors/walls.",
+        "Reworked the title block project information system for the option 1 plan and all layouts.",
+        "Renamed the logo option plan.",
+        "Added design load criteria into the project information inputs.",
+        "Code criteria now comes from project information in the spec plan.",
+        "CSV project information system was removed for the new project information system.",
+        "Logo and stamp were resized to \u00bc\u201d scale to match project information and client information blocks.",
+        "Contact information text was added alongside project information.",
+        "Added new layers for display layers to drive the look of new wall types vs existing wall types.",
+        "Fixed a glitch with the default exterior wall type not following layers.",
+        "Adjusted saved plan views wall layer settings.",
+        "Fixed some of the Pro Plan Library Walls to follow PP layer settings.",
+        "Added an RCP saved plan view with text/notes layers and new keynote schedule. Converted all ceiling mounted lights in the library to the new custom electrical, RCP layer that is displayed in that saved plan view.",
+        "Every single detail in the Pro Plan has each component polyline mapped to neq unique layers which drive the fill styles. You can now globally change all fill styles colors and patterns for the entire detail system to match your standard.",
+        "Changed Room fill style layer color to light grey.",
+        "Changed SPV from \u201cFurniture\u201d to \u201cOverview\u201d and SPV of \u201cWorking Furniture\u201d to \u201cFurniture/Overview\u201d.",
+        "Changed Overview to display room fill.",
+        "Added a Chase room style set to unconditioned and unspecified so it hides its label but reports to Area Analysis.",
+        "Anno tool options now live in the built-in Project Information Tool.",
+        "Only schedule numbers are displayed in elevations for cabinets and fenestration.",
+        "More robust Area Analysis.",
+        "Walls, roofs, hatching tool fill style driven by SPV\u2019s/Layer Sets.",
+        "Renamed some layers in walls to make it easier to make adjustment to walls without adjusting other elements by filtering to \u201cWalls\u201d For instance, \u201cwalls, hatching\u201d is now \u201cwall, hatching\u201d so that it isn\u2019t affected by the search term \u201cwalls\u201d.",
+        "Added locked custom colors to the select color boxes.",
+        "Removed Redlines, small details, and working landscaping SPV\u2019s and added in default sets drop down menu to use small details or redlines.",
+        "Footing follows fill style, set to angle hatch and follows layer color at 80% transparency.",
+        "Turned on the ceiling beam and joist layer for the floor, framing plan SPV.",
+        "Walls were rebuilt to get their main layer line parameters from a new layer called Walls, Main Layer Lines. This gives the ability to quickly either show the framing lines in wall types or keep them hidden and make it view dependent.",
+        "With new wall type layer management, made new default sets for new construction which changes the dimension default and displays the main wall layer and hatches other wall layers.",
+        "Updated 3d temp dimensions.",
+        "Removed outdated layer sets and default sets and dimension defaults.",
+        "Details now have some layer-based fill styles.",
+        "New default sets change area analysis output for remodel to new construction.",
+        "Undercounter light now draws clockwise.",
+        "New BWP SPV with new braced wall line.",
+        "Fixed dimensioning in roof plan views.",
+        "Changed the way room heights are rounded for better precision.",
+        "Added scullery, butlers pantry, coat, and foyer room types.",
+        "Rewrote the room and ceiling height macros again and now they automatically format themselves based on the room sizes. The truncate tool now will revert that formatting in the case that you want a full size label to place outside of a small room.",
+        "Design Load, Spec, Logo, and Stamp all now come from one file. Code version automatically switches all spec based on state and country codes.",
+        "New Construction dimension defaults have now been set to centerline of door openings and single side of main wall layer.",
+        "Windows now have callouts in elevation and kitchen SPVs instead of labels. Labels exist in every other view type.",
+        "Pro Plan now comes with an add-on system for reading CSV outputs from BuilderTrend/JobTread/Generic CSVs that is user configurable.",
+        "Attic walls on all layer sets now use a blank line style and are very light grey. This is so that they aren\u2019t as distracting in the working plan view but still there and editable.",
+        "Overhaul of the roof settings for a new modern look and feel. Replaced the roof texture with a tintable comp shingle roof, Improved the bump map. Added new fried boards and gable end shadow board moldings. Removed z bar from gable end and changed the overhang. Changed default materials. Added a gutter guard.",
+        "Tweaked settings for temp dimension defaults.",
+        "Second overhaul of all layer based fill styles and layer sets including overhaul of all built in wall types.",
+        "Updated the BWP schedule to use new ABC conventions.",
+        "Updated helper macros for schedules that use alphanumeric labels.",
+        "Adjusted line weights across all layer sets.",
+        "Built-in wall types are now split by display layer and line styles as well as fill styles are derived from the display layers. Wall display of built in walls are now infinitely customizable from layer set to layer set."
+      ],
+      "Layout Files": [
+        "Reworked the title block project information system for the option 1 plan and all layouts.",
+        "Added an Ultrawide toolbar layout.",
+        "Only schedule numbers are displayed in elevations for cabinets and fenestration.",
+        "Overhauled the Detail Designations Page. Added new categories for deck structural elements and others.",
+        "Redesigned the detail designations page to simplify it. The detail preview has now been removed.",
+        "Windows now have callouts in elevation and kitchen SPVs instead of labels. Labels exist in every other view type.",
+        "New callout tool drives details from being connected to a wall.",
+        "Changed cross section and elevation line weights for a cleaner elevation.",
+        "Added new framing back clip for easier cross sections.",
+        "Changed Opening Indicators to show alongside callout labels in elevation views.",
+        "Turned the display of cross section cameras on in working roofs.",
+        "Right justified all layout labels pinned to the layout box left corner.",
+        "Adjusted alignment across all layout templates.",
+        "Added callout arrows to elevation cameras.",
+        "Random patches in Layout."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "Added insulation to the floor structure defaults.",
+        "Added design load criteria into the project information inputs.",
+        "Code criteria now comes from project information in the spec plan.",
+        "Logo and stamp were resized to \u00bc\u201d scale to match project information and client information blocks.",
+        "Contact information text was added alongside project information.",
+        "Added new layers for display layers to drive the look of new wall types vs existing wall types.",
+        "Added an Ultrawide toolbar layout.",
+        "Broke up the kitchen tools for laptop screen compatibility.",
+        "Added an RCP saved plan view with text/notes layers and new keynote schedule. Converted all ceiling mounted lights in the library to the new custom electrical, RCP layer that is displayed in that saved plan view.",
+        "Added a new stem wall width designation and added the associated text library object in the pro plan tools library.",
+        "Every single detail in the Pro Plan has each component polyline mapped to neq unique layers which drive the fill styles. You can now globally change all fill styles colors and patterns for the entire detail system to match your standard.",
+        "Built new library of fill styles for graphic real estate listing style overview.",
+        "Added a Chase room style set to unconditioned and unspecified so it hides its label but reports to Area Analysis.",
+        "Anno tool options now live in the built-in Project Information Tool.",
+        "Only schedule numbers are displayed in elevations for cabinets and fenestration.",
+        "More robust Area Analysis.",
+        "Walls, roofs, hatching tool fill style driven by SPV\u2019s/Layer Sets.",
+        "Room label abbreviates rooms less than 12 sq. ft and hides height label.",
+        "Added locked custom colors to the select color boxes.",
+        "Footing follows fill style, set to angle hatch and follows layer color at 80% transparency.",
+        "Turned on the ceiling beam and joist layer for the floor, framing plan SPV.",
+        "Walls were rebuilt to get their main layer line parameters from a new layer called Walls, Main Layer Lines. This gives the ability to quickly either show the framing lines in wall types or keep them hidden and make it view dependent.",
+        "With new wall type layer management, made new default sets for new construction which changes the dimension default and displays the main wall layer and hatches other wall layers.",
+        "Details now have some layer-based fill styles.",
+        "Added the new style palette tool for additions. Will add to new conditioned area.",
+        "New default sets change area analysis output for remodel to new construction.",
+        "Undercounter light now draws clockwise.",
+        "Added new side panel kitchen quick tools.",
+        "Added new tray divider quick tool.",
+        "New Pro Plan Transfer Tool reduces steps.",
+        "New BWP SPV with new braced wall line.",
+        "Cleaned up floor framing plan for better display.",
+        "Added scullery, butlers pantry, coat, and foyer room types.",
+        "Window/Door/Cabinet label systems have all been turned into global methods and have been re-written to call other global methods. This reduces the time it takes for each window/door/cabinet to pass through their logical arguments.",
+        "The roof and foundation NFA and the Area Analysis systems were all combined into single macros to reduce redundant calls.",
+        "Anno tool has been completely re-written for more easily customizable annotations and now automatically reports floor surface when not connected but inside of a room.",
+        "Most macro systems are now global lambdas with a reporting output so you can see the output but the call is done through a global which allows objects to retrieve values concurrently.",
+        "All objects now work by looking at a global label system to start parsing their individual values instead of one-by-one iterating through a macro in the TMM thus waiting its turn for the next.",
+        "Overhauled the Detail Designations Page. Added new categories for deck structural elements and others.",
+        "Built a library of annotations for integrating into the system.",
+        "Design Load, Spec, Logo, and Stamp all now come from one file. Code version automatically switches all spec based on state and country codes.",
+        "New Construction dimension defaults have now been set to centerline of door openings and single side of main wall layer.",
+        "Windows now have callouts in elevation and kitchen SPVs instead of labels. Labels exist in every other view type.",
+        "Pro Plan now comes with an add-on system for reading CSV outputs from BuilderTrend/JobTread/Generic CSVs that is user configurable.",
+        "Attic walls on all layer sets now use a blank line style and are very light grey. This is so that they aren\u2019t as distracting in the working plan view but still there and editable.",
+        "New callout tool drives details from being connected to a wall.",
+        "Added new casings to windows and doors and a new custom sill profile for a clean look.",
+        "Added a new exterior siding texture that looks more realistic.",
+        "Added a new concrete texture with ao maps for pronounced shadows.",
+        "Tweaked settings for temp dimension defaults.",
+        "Aggregated plan materials and reduced some file sizes.",
+        "Added new framing back clip for easier cross sections.",
+        "Turned the display of cross section cameras on in working roofs.",
+        "Right justified all layout labels pinned to the layout box left corner.",
+        "Added callout arrows to elevation cameras.",
+        "Random patches in Layout.",
+        "Built-in wall types are now split by display layer and line styles as well as fill styles are derived from the display layers. Wall display of built in walls are now infinitely customizable from layer set to layer set."
+      ],
+      "Patches and Improvements": [
+        "Updated the pro plan transfer tool to include labels. Updated the selection schedules for updating windows/doors/walls.",
+        "Reworked the title block project information system for the option 1 plan and all layouts.",
+        "Renamed the logo option plan.",
+        "Fixed a glitch with the default exterior wall type not following layers.",
+        "Adjusted saved plan views wall layer settings.",
+        "Fixed some of the Pro Plan Library Walls to follow PP layer settings.",
+        "Fixed room label and now properly abbreviates its name based on all options.",
+        "Changed Room fill style layer color to light grey.",
+        "Changed SPV from \u201cFurniture\u201d to \u201cOverview\u201d and SPV of \u201cWorking Furniture\u201d to \u201cFurniture/Overview\u201d.",
+        "Changed Overview to display room fill.",
+        "Framing fill styles are view dependent. Adjusted colors and fills for better graphics.",
+        "Renamed some layers in walls to make it easier to make adjustment to walls without adjusting other elements by filtering to \u201cWalls\u201d For instance, \u201cwalls, hatching\u201d is now \u201cwall, hatching\u201d so that it isn\u2019t affected by the search term \u201cwalls\u201d.",
+        "Adjusted all framing fill styles for better framing views.",
+        "Updated 3d temp dimensions.",
+        "Rewrote the room label. Added the new style palette tool for proposed rooms.",
+        "Fixed dimensioning in roof plan views.",
+        "Rewrote the door macro for proper offset of RO labels in framing views.",
+        "BWP tool changed draw order for better display in framing views.",
+        "Changed the way room heights are rounded for better precision.",
+        "MAJOR overhaul of all macro driven systems have led to a decrease in drawing lag of approximately 350ms per click for drawing rooms and placing windows/doors/cabinets are as follows:",
+        "Changed order of calls and dependencies to avoid macro checks that were unnecessary.",
+        "Rewrote the room and ceiling height macros again and now they automatically format themselves based on the room sizes. The truncate tool now will revert that formatting in the case that you want a full size label to place outside of a small room.",
+        "Changed cross section and elevation line weights for a cleaner elevation.",
+        "Changed Opening Indicators to show alongside callout labels in elevation views.",
+        "Adjusted alignment across all layout templates.",
+        "Second overhaul of all layer based fill styles and layer sets including overhaul of all built in wall types.",
+        "Updated the BWP schedule to use new ABC conventions.",
+        "Updated helper macros for schedules that use alphanumeric labels.",
+        "Adjusted line weights across all layer sets."
+      ],
+      "Removed or Replaced": [
+        "CSV project information system was removed for the new project information system.",
+        "Removed Redlines, small details, and working landscaping SPV\u2019s and added in default sets drop down menu to use small details or redlines.",
+        "Removed outdated layer sets and default sets and dimension defaults.",
+        "Global helper macros were created to remove bottlenecks.",
+        "Removed lesser used or obscure macros for easier management in the TMM console.",
+        "Removed the cadlabel fill-based designation system, rewrote details to remove this system.",
+        "Redesigned the detail designations page to simplify it. The detail preview has now been removed.",
+        "Overhaul of the roof settings for a new modern look and feel. Replaced the roof texture with a tintable comp shingle roof, Improved the bump map. Added new fried boards and gable end shadow board moldings. Removed z bar from gable end and changed the overhang. Changed default materials. Added a gutter guard.",
+        "Replaced png files with webp files in the library for better file sizes."
+      ]
+    },
+    "downloads": [
+      "Pro Plan",
+      "Library",
+      "Toolbars"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  },
+  {
+    "version": "PPX18 260309",
+    "status": "Previous release",
+    "groups": {
+      "Library": [
+        "Fixed Story Pole Dimensions which were overlooked when new dimension tools were introduced.",
+        "Added new Monopoly Framed Details.",
+        "Order form will handle desired settings for labels upon delivery. Each customer will have their own default macro and will be delivered to them if ordering the assisted install.",
+        "Door label macro was fixed to show interior labels on garage doors.",
+        "Fixed DLR macros for new optimizations in both layout and plan.",
+        "Removed project preferences and it now lives in the all options macro. Harder to set but better performance.",
+        "Removed the callout rose and cameras and added the callout rose to the toolbars.",
+        "Moved the plan transfer tool next to the edit area tool and floor defaults. Added a new schedule tool for easier transfers.",
+        "Purged and removed materials from support plan files to lower file size.",
+        "Replaced some materials for smaller file size.",
+        "Removed some bottlenecks in the window label system.",
+        "Rewrote the window and door label system to utilize a global macro for superscript and a global macro for number formatting. This eliminates a bottleneck and may show 0-100ms in improvement when resizing windows depending on the system.",
+        "Removed unnecessary files from the pro plan library freeing up 60mb.",
+        "Removed some options from the window label system that were never used by any purchasers.",
+        "Added new window tools for deleting casings and sills."
+      ],
+      "Toolbars": [
+        "Removed the callout rose and cameras and added the callout rose to the toolbars."
+      ],
+      "Plan Template": [
+        "Changed Overview Camera to DLSS by default.",
+        "Added a schematic design review spec.",
+        "Fixed Story Pole Dimensions which were overlooked when new dimension tools were introduced.",
+        "Set elevation cameras to all use the story pole dimension default.",
+        "Fixed story pole dimension default offsets and disabled intermediate ridges and enabled intermediate plate heights.",
+        "Separate project file links for each title block style so only 1 title block shows in layouts.",
+        "Reorganized the Project File.",
+        "Order form will handle desired settings for labels upon delivery. Each customer will have their own default macro and will be delivered to them if ordering the assisted install.",
+        "Moved the plan transfer tool next to the edit area tool and floor defaults. Added a new schedule tool for easier transfers.",
+        "Removed the CSV reading system, now only available from assisted install package.",
+        "Changed quick link names in the top navigation area.",
+        "Added a new schedules CAD block to help with Pro Plan transfer.",
+        "Fixed the elevation keynote schedule not grouping similar.",
+        "Reorganized the Pro Plan downloads folder so the initial download is a smaller file size."
+      ],
+      "Layout Files": [
+        "Added an ANSI C Layout for \u00bd scale prints at 8-1/2\u201d x 11\u201d for client design review layout only on some Layout title block styles.",
+        "Shifted Title Block Info on non-sidebar layouts to be better situated at the rolled-edge.",
+        "Set elevation cameras to all use the story pole dimension default.",
+        "Separate project file links for each title block style so only 1 title block shows in layouts.",
+        "Split project downloads into title block styles.",
+        "Fixed DLR macros for new optimizations in both layout and plan.",
+        "Removed the callout rose and cameras and added the callout rose to the toolbars.",
+        "Fixed duplicate spec on Layout.",
+        "Fixed the elevation keynote schedule not grouping similar."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "Added a schematic design review spec.",
+        "Added an ANSI C Layout for \u00bd scale prints at 8-1/2\u201d x 11\u201d for client design review layout only on some Layout title block styles.",
+        "Shifted Title Block Info on non-sidebar layouts to be better situated at the rolled-edge.",
+        "Set elevation cameras to all use the story pole dimension default.",
+        "Added new Monopoly Framed Details.",
+        "Separate project file links for each title block style so only 1 title block shows in layouts.",
+        "Reorganized the Project File.",
+        "Order form will handle desired settings for labels upon delivery. Each customer will have their own default macro and will be delivered to them if ordering the assisted install.",
+        "Split project downloads into title block styles.",
+        "Moved the plan transfer tool next to the edit area tool and floor defaults. Added a new schedule tool for easier transfers.",
+        "Added a new schedules CAD block to help with Pro Plan transfer.",
+        "Reorganized the Pro Plan downloads folder so the initial download is a smaller file size.",
+        "Added new window tools for deleting casings and sills."
+      ],
+      "Patches and Improvements": [
+        "Changed Overview Camera to DLSS by default.",
+        "Fixed Story Pole Dimensions which were overlooked when new dimension tools were introduced.",
+        "Door label macro was fixed to show interior labels on garage doors.",
+        "Fixed DLR macros for new optimizations in both layout and plan.",
+        "Fixed duplicate spec on Layout.",
+        "Changed quick link names in the top navigation area.",
+        "Fixed the elevation keynote schedule not grouping similar.",
+        "Rewrote the window and door label system to utilize a global macro for superscript and a global macro for number formatting. This eliminates a bottleneck and may show 0-100ms in improvement when resizing windows depending on the system."
+      ],
+      "Removed or Replaced": [
+        "Fixed story pole dimension default offsets and disabled intermediate ridges and enabled intermediate plate heights.",
+        "Removed project preferences and it now lives in the all options macro. Harder to set but better performance.",
+        "Removed the callout rose and cameras and added the callout rose to the toolbars.",
+        "Purged and removed materials from support plan files to lower file size.",
+        "Replaced some materials for smaller file size.",
+        "Removed some bottlenecks in the window label system.",
+        "Removed the CSV reading system, now only available from assisted install package.",
+        "Removed unnecessary files from the pro plan library freeing up 60mb.",
+        "Removed some options from the window label system that were never used by any purchasers."
+      ]
+    },
+    "downloads": [
+      "Pro Plan",
+      "Library",
+      "Toolbars"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  },
+  {
+    "version": "251115",
+    "status": "Previous release",
+    "groups": {
+      "Library": [
+        "Changed framing defaults to have a semi transparent wood fill.",
+        "Changed the fill on the roof framing SPV roof planes for better legibility.",
+        "Added new framing member defaults for most common beams in NA typ res construction.",
+        "Fixed an old glitch with window types. The double and triple casement window sprayers should now change to correct hinge sides in this version of the Pro Plan."
+      ],
+      "Plan Template": [
+        "This update is currently available for download, the final version will be announced when compatibility with X18 is substantiated.",
+        "Install instructions:",
+        "Please check any version info that postdates your current Pro Plan file in case you need to install something missed from other versions.",
+        "The changelog is now a web link so you can bookmark it.",
+        "Fixed the temp dimension settings to not include newel centers making it impossible to dimension your deck. Tab into a railing for newel centers.",
+        "Added a Roof Plan SPV with accompanying note and text defaults for showing roofs only. Add this roof plan to all of the ANSI D and larger sheet sizes.",
+        "Changed framing defaults to have a semi transparent wood fill.",
+        "Changed the fill on the roof framing SPV roof planes for better legibility.",
+        "Added new framing member defaults for most common beams in NA typ res construction.",
+        "Changed Roof plans to \u201cUse Any Floor\u201d for easier linking to multistory roof plans.",
+        "Overhauled the folder structure of the Pro Plan and added updated links for resources help and information.",
+        "Removed links from the menu at the top of the screen."
+      ],
+      "Layout Files": [
+        "Added the new Nexus Layouts in multiple sheet sizes.",
+        "Changed the terrain size to fit within the elevation cameras and after a census switched the base callout locations and size to represent ARCH D instead of ANSI D at \u00bc\u201d sheet size.",
+        "Added a Roof Plan SPV with accompanying note and text defaults for showing roofs only. Add this roof plan to all of the ANSI D and larger sheet sizes.",
+        "Added Arrow ARCH C Layout.",
+        "Updated all thumbnail previews for layouts for easier visual recognition of different title block styles."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "This update is currently available for download, the final version will be announced when compatibility with X18 is substantiated.",
+        "Install instructions:",
+        "Please check any version info that postdates your current Pro Plan file in case you need to install something missed from other versions.",
+        "The changelog is now a web link so you can bookmark it.",
+        "Added the new Nexus Layouts in multiple sheet sizes.",
+        "Added a Roof Plan SPV with accompanying note and text defaults for showing roofs only. Add this roof plan to all of the ANSI D and larger sheet sizes.",
+        "Added new framing member defaults for most common beams in NA typ res construction.",
+        "Added Arrow ARCH C Layout."
+      ],
+      "Patches and Improvements": [
+        "Fixed the temp dimension settings to not include newel centers making it impossible to dimension your deck. Tab into a railing for newel centers.",
+        "Changed the terrain size to fit within the elevation cameras and after a census switched the base callout locations and size to represent ARCH D instead of ANSI D at \u00bc\u201d sheet size.",
+        "Changed framing defaults to have a semi transparent wood fill.",
+        "Changed the fill on the roof framing SPV roof planes for better legibility.",
+        "Changed Roof plans to \u201cUse Any Floor\u201d for easier linking to multistory roof plans.",
+        "Fixed an old glitch with window types. The double and triple casement window sprayers should now change to correct hinge sides in this version of the Pro Plan.",
+        "Overhauled the folder structure of the Pro Plan and added updated links for resources help and information.",
+        "Updated all thumbnail previews for layouts for easier visual recognition of different title block styles."
+      ],
+      "Removed or Replaced": [
+        "Removed links from the menu at the top of the screen."
+      ]
+    },
+    "downloads": [
+      "Pro Plan",
+      "Library",
+      "Toolbars",
+      "Font Files",
+      "Bonus Files"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  },
+  {
+    "version": "251017",
+    "status": "Previous release",
+    "groups": {
+      "Library": [
+        "Please check any version info that postdates your current Pro Plan file in case you need to install something missed from other versions. This update requires that you delete all previous libraries for the pro plan as outlined in the new PDF within the download package.",
+        "There is a new section keynotes schedule and note default. A previous version of the Pro Plan injected the macro designations input into the anno tool field of framing members. This means in a cross section view you can drop a note and drag a leader to a framing member, and it will report from macro designations making cross section annotations quicker.",
+        "Default Framing Note tool now sets an automatic prefix J for Joists, S for studs, B for Beams, R for Rafter, T for truss etc. You can auto sort based on the column.",
+        "Fixed Toolbars Link to Pro Plan Transfer Tool and Fur Wall and split library folders. Requires complete deletion of all Pro Plan Library folders and reinstallation. Video will be attached as a link to this upon release.",
+        "Changed window schedule output for (existing) conditions so that RO shows as \u201cN/A\u201d.",
+        "Put in a lot of adjustments on the included wall types in the library for better display in the Pro Plan.",
+        "Fixed broken link in layout from missing foundation detail.",
+        "Library is now one file to update, making installations easier.",
+        "Added new instructional PDF for Library updates.",
+        "Added a perpetual link for downloading the most up to date library manual in PDF form."
+      ],
+      "Toolbars": [
+        "Fixed Toolbars Link to Pro Plan Transfer Tool and Fur Wall and split library folders. Requires complete deletion of all Pro Plan Library folders and reinstallation. Video will be attached as a link to this upon release."
+      ],
+      "Plan Template": [
+        "Install instructions:",
+        "The changelog is now a web link so you can bookmark it. If you have a strange font showing up anywhere this means you need to overwrite existing fonts with the fonts in the Pro Plan package even if previously installed.",
+        "There is a new section keynotes schedule and note default. A previous version of the Pro Plan injected the macro designations input into the anno tool field of framing members. This means in a cross section view you can drop a note and drag a leader to a framing member, and it will report from macro designations making cross section annotations quicker.",
+        "Default Framing Note tool now sets an automatic prefix J for Joists, S for studs, B for Beams, R for Rafter, T for truss etc. You can auto sort based on the column.",
+        "Area Analysis was changed to outside surface instead of outside main layer.",
+        "Changed a bunch of settings in other dimension defaults that are less commonly used for better performance across all dimensions.",
+        "Fixed default schedule font to a layer-based text style for quick changing of text styles.",
+        "Changed window schedule output for (existing) conditions so that RO shows as \u201cN/A\u201d.",
+        "Fixed some wall display settings in the Pro Plan.",
+        "Fixed perpetual link from download folder to the Pro Plan package.",
+        "Reorganized pro plan package folders."
+      ],
+      "Layout Files": [
+        "There is a new section keynotes schedule and note default. A previous version of the Pro Plan injected the macro designations input into the anno tool field of framing members. This means in a cross section view you can drop a note and drag a leader to a framing member, and it will report from macro designations making cross section annotations quicker.",
+        "Fixed roof display in cross section and elevation views.",
+        "Fixed broken link in layout from missing foundation detail."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "Install instructions:",
+        "Please check any version info that postdates your current Pro Plan file in case you need to install something missed from other versions. This update requires that you delete all previous libraries for the pro plan as outlined in the new PDF within the download package.",
+        "The changelog is now a web link so you can bookmark it. If you have a strange font showing up anywhere this means you need to overwrite existing fonts with the fonts in the Pro Plan package even if previously installed.",
+        "There is a new section keynotes schedule and note default. A previous version of the Pro Plan injected the macro designations input into the anno tool field of framing members. This means in a cross section view you can drop a note and drag a leader to a framing member, and it will report from macro designations making cross section annotations quicker.",
+        "Default Framing Note tool now sets an automatic prefix J for Joists, S for studs, B for Beams, R for Rafter, T for truss etc. You can auto sort based on the column.",
+        "Put in a lot of adjustments on the included wall types in the library for better display in the Pro Plan.",
+        "Library is now one file to update, making installations easier.",
+        "Added new instructional PDF for Library updates.",
+        "Added a perpetual link for downloading the most up to date library manual in PDF form.",
+        "Reorganized pro plan package folders."
+      ],
+      "Patches and Improvements": [
+        "Area Analysis was changed to outside surface instead of outside main layer.",
+        "Changed a bunch of settings in other dimension defaults that are less commonly used for better performance across all dimensions.",
+        "Fixed Toolbars Link to Pro Plan Transfer Tool and Fur Wall and split library folders. Requires complete deletion of all Pro Plan Library folders and reinstallation. Video will be attached as a link to this upon release.",
+        "Fixed default schedule font to a layer-based text style for quick changing of text styles.",
+        "Changed window schedule output for (existing) conditions so that RO shows as \u201cN/A\u201d.",
+        "Fixed some wall display settings in the Pro Plan.",
+        "Fixed roof display in cross section and elevation views.",
+        "Fixed broken link in layout from missing foundation detail.",
+        "Fixed perpetual link from download folder to the Pro Plan package."
+      ]
+    },
+    "downloads": [
+      "Pro Plan",
+      "Library",
+      "Toolbars",
+      "Font Files",
+      "Bonus Files"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  },
+  {
+    "version": "250926",
+    "status": "Previous release",
+    "groups": {
+      "Library": [
+        "Updated Toolbars, please re-download the Pro Plan PDF for new easier instructions on toolbar imports.",
+        "The Architectural Quick Tools were updated and the Pro Plan Transfer Tool has been added as a separate library item. Toolbars link to this new transfer tool.",
+        "There is a new PC installer helper program, making it even easier to install the Pro Plan, especially the toolbars on a PC. Stay tuned for MAC, I need a donor.",
+        "Re-sorted some of the CAD details with new subfolders.",
+        "New BWP notes on the BWP nail schedule Detail.",
+        "New Stair Construction Detail.",
+        "New concrete buck-out detail.",
+        "Updated Window and Door Schedule output to show tempered and egress.",
+        "Updated remap font macro for schedules.",
+        "Added an \u201cElevation View\u201d Layer set for default and saved elevation cameras. Back clipped cross section cameras will default to the old \u201cSection View\u201d layerset. The section view layer set now has framing turned on.",
+        "New glass fill style applied to all glass and vector rendering changed so that glass is a very light teal.",
+        "New window egress checker. This will prompt you in all caps in the schedule if you fail to meet egress when you have a window checked as egress. It will list the criteria that failed. If it passes it just list Pass in your schedule. This is a VERY complicated script to write so if you think something is incorrect let me know. Please double check your windows."
+      ],
+      "Toolbars": [
+        "Updated Toolbars, please re-download the Pro Plan PDF for new easier instructions on toolbar imports.",
+        "The Architectural Quick Tools were updated and the Pro Plan Transfer Tool has been added as a separate library item. Toolbars link to this new transfer tool.",
+        "There is a new PC installer helper program, making it even easier to install the Pro Plan, especially the toolbars on a PC. Stay tuned for MAC, I need a donor."
+      ],
+      "Plan Template": [
+        "Install instructions:",
+        "Rabscustom font was updated in this version to give better kerning and alignment in schedulers, make sure to download and install and overwrite the previous version before opening chief.",
+        "Bug reports and suggestions go in our Discord server.",
+        "The changelog is now a web link so you can bookmark it.",
+        "New BWP notes on the BWP nail schedule Detail.",
+        "BWP notes are using a new lambda method for converting schedule numbers to schedule letters.",
+        "Changed schedules to show grid lines as a very faint light grey.",
+        "Updated Window and Door Schedule output to show tempered and egress.",
+        "Updated remap font macro for schedules.",
+        "Added new General Plan label preferences.",
+        "Added an \u201cElevation View\u201d Layer set for default and saved elevation cameras. Back clipped cross section cameras will default to the old \u201cSection View\u201d layerset. The section view layer set now has framing turned on.",
+        "Changed terrain perimeter grass to white for vector views and thickened line weight as well as increasing the skirt size.",
+        "New window egress checker. This will prompt you in all caps in the schedule if you fail to meet egress when you have a window checked as egress. It will list the criteria that failed. If it passes it just list Pass in your schedule. This is a VERY complicated script to write so if you think something is incorrect let me know. Please double check your windows."
+      ],
+      "Layout Files": [
+        "There is a new handwritten font and hand drawn pro plan(experimental) as well as a handwritten layout.",
+        "Added an \u201cElevation View\u201d Layer set for default and saved elevation cameras. Back clipped cross section cameras will default to the old \u201cSection View\u201d layerset. The section view layer set now has framing turned on."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "Install instructions:",
+        "Bug reports and suggestions go in our Discord server.",
+        "The changelog is now a web link so you can bookmark it.",
+        "There is a new PC installer helper program, making it even easier to install the Pro Plan, especially the toolbars on a PC. Stay tuned for MAC, I need a donor.",
+        "Re-sorted some of the CAD details with new subfolders.",
+        "New BWP notes on the BWP nail schedule Detail.",
+        "BWP notes are using a new lambda method for converting schedule numbers to schedule letters.",
+        "There is a new handwritten font and hand drawn pro plan(experimental) as well as a handwritten layout.",
+        "New Stair Construction Detail.",
+        "New concrete buck-out detail.",
+        "Added new General Plan label preferences.",
+        "Added an \u201cElevation View\u201d Layer set for default and saved elevation cameras. Back clipped cross section cameras will default to the old \u201cSection View\u201d layerset. The section view layer set now has framing turned on.",
+        "New window egress checker. This will prompt you in all caps in the schedule if you fail to meet egress when you have a window checked as egress. It will list the criteria that failed. If it passes it just list Pass in your schedule. This is a VERY complicated script to write so if you think something is incorrect let me know. Please double check your windows."
+      ],
+      "Patches and Improvements": [
+        "Rabscustom font was updated in this version to give better kerning and alignment in schedulers, make sure to download and install and overwrite the previous version before opening chief.",
+        "Updated Toolbars, please re-download the Pro Plan PDF for new easier instructions on toolbar imports.",
+        "The Architectural Quick Tools were updated and the Pro Plan Transfer Tool has been added as a separate library item. Toolbars link to this new transfer tool.",
+        "Changed schedules to show grid lines as a very faint light grey.",
+        "Updated Window and Door Schedule output to show tempered and egress.",
+        "Updated remap font macro for schedules.",
+        "New glass fill style applied to all glass and vector rendering changed so that glass is a very light teal.",
+        "Changed terrain perimeter grass to white for vector views and thickened line weight as well as increasing the skirt size."
+      ]
+    },
+    "downloads": [
+      "Pro Plan",
+      "Library",
+      "Toolbars",
+      "Font Files"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  },
+  {
+    "version": "250915",
+    "status": "Previous release",
+    "groups": {
+      "Library": [
+        "Please check your version and look through this changelog. If you are skipping a few versions you may need to install additional fonts or library items. Rabscustom font was updated to give us the new schedule rich text look in the previous version, make sure to install and overwrite the previous version before opening chief.",
+        "CSV system now no longer needs to be setup in order to use Tools/designer/Client Information. There are no fail state messages for troubleshooting the system and the tools designer client info should always work regardless of the failstate.",
+        "The CSV system has now had a massive overhaul for performance and functionality. There should be more function from this system especially if all you want as an end user is to read from tools/designer/client information.",
+        "The reference spec plan now will dictate the global code references on the Pro Plans macro designations page."
+      ],
+      "Plan Template": [
+        "Install instructions:",
+        "Please check your version and look through this changelog. If you are skipping a few versions you may need to install additional fonts or library items. Rabscustom font was updated to give us the new schedule rich text look in the previous version, make sure to install and overwrite the previous version before opening chief.",
+        "This update only requires you download the project file and re-establish your default settings and logo replacement plan.",
+        "Bug reports and suggestions go in our Discord server.",
+        "Made a custom locked layer for the quick links at the top of the screen so no accidental clicks when trying to navigate to links.",
+        "Updated the link to pro plan videos to be correct.",
+        "Project name now reports to the project information report regardless of using csv or designer client information.",
+        "Added a custom label to the Plot Plan that depicts a North Pointer In the Label. This is not dynamically linked to any north pointer in the plan."
+      ],
+      "Layout Files": [
+        "The reference spec plan now will dictate the global code references on the Pro Plans macro designations page."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "Install instructions:",
+        "This update only requires you download the project file and re-establish your default settings and logo replacement plan.",
+        "Bug reports and suggestions go in our Discord server.",
+        "Made a custom locked layer for the quick links at the top of the screen so no accidental clicks when trying to navigate to links.",
+        "The reference spec plan now will dictate the global code references on the Pro Plans macro designations page.",
+        "Project name now reports to the project information report regardless of using csv or designer client information.",
+        "Added a custom label to the Plot Plan that depicts a North Pointer In the Label. This is not dynamically linked to any north pointer in the plan."
+      ],
+      "Patches and Improvements": [
+        "Please check your version and look through this changelog. If you are skipping a few versions you may need to install additional fonts or library items. Rabscustom font was updated to give us the new schedule rich text look in the previous version, make sure to install and overwrite the previous version before opening chief.",
+        "Updated the link to pro plan videos to be correct.",
+        "The CSV system has now had a massive overhaul for performance and functionality. There should be more function from this system especially if all you want as an end user is to read from tools/designer/client information."
+      ],
+      "Removed or Replaced": [
+        "CSV system now no longer needs to be setup in order to use Tools/designer/Client Information. There are no fail state messages for troubleshooting the system and the tools designer client info should always work regardless of the failstate."
+      ]
+    },
+    "downloads": [
+      "Pro Plan"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  },
+  {
+    "version": "250905",
+    "status": "Previous release",
+    "groups": {
+      "Library": [
+        "The best part of this update is SPEED! I found significant bottlenecks in the macro driven systems. Many macros referenced your user_options through a macro call. What does that mean. It means your cabinets window, doors, and rooms were all standing in line for their turn to check your options, and worse, they forced these options to rebuild every time. I switched to a global macro system that requires no line whatsoever. Your plan file should be a few milliseconds faster per object placed.",
+        "There is a tradeoff. You will need to open a cabinet or window before printing if no cabinet or window has been open during your entire drafting session.",
+        "Requires that you delete the existing Kitchen Tools Library and empty your trash library and then install the new kitchen tools library.",
+        "Rebuilt the existing deck railing detail.",
+        "New deck ledger detail with DTT2z lateral load ties.",
+        "Can now use globals to call out current code cycle references. More info on the macro designations CAD detail. This means if for instance you are using CBC spec and you put %$building_code% in a detail it will print \u201c2022 CBC\u201d.",
+        "Re-built the remap_small_font macro so it can be applied in regular text, schedules, and more. Check the Project preferences for more info. This means rich text like looking outputs in schedules and anywhere where we can\u2019t or don\u2019t want to use rich text.",
+        "Window/Door and Cabinet Schedules have been completely rebuilt with the font remapping and look much improved. Enjoy the only Rich-text like schedules on the market. Their columns to include have been renamed for clarity on input location.Their is a custom macro that generates automatic spacing in both the cabinet and window/door labels so that all rows remain spaced equal and keep alignment on schedule wrapping. This makes for very clean schedules that look organized and better than ever.",
+        "Added a new square footing stackable detail.",
+        "Added a new girder specification rule and quick switch in the macro designations CAD detail."
+      ],
+      "Plan Template": [
+        "The entire Pro Plan uses RabsCustom for remapped fonts. If you have a font request I can build it for you. Put it in suggestions. Please re-install the new RabsCustom font and overwrite existing. Please do this prior to installing the Pro Plan.",
+        "Re-built the remap_small_font macro so it can be applied in regular text, schedules, and more. Check the Project preferences for more info. This means rich text like looking outputs in schedules and anywhere where we can\u2019t or don\u2019t want to use rich text.",
+        "Window/Door and Cabinet Schedules have been completely rebuilt with the font remapping and look much improved. Enjoy the only Rich-text like schedules on the market. Their columns to include have been renamed for clarity on input location.Their is a custom macro that generates automatic spacing in both the cabinet and window/door labels so that all rows remain spaced equal and keep alignment on schedule wrapping. This makes for very clean schedules that look organized and better than ever.",
+        "Ai messed up the CSV reading system. This version patches it and updates it. It is far too difficult to allow the \u201c \u2013 \u201c method for subfolders and maintain the source code since ai gets confused and messes up parts of the code. The new convention only uses underscores and periods to designate subfolders. Space-dash-space can now be a part of your folder naming convention if you like.",
+        "Updated the schedule for fixture installs to show column names for reference on its proper use."
+      ],
+      "Layout Files": [
+        "Rebuilt the spec plans to establish global code callouts."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "The best part of this update is SPEED! I found significant bottlenecks in the macro driven systems. Many macros referenced your user_options through a macro call. What does that mean. It means your cabinets window, doors, and rooms were all standing in line for their turn to check your options, and worse, they forced these options to rebuild every time. I switched to a global macro system that requires no line whatsoever. Your plan file should be a few milliseconds faster per object placed.",
+        "There is a tradeoff. You will need to open a cabinet or window before printing if no cabinet or window has been open during your entire drafting session.",
+        "Requires that you delete the existing Kitchen Tools Library and empty your trash library and then install the new kitchen tools library.",
+        "The entire Pro Plan uses RabsCustom for remapped fonts. If you have a font request I can build it for you. Put it in suggestions. Please re-install the new RabsCustom font and overwrite existing. Please do this prior to installing the Pro Plan.",
+        "Rebuilt the existing deck railing detail.",
+        "New deck ledger detail with DTT2z lateral load ties.",
+        "Rebuilt the spec plans to establish global code callouts.",
+        "Can now use globals to call out current code cycle references. More info on the macro designations CAD detail. This means if for instance you are using CBC spec and you put %$building_code% in a detail it will print \u201c2022 CBC\u201d.",
+        "Re-built the remap_small_font macro so it can be applied in regular text, schedules, and more. Check the Project preferences for more info. This means rich text like looking outputs in schedules and anywhere where we can\u2019t or don\u2019t want to use rich text.",
+        "Ai messed up the CSV reading system. This version patches it and updates it. It is far too difficult to allow the \u201c \u2013 \u201c method for subfolders and maintain the source code since ai gets confused and messes up parts of the code. The new convention only uses underscores and periods to designate subfolders. Space-dash-space can now be a part of your folder naming convention if you like.",
+        "Added a new square footing stackable detail.",
+        "Added a new girder specification rule and quick switch in the macro designations CAD detail."
+      ],
+      "Patches and Improvements": [
+        "Window/Door and Cabinet Schedules have been completely rebuilt with the font remapping and look much improved. Enjoy the only Rich-text like schedules on the market. Their columns to include have been renamed for clarity on input location.Their is a custom macro that generates automatic spacing in both the cabinet and window/door labels so that all rows remain spaced equal and keep alignment on schedule wrapping. This makes for very clean schedules that look organized and better than ever.",
+        "Updated the schedule for fixture installs to show column names for reference on its proper use."
+      ]
+    },
+    "downloads": [
+      "Pro Plan",
+      "Library",
+      "Font Files"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  },
+  {
+    "version": "250825",
+    "status": "Previous release",
+    "groups": {
+      "Library": [
+        "The Area Map has now been contained within a Pro Plan CAD detail for easier updating of all Layouts.",
+        "Kitchen Tools Macro Conflict Mitigation: Major efforts undertaken to resolve macro conflicts\u2014particularly in the kitchen tools package, covering symbols and style palette tools. While some macro conflicts remain in other packages, kitchen tools were the focus of this update.",
+        "Annotation Tool Default Values: Introduced new default values for the Annot Tool field in most kitchen tools. For example, the base double bass drawer cabinet\u2019s annotation now automatically reads \u201cpots and pans\u201d for new plan and \u201cdemo\u201d for as-built plans when linked to the Annot Tool or default note tool. This logic extends to numerous kitchen style palette tools, streamlining kitchen design annotation and reducing redundant tasks for designers.",
+        "Note Tool Enhancement: The note tool was rewritten to recognize annotation types within the Annot Tool field (custom fields in the Object Information panel). Proposed and as-built annotations are now separated by a semicolon (;). For example: pots and pans; demo will show \u201cpots and pans\u201d in a proposed plan and \u201cdemo\u201d in an as-built plan.",
+        "Base Cabinet Label Improvements: The base cabinet label now intelligently detects cook tops\u2014if a cabinet has an appliance inserted in its top, it is no longer automatically labeled \u201csink base.\u201d.",
+        "Kitchen Tool Enhancements: Various kitchen tools received additional functions and bug fixes, increasing their reliability and feature set.",
+        "Fixed Climate Zone macro to report immediately from the CSV file.",
+        "Fixed misaligned detail page on Arrow Layout.",
+        "The wall cabinet and full height cabinet labels got destroyed by an AI edit and I just now caught it. Returned function for recognizing wall cabinets properly now and added some function as well."
+      ],
+      "Plan Template": [
+        "Updated.",
+        "CSV system supports proper subolders such as Project name John, Subfolder Kitchen. See screenshot below.",
+        "Pro Plan has been reorganized for faster visual recognition of folder structure.",
+        "CSV system now has a switch to turn it off and revert to Designer/Client Information based input. You can reformat any field by using a colon to create a name value pair such as.",
+        "Version 25.08.21 and 25.08.22.",
+        "CSV system now supports periods INSTEAD of \u201c \u2013 \u201c if the period is present.",
+        "Here are examples:",
+        "Project Name: ARS \u2013 Alex.Project Folders.Test will look in /ARS \u2013 Alex/Project Folders/Test.",
+        "Project Name: ARS-345 \u2013 Test will look in /ARS/Test.",
+        "Project Name: Alex \u2013 Client-24.Test will look in /Alex \u2013 Client/Test.",
+        "So if a period is present, logic for space minus space is circumvented. If no period is present, space minus space creates a subfolder. In both cases a minus will omit anything after the minus up until another subfolder rule.",
+        "Keynotes have all new logic. For example, the Floor Plan Keynotes will auto change their name to Demo Keynotes if in the AB file. You can change the name in columns to include of the schedule.",
+        "Annotation Tool Default Values: Introduced new default values for the Annot Tool field in most kitchen tools. For example, the base double bass drawer cabinet\u2019s annotation now automatically reads \u201cpots and pans\u201d for new plan and \u201cdemo\u201d for as-built plans when linked to the Annot Tool or default note tool. This logic extends to numerous kitchen style palette tools, streamlining kitchen design annotation and reducing redundant tasks for designers.",
+        "Project CSV File System Update: The project CSV file system now accepts periods (.) in addition to \u201cspace-dash-space\u201d for distinguishing subfolders. It also accepts partial matches if it finds no matches as well as a better implementation of searching folder structures. This has not been tested on Mac but should work far better than previous versions.",
+        "This change supports broader folder naming conventions, including the use of \u201cspace-dash-space\u201d in custom folder names outside Chief Architect. Fuzzy matching was improved to better handle extra spaces in project file names.",
+        "Such as John.ADA as a project name will look in the /John/ADA/ folder.",
+        "Fixed header label for No Work condition to report N/A to schedule.",
+        "The Keynote Schedules now have a new trick implemented. They are using a conditional title for the keynote that changes wether the plan is an existing plan or new plan. For example, the floor plan keynotes will display demo keynotes on your -AB plan."
+      ],
+      "Layout Files": [
+        "Guide points have been added to logo replacement and an engineer stamp input has been added to the logo field. Please delete the stamp if you do not use the stamp, this is the easiest way to remove it from all layouts.",
+        "The Area Map has now been contained within a Pro Plan CAD detail for easier updating of all Layouts.",
+        "The CSV system ignores any file name after the \u201cLayout\u201d folder it exists in, but if your project name is ARS \u2013 Alex. And you make a subfolder of your project such as \u201cKitchen\u201d then the CSV will look in /ARS \u2013 Alex/Kitchen/.",
+        "Fixed misaligned detail page on Arrow Layout."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "CSV system supports proper subolders such as Project name John, Subfolder Kitchen. See screenshot below.",
+        "Pro Plan has been reorganized for faster visual recognition of folder structure.",
+        "The Area Map has now been contained within a Pro Plan CAD detail for easier updating of all Layouts.",
+        "CSV system now has a switch to turn it off and revert to Designer/Client Information based input. You can reformat any field by using a colon to create a name value pair such as.",
+        "Version 25.08.21 and 25.08.22.",
+        "CSV system now supports periods INSTEAD of \u201c \u2013 \u201c if the period is present.",
+        "Here are examples:",
+        "Project Name: ARS \u2013 Alex.Project Folders.Test will look in /ARS \u2013 Alex/Project Folders/Test.",
+        "Project Name: ARS-345 \u2013 Test will look in /ARS/Test.",
+        "Project Name: Alex \u2013 Client-24.Test will look in /Alex \u2013 Client/Test.",
+        "So if a period is present, logic for space minus space is circumvented. If no period is present, space minus space creates a subfolder. In both cases a minus will omit anything after the minus up until another subfolder rule.",
+        "The CSV system ignores any file name after the \u201cLayout\u201d folder it exists in, but if your project name is ARS \u2013 Alex. And you make a subfolder of your project such as \u201cKitchen\u201d then the CSV will look in /ARS \u2013 Alex/Kitchen/.",
+        "Keynotes have all new logic. For example, the Floor Plan Keynotes will auto change their name to Demo Keynotes if in the AB file. You can change the name in columns to include of the schedule.",
+        "Kitchen Tools Macro Conflict Mitigation: Major efforts undertaken to resolve macro conflicts\u2014particularly in the kitchen tools package, covering symbols and style palette tools. While some macro conflicts remain in other packages, kitchen tools were the focus of this update.",
+        "Annotation Tool Default Values: Introduced new default values for the Annot Tool field in most kitchen tools. For example, the base double bass drawer cabinet\u2019s annotation now automatically reads \u201cpots and pans\u201d for new plan and \u201cdemo\u201d for as-built plans when linked to the Annot Tool or default note tool. This logic extends to numerous kitchen style palette tools, streamlining kitchen design annotation and reducing redundant tasks for designers.",
+        "Note Tool Enhancement: The note tool was rewritten to recognize annotation types within the Annot Tool field (custom fields in the Object Information panel). Proposed and as-built annotations are now separated by a semicolon (;). For example: pots and pans; demo will show \u201cpots and pans\u201d in a proposed plan and \u201cdemo\u201d in an as-built plan.",
+        "Kitchen Tool Enhancements: Various kitchen tools received additional functions and bug fixes, increasing their reliability and feature set.",
+        "Project CSV File System Update: The project CSV file system now accepts periods (.) in addition to \u201cspace-dash-space\u201d for distinguishing subfolders. It also accepts partial matches if it finds no matches as well as a better implementation of searching folder structures. This has not been tested on Mac but should work far better than previous versions.",
+        "This change supports broader folder naming conventions, including the use of \u201cspace-dash-space\u201d in custom folder names outside Chief Architect. Fuzzy matching was improved to better handle extra spaces in project file names.",
+        "Such as John.ADA as a project name will look in the /John/ADA/ folder.",
+        "The wall cabinet and full height cabinet labels got destroyed by an AI edit and I just now caught it. Returned function for recognizing wall cabinets properly now and added some function as well.",
+        "The Keynote Schedules now have a new trick implemented. They are using a conditional title for the keynote that changes wether the plan is an existing plan or new plan. For example, the floor plan keynotes will display demo keynotes on your -AB plan."
+      ],
+      "Patches and Improvements": [
+        "Updated.",
+        "Fixed Climate Zone macro to report immediately from the CSV file.",
+        "Fixed misaligned detail page on Arrow Layout.",
+        "Fixed header label for No Work condition to report N/A to schedule."
+      ],
+      "Removed or Replaced": [
+        "Guide points have been added to logo replacement and an engineer stamp input has been added to the logo field. Please delete the stamp if you do not use the stamp, this is the easiest way to remove it from all layouts.",
+        "Base Cabinet Label Improvements: The base cabinet label now intelligently detects cook tops\u2014if a cabinet has an appliance inserted in its top, it is no longer automatically labeled \u201csink base.\u201d."
+      ]
+    },
+    "downloads": [
+      "Pro Plan",
+      "Library",
+      "Bonus Files"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  },
+  {
+    "version": "250820",
+    "status": "Previous release",
+    "groups": {
+      "Library": [
+        "Door Label Macro Error Fix.",
+        "- Fixed critical \"undefined method 'empty?' for nil:NilClass\" error in door labels.",
+        "- Added comprehensive nil safety checks throughout door label macro.",
+        "- Fixed issue where door types configuration was not being properly referenced from all options.",
+        "- Restored proper door type handling that was missing from previous AI-generated code.",
+        "- Added fallback values and safe property access for doors in non-standard spaces.",
+        "- Note: This corrects an error introduced by previous AI-based coding that hardcoded door logic instead of using the configurable all options system.",
+        "- Added enhanced label_Rab macro with comprehensive error handling and superscript fallbacks.",
+        "- Added label_Super helper macro for dimension formatting with superscript support.",
+        "- Implemented rescue wrappers for doors, windows, and cabinets with evaluation errors.",
+        "- Cabinet fallback format: schedule_number + type[0] + width + height.",
+        "- Door/Window fallback format: schedule_number + superscript dimensions in typical label fashion.",
+        "- Restored proper functionality of user options for door labels.",
+        "- Applied same space character handling to cabinet label replacement fields.",
+        "Plumbing Keynotes CAD Detail Restoration.",
+        "- Added back plumbing keynotes CAD detail to the system.",
+        "- Restored plumbing annotation capabilities for detailed plumbing documentation.",
+        "Right click on a blank area of your toolbars and choose \u201cCustomize Toolbars\u201d.",
+        "Search for Place Library Object.",
+        "Drage the Place Library Object onto your walls toolbar.",
+        "Link the Library Object to the BWP Tool(Cabinet) in your Library.",
+        "- Updated csv_auto_print_custom_font macro in layout files to automatically detect and process climate zone patterns.",
+        "- Climate zone macros are automatically resolved before applying small font remapping.",
+        "- Repaired Willow layouts by removing fill style from sheet size text.",
+        "Interior Door Schedule.",
+        "- Added comprehensive interior door schedule functionality.",
+        "- Integrated door schedule with layout system for floor plan views.",
+        "- Applied door schedule across all Architectural and ANSI D layouts.",
+        "- Enhanced layout organization and door information display."
+      ],
+      "Toolbars": [
+        "Right click on a blank area of your toolbars and choose \u201cCustomize Toolbars\u201d.",
+        "Drage the Place Library Object onto your walls toolbar.",
+        "Specify the Icon provided in the step 5 folder."
+      ],
+      "Plan Template": [
+        "Updated.",
+        "- Error was occurring specifically in attic/unfinished spaces on 2nd floor.",
+        "Enhanced Label System with Error Handling.",
+        "- Added label_Super helper macro for dimension formatting with superscript support.",
+        "- Cabinet fallback format: schedule_number + type[0] + width + height.",
+        "- Door/Window fallback format: schedule_number + superscript dimensions in typical label fashion.",
+        "- All fallbacks maintain proper superscript formatting for dimensions.",
+        "Label Replacement and User Options Enhancements.",
+        "- Fixed label replacement field to accept single space character as valid input.",
+        "- Single space character now properly clears both type and hinge side labels.",
+        "- Hinge side display now correctly respects user option settings.",
+        "- Example: Entering \" \" (single space) in Label Replacement will show only dimensions without type or handiness.",
+        "- Example label output: \"2668\" instead of \"2668 RH\" when space is used.",
+        "- Maintains existing plumbing keynote functionality and formatting.",
+        "Wall Legend Restoration (Performance Optimized)",
+        "- Added back wall legend functionality to the system.",
+        "- **Important Note:** Wall legend is currently set to NOT include walls by default.",
+        "- This prevents live updating and wall legend population during normal plan work.",
+        "- **Action Required Before Printing:** Open the wall legend and check \"Include Walls\" option to populate the legend.",
+        "- Performance optimization prevents potential slowdowns during plan development.",
+        "- Wall legend will only update when manually enabled for final documentation.",
+        "Version 25.08.18.",
+        "Recessed Light Fixture Fix.",
+        "- Fixed issue with recessed light fixture cutting a hole in the floor above.",
+        "- Resolved improper floor penetration behavior.",
+        "Disclaimer System Fix (Spec Files)",
+        "- Fixed issue with disclaimer not properly picking up the designer name.",
+        "- Improved designer name recognition and display in disclaimer text.",
+        "- System now supports %climate_zone%, %climate_zoneCA%, %climate_zoneMI%, and %climate_zoneWA% patterns in CSV values.",
+        "- Maintains existing small font functionality while adding climate zone support.",
+        "Version 25.08.11.",
+        "Plan Changes.",
+        "- Modified furniture SPV display to not show ceiling height for cleaner real estate presentation.",
+        "- Added display of room dimensions to show fixtures and appliances in furniture SPVs.",
+        "- Hidden callouts in furniture SPVs for more of a real estate type view.",
+        "Installation & Distribution.",
+        "- Added DMG Mac installer program to help install the Pro Plan on macOS systems.",
+        "- Simplified installation process for Mac users.",
+        "Project CSV System Improvements.",
+        "- Enhanced error response handling for cases where the system cannot read the root project_directory.rb file.",
+        "- Updated root directory configuration to use %q syntax for better accuracy and easier user configuration.",
+        "- Improved error messages and troubleshooting guidance for configuration issues.",
+        "Interior Door Schedule.",
+        "- Added comprehensive interior door schedule functionality.",
+        "- Integrated door schedule with layout system for floor plan views.",
+        "- Applied door schedule across all Architectural and ANSI D layouts."
+      ],
+      "Layout Files": [
+        "- Spec files now properly pull global designer value from layout files.",
+        "Project CSV System Climate Zone Integration (Layout Files)",
+        "- Updated csv_auto_print_custom_font macro in layout files to automatically detect and process climate zone patterns.",
+        "- Note: This change affects layout files, not plan files.",
+        "Layout Improvements.",
+        "- Added new layout title block style called \"Townsend\" for Arch D and ANSI D layouts.",
+        "- Repaired Willow layouts by removing fill style from sheet size text.",
+        "- Restored missing graphic wash on sheet G1.",
+        "- Re-saved all Willow layouts to start on G1 when first opened.",
+        "- Hidden callouts in furniture SPVs for more of a real estate type view.",
+        "- Integrated door schedule with layout system for floor plan views.",
+        "- Applied door schedule across all Architectural and ANSI D layouts.",
+        "- Enhanced layout organization and door information display."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "- Error was occurring specifically in attic/unfinished spaces on 2nd floor.",
+        "- Added comprehensive nil safety checks throughout door label macro.",
+        "- Restored proper door type handling that was missing from previous AI-generated code.",
+        "- Added fallback values and safe property access for doors in non-standard spaces.",
+        "- Note: This corrects an error introduced by previous AI-based coding that hardcoded door logic instead of using the configurable all options system.",
+        "Enhanced Label System with Error Handling.",
+        "- Added enhanced label_Rab macro with comprehensive error handling and superscript fallbacks.",
+        "- Added label_Super helper macro for dimension formatting with superscript support.",
+        "- Implemented rescue wrappers for doors, windows, and cabinets with evaluation errors.",
+        "- Cabinet fallback format: schedule_number + type[0] + width + height.",
+        "- Door/Window fallback format: schedule_number + superscript dimensions in typical label fashion.",
+        "- All fallbacks maintain proper superscript formatting for dimensions.",
+        "Label Replacement and User Options Enhancements.",
+        "- Single space character now properly clears both type and hinge side labels.",
+        "- Restored proper functionality of user options for door labels.",
+        "- Hinge side display now correctly respects user option settings.",
+        "- Applied same space character handling to cabinet label replacement fields.",
+        "- Example: Entering \" \" (single space) in Label Replacement will show only dimensions without type or handiness.",
+        "- Example label output: \"2668\" instead of \"2668 RH\" when space is used.",
+        "Plumbing Keynotes CAD Detail Restoration.",
+        "- Added back plumbing keynotes CAD detail to the system.",
+        "- Restored plumbing annotation capabilities for detailed plumbing documentation.",
+        "- Maintains existing plumbing keynote functionality and formatting.",
+        "Wall Legend Restoration (Performance Optimized)",
+        "- Added back wall legend functionality to the system.",
+        "- **Important Note:** Wall legend is currently set to NOT include walls by default.",
+        "- This prevents live updating and wall legend population during normal plan work.",
+        "- **Action Required Before Printing:** Open the wall legend and check \"Include Walls\" option to populate the legend.",
+        "- Performance optimization prevents potential slowdowns during plan development.",
+        "- Wall legend will only update when manually enabled for final documentation.",
+        "Right click on a blank area of your toolbars and choose \u201cCustomize Toolbars\u201d.",
+        "Search for Place Library Object.",
+        "Drage the Place Library Object onto your walls toolbar.",
+        "Link the Library Object to the BWP Tool(Cabinet) in your Library.",
+        "Specify the Icon provided in the step 5 folder.",
+        "Version 25.08.18.",
+        "- Resolved improper floor penetration behavior.",
+        "- Improved designer name recognition and display in disclaimer text.",
+        "- Spec files now properly pull global designer value from layout files.",
+        "Project CSV System Climate Zone Integration (Layout Files)",
+        "- System now supports %climate_zone%, %climate_zoneCA%, %climate_zoneMI%, and %climate_zoneWA% patterns in CSV values.",
+        "- Climate zone macros are automatically resolved before applying small font remapping.",
+        "- Maintains existing small font functionality while adding climate zone support.",
+        "- Note: This change affects layout files, not plan files.",
+        "Layout Improvements.",
+        "- Added new layout title block style called \"Townsend\" for Arch D and ANSI D layouts.",
+        "- Repaired Willow layouts by removing fill style from sheet size text.",
+        "- Restored missing graphic wash on sheet G1.",
+        "- Re-saved all Willow layouts to start on G1 when first opened.",
+        "Version 25.08.11.",
+        "Plan Changes.",
+        "- Modified furniture SPV display to not show ceiling height for cleaner real estate presentation.",
+        "- Added display of room dimensions to show fixtures and appliances in furniture SPVs.",
+        "- Hidden callouts in furniture SPVs for more of a real estate type view.",
+        "Installation & Distribution.",
+        "- Added DMG Mac installer program to help install the Pro Plan on macOS systems.",
+        "- Simplified installation process for Mac users.",
+        "Project CSV System Improvements.",
+        "- Enhanced error response handling for cases where the system cannot read the root project_directory.rb file.",
+        "- Improved error messages and troubleshooting guidance for configuration issues.",
+        "Interior Door Schedule.",
+        "- Added comprehensive interior door schedule functionality.",
+        "- Integrated door schedule with layout system for floor plan views.",
+        "- Applied door schedule across all Architectural and ANSI D layouts.",
+        "- Enhanced layout organization and door information display."
+      ],
+      "Patches and Improvements": [
+        "Updated.",
+        "Door Label Macro Error Fix.",
+        "- Fixed critical \"undefined method 'empty?' for nil:NilClass\" error in door labels.",
+        "- Fixed issue where door types configuration was not being properly referenced from all options.",
+        "- Fixed label replacement field to accept single space character as valid input.",
+        "Recessed Light Fixture Fix.",
+        "- Fixed issue with recessed light fixture cutting a hole in the floor above.",
+        "Disclaimer System Fix (Spec Files)",
+        "- Fixed issue with disclaimer not properly picking up the designer name.",
+        "- Updated csv_auto_print_custom_font macro in layout files to automatically detect and process climate zone patterns.",
+        "- Updated root directory configuration to use %q syntax for better accuracy and easier user configuration."
+      ]
+    },
+    "downloads": [
+      "Pro Plan",
+      "Bonus Files",
+      "Scripts"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  },
+  {
+    "version": "250805",
+    "status": "Previous release",
+    "groups": {
+      "Library": [
+        "- Modified how designer and client information is sent to the page - now sent from a CAD detail.",
+        "- Enhanced error messages to include detailed troubleshooting steps for:",
+        "Label RAB Macro.",
+        "- Improved handling of transient errors when moving cabinets; some errors still remain and will require Chief Architect technical support to fully resolve.",
+        "Catalog & Tools Updates.",
+        "- Changed all hood symbols and kitchen tools to use no fill style.",
+        "- Updated some macros stored in kitchen tools to versions with improved evaluation error handling.",
+        "- Added detailed setup instructions for scripts folder and project directory configuration.",
+        "- Roof Component Materials Fix: Modified roof comp shingle roof layers to prevent unwanted material list generation.",
+        "- This prevents these layers from producing materials in the material list function.",
+        "- Results in more realistic comp shingle roof representation without material list interference."
+      ],
+      "Plan Template": [
+        "- Added new Project Information textblock in the sidebar for users who don't want to use the CSV lookup system.",
+        "Project CSV System Enhancements.",
+        "- Updated error reporting on project information output for better user experience.",
+        "- Added comprehensive error handling for CSV file linking issues.",
+        "- Fixed global variable contamination issue that was causing cross-project data mixing.",
+        "- Cloud drive sync settings ('always available' vs 'online only')",
+        "- Scripts folder location verification.",
+        "- Chief Architect preferences configuration.",
+        "- project_directory.rb file setup.",
+        "Documentation Updates.",
+        "- Added link to Project Information page in the Rabbitt Design Manual.",
+        "- Updated Project CSV documentation with comprehensive troubleshooting information.",
+        "- Included cloud drive synchronization requirements and common issues.",
+        "Changes Made.",
+        "- Roof Component Materials Fix: Modified roof comp shingle roof layers to prevent unwanted material list generation.",
+        "- Changed roof comp shingle roof layers from active to \"none\" setting.",
+        "- This prevents these layers from producing materials in the material list function.",
+        "Maintained by: Rabbit Design."
+      ],
+      "Layout Files": [
+        "Layout Improvements.",
+        "- Updated all layouts with new sidebar information that is easier to read.",
+        "- Changed all callout alignment on all layouts to light gray for less distraction.",
+        "- Modified how designer and client information is sent to the page - now sent from a CAD detail.",
+        "- Improved handling of transient errors when moving cabinets; some errors still remain and will require Chief Architect technical support to fully resolve.",
+        "- Added link to Project Information page in the Rabbitt Design Manual."
+      ]
+    },
+    "changes": {
+      "New Features": [
+        "Layout Improvements.",
+        "- Modified how designer and client information is sent to the page - now sent from a CAD detail.",
+        "- Added new Project Information textblock in the sidebar for users who don't want to use the CSV lookup system.",
+        "Project CSV System Enhancements.",
+        "- Added comprehensive error handling for CSV file linking issues.",
+        "- Enhanced error messages to include detailed troubleshooting steps for:",
+        "- Cloud drive sync settings ('always available' vs 'online only')",
+        "- Scripts folder location verification.",
+        "- Chief Architect preferences configuration.",
+        "- project_directory.rb file setup.",
+        "Label RAB Macro.",
+        "- Improved handling of transient errors when moving cabinets; some errors still remain and will require Chief Architect technical support to fully resolve.",
+        "Catalog & Tools Updates.",
+        "Documentation Updates.",
+        "- Added link to Project Information page in the Rabbitt Design Manual.",
+        "- Added detailed setup instructions for scripts folder and project directory configuration.",
+        "- Included cloud drive synchronization requirements and common issues.",
+        "Changes Made.",
+        "- This prevents these layers from producing materials in the material list function.",
+        "- Results in more realistic comp shingle roof representation without material list interference.",
+        "Maintained by: Rabbit Design."
+      ],
+      "Patches and Improvements": [
+        "- Updated all layouts with new sidebar information that is easier to read.",
+        "- Changed all callout alignment on all layouts to light gray for less distraction.",
+        "- Updated error reporting on project information output for better user experience.",
+        "- Fixed global variable contamination issue that was causing cross-project data mixing.",
+        "- Changed all hood symbols and kitchen tools to use no fill style.",
+        "- Updated some macros stored in kitchen tools to versions with improved evaluation error handling.",
+        "- Updated Project CSV documentation with comprehensive troubleshooting information.",
+        "- Roof Component Materials Fix: Modified roof comp shingle roof layers to prevent unwanted material list generation.",
+        "- Changed roof comp shingle roof layers from active to \"none\" setting."
+      ]
+    },
+    "downloads": [
+      "Pro Plan",
+      "Library"
+    ],
+    "safe": [
+      "Unchanged project-information fields, after checking the notes below",
+      "Saved Plan Views and layer sets only when imported as new items"
+    ],
+    "avoid": [
+      "Framing and wall defaults",
+      "Window, door, room-label, room-type, and cabinet defaults",
+      "Replacing layout originals or project-information fields used by the updated layouts"
+    ]
+  }
+]
