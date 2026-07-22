@@ -10,6 +10,8 @@
 - Added a section explaining the 2 additional template pages in the manual
 - Removed invisible text boxes from all Layout files
 - Patched all spec writing labels to use rabsboxlabel
+- Swapped page index position for design load criteria on Arrow Layouts. Moved Info closer to the roll edge on smaller sheet sizes
+- Re-built regular Townsend Layouts With new G1 Spec and Info
 
 ## Removed or Replaced
 - Removed the Applicable Codes text box from the Spec files working plan view and moved it to the CAD block listed in patches and improvements
