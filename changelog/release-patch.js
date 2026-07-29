@@ -1,0 +1,13 @@
+(() => {
+  const originalFetch = window.fetch.bind(window);
+  window.fetch = async (input, options) => {
+    const response = await originalFetch(input, options);
+    if (!String(input).includes("changelog-data-v4.json")) return response;
+    const data = await response.json();
+    const notes = {"New Features":["Added Flood Zone and Map ID fields to Spec Plan Project Information."],"Patches and Improvements":["Added a new CAD detail named Manual - Applicable Codes. This lets users enter code criteria manually through the Project Information Tool instead of using the automatic criteria generated from the Code Cycle field.","Improved the RabsBoxLabel macro to reduce false positives and provide more flexibility for elevation camera labels.","Patched the Applicable Codes label on all Layout files so it correctly uses RabsBoxLabel.","Added a section to the user manual explaining the two additional template pages.","Removed invisible text boxes from all Layout files.","Patched all specification-writing labels to use RabsBoxLabel."],"Removed or Replaced":["Removed the Applicable Codes text box from the Spec Plan working plan view and moved that information to the Manual - Applicable Codes CAD detail described above."]};
+    const release={version:"PPX18 260722",status:"Current release",groups:{"Spec Plan":["Added Flood Zone and Map ID fields to Spec Plan Project Information.","Added a Manual - Applicable Codes CAD detail for manually entered code criteria.","Removed the former Applicable Codes text box from the Spec Plan working plan view.","Patched all specification-writing labels to use RabsBoxLabel."],"Layout Files":["Patched the Applicable Codes label on all Layout files so it correctly uses RabsBoxLabel.","Removed invisible text boxes from all Layout files."],"General":["Improved the RabsBoxLabel macro to reduce false positives and provide more flexibility for elevation camera labels.","Added a manual section explaining the two additional template pages."]},changes:notes,downloads:["Pro Plan","Spec Plan","Layout Files"],safe:["Direct upgrade from PPX18 260720 only: ALL Default Settings for the Pro Plan","Direct upgrade from PPX18 260720 only: Project Information for the Spec Plan and Layout"],avoid:["Do not apply this release-specific import permission to PPX18 260714 or earlier versions."]};
+    const previous=data.find(item=>item.version==="PPX18 260720");if(previous)previous.status="Previous release";
+    const patched=[{version:"PPX18 260729",status:"Unreleased development",groups:{},changes:{},downloads:[],safe:[],avoid:[]},release,...data.filter(item=>item.version!=="PPX18 260722")];
+    return new Response(JSON.stringify(patched),{status:response.status,headers:{"Content-Type":"application/json"}});
+  };
+})();
