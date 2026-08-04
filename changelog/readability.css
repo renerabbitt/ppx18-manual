@@ -34,3 +34,8 @@
 .update-list li,.detail-body p,.detail-body li{font-size:18px!important;line-height:1.65!important}
 .accordion-stack summary strong{font-size:18px!important}
 
+
+.compare-summary h3{display:none}
+.compare-summary .downloads{display:block;margin:8px 0;padding:0;list-style:none}
+.compare-summary .downloads li{display:inline;border:0!important;background:transparent!important;padding:0!important;margin:0!important;color:#111!important;font-size:18px!important}
+.compare-summary .downloads li:not(:last-child)::after{content:", "}
