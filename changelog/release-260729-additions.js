@@ -13,9 +13,10 @@
         "Updated Room Label to use a global call instead of storing the label in the Library, reducing macro conflicts and improving performance.",
         "Updated the Pro Plan Transfer tool and the All Macro Replacement tool."
       ];
-      release.changes["New Features"] = [...(release.changes["New Features"] || []), ...plan];
-      release.groups["Plan Template"] = [...(release.groups["Plan Template"] || []), ...plan.slice(0, 4)];
-      release.groups["Library"] = [...(release.groups["Library"] || []), plan[4]];
+      release.changes["New Features"] = [...(release.changes["New Features"] || []), plan[1]];
+      release.changes["Patches and Improvements"] = [...(release.changes["Patches and Improvements"] || []), plan[0], plan[2], plan[3], plan[4]];
+      release.groups["Plan Template"] = [...(release.groups["Plan Template"] || []), plan[1]];
+      release.groups["Library"] = [...(release.groups["Library"] || []), plan[0], plan[2], plan[3], plan[4]];
     }
     return new Response(JSON.stringify(data), {status: response.status, headers: {"Content-Type":"application/json"}});
   };
