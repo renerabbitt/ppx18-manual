@@ -13,7 +13,7 @@
         "Updated Room Label to use a global call instead of storing the label in the Library, reducing macro conflicts and improving performance.",
         "Updated the Pro Plan Transfer tool and the All Macro Replacement tool."
       ];
-      release.changes["Patches and Improvements"] = [...(release.changes["Patches and Improvements"] || []), ...plan];
+      release.changes["New Features"] = [...(release.changes["New Features"] || []), ...plan];
       release.groups["Plan Template"] = [...(release.groups["Plan Template"] || []), ...plan.slice(0, 4)];
       release.groups["Library"] = [...(release.groups["Library"] || []), plan[4]];
     }
