@@ -119,6 +119,7 @@
           "Revised the Foundation Vent workflow for better performance. Enter the crawlspace square footage directly in each vent as explained in the updated Help and User Manual.",
           "Converted the detailed Area Analysis breakdown schedules into CAD blocks stored in the Library and linked them to the Area Analysis toolbar. Place them only when diagnostic information is needed.",
           "Rewrote the window and door macros for improved speed and reliability and removed unused options and legacy error-prone systems.",
+          "Old macro values cannot be imported into PPX18 260729 because the macro system was substantially rewritten. Use the current macros supplied with this release.",
           "Added and updated User Manual sections for the current features and revised workflows."
         ],
         "Removed or Replaced": [
