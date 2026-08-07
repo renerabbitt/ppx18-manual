@@ -1,76 +1,63 @@
 (() => {
-  const shot = (src, alt, caption) =>
-    '<figure><a href="' + src + '" target="_blank" rel="noreferrer"><img src="' + src + '" alt="' + alt + '"></a><figcaption>' + caption + '</figcaption></figure>';
+  const shot = (src, alt, title, caption) =>
+    '<figure class="install-shot"><a href="' + src + '" target="_blank" rel="noreferrer"><img src="' + src + '" alt="' + alt + '"></a><figcaption><strong>' + title + '</strong><span>' + caption + '</span></figcaption></figure>';
 
   const buildUpdateGuide = () => '<article class="chapter update-chapter simple-update-guide" id="updating">' +
     '<div class="kicker">PPX18 UPDATE AND INSTALL GUIDE</div>' +
     '<h1>How to Update PPX18</h1>' +
-    '<p class="deck">Follow the sections below for the files included with your release.</p>' +
-    '<p class="assisted-install"><strong>Would you prefer help?</strong> <a href="https://www.rabbittdesign.net/shop/p/assisted-install-or-modification-on-any-package" target="_blank" rel="noreferrer">Purchase an assisted installation from Rabbitt Design.</a></p>' +
+    '<p class="deck">Clear instructions for installing the files included with your PPX18 release.</p>' +
+    '<p class="release-summary"><strong>Would you prefer help?</strong> <a href="https://www.rabbittdesign.net/shop/p/assisted-install-or-modification-on-any-package" target="_blank" rel="noreferrer">Purchase an assisted installation from Rabbitt Design.</a></p>' +
 
-    '<section class="simple-update-step">' +
-      '<div class="simple-step-copy"><h2>1. Replace the PPX18 Library</h2>' +
-      '<p><strong>If you have other Rabbitt Design systems installed:</strong> Open the Library Browser and open <strong>Tags</strong>. If Tags are hidden, click the gear icon and place a check next to <strong>Tags</strong>. Select the <strong>z.sys-ProPlan</strong> tag, select every item in the filtered results, and delete those items.</p>' +
-      '<p><strong>If PPX18 is your only Rabbitt Design system:</strong> Select the main <strong>Rabbitt Design Library</strong> folder and delete it.</p>' +
-      '<p>After the deletion finishes, scroll to <strong>Trash</strong> or <strong>User Trash</strong>, right-click it, and choose <strong>Empty Trash</strong>. Open the <strong>Step 2</strong> folder in your downloaded PPX18 installation files, then double-click the supplied <strong>CALIBZ</strong> file to install the replacement Library.</p>' +
-      '<p>When installation is complete, there should be only one main <strong>Rabbitt Design Library</strong> folder. If duplicate main folders remain, delete all of them, empty Trash, and install the CALIBZ file again.</p></div>' +
-      '<aside class="simple-step-images">' +
-        shot('../images/install-update/pdf-image-12.jpg','Delete the outdated PPX18 Library','Delete the Pro Plan items or the main Rabbitt Design Library folder.') +
-        shot('../images/install-update/pdf-image-18.png','Empty Trash or User Trash','Empty Trash before installing the replacement CALIBZ file.') +
-      '</aside>' +
-    '</section>' +
+    '<div class="accordion-stack update-instruction-stack">' +
+      '<details open><summary><span>01</span><div><strong>Replace the PPX18 Library</strong><small>Delete the previous Pro Plan Library and install the CALIBZ file from Step 2</small></div></summary>' +
+      '<div class="detail-body"><div class="install-guide-layout"><div class="install-procedure">' +
+        '<p><strong>If you have other Rabbitt Design systems installed:</strong> Open the Library Browser and open <strong>Tags</strong>. If Tags are hidden, click the gear icon and place a check next to <strong>Tags</strong>. Select the <strong>z.sys-ProPlan</strong> tag, select every item in the filtered results, and delete those items.</p>' +
+        '<p><strong>If PPX18 is your only Rabbitt Design system:</strong> Select the main <strong>Rabbitt Design Library</strong> folder and delete it.</p>' +
+        '<p>After the deletion finishes, scroll to <strong>Trash</strong> or <strong>User Trash</strong>, right-click it, and choose <strong>Empty Trash</strong>. Open the <strong>Step 2</strong> folder in your downloaded PPX18 installation files, then double-click the supplied <strong>CALIBZ</strong> file to install the replacement Library.</p>' +
+        '<p>When installation is complete, there should be only one main <strong>Rabbitt Design Library</strong> folder. If duplicate main folders remain, delete all of them, empty Trash, and install the CALIBZ file again.</p>' +
+      '</div><aside class="install-images" aria-label="Library installation screenshots">' +
+        shot('../images/install-update/pdf-image-12.jpg','Delete the outdated PPX18 Library','Delete the previous PPX18 Library','Delete the Pro Plan items or the main Rabbitt Design Library folder.') +
+        shot('../images/install-update/pdf-image-18.png','Empty Trash or User Trash','Empty Trash','Empty Trash before installing the replacement CALIBZ file.') +
+      '</aside></div></div></details>' +
 
-    '<section class="simple-update-step">' +
-      '<div class="simple-step-copy"><h2>2. Replace Toolbar Configurations</h2>' +
-      '<p>In Chief Architect, open <strong>Tools &gt; Toolbars and Hotkeys &gt; Customize Toolbars</strong>. Open <strong>Configurations</strong> and choose <strong>Import</strong>.</p>' +
-      '<p>When the Import dialog box opens, navigate to the <strong>Step 3</strong> folder inside your downloaded PPX18 installation files. Chief Architect normally opens its own toolbar folder first; that is not the correct folder. Select every <strong>TOOLBAR</strong> file in the PPX18 Step 3 folder and choose <strong>Replace All</strong>.</p>' +
-      '<p>Wait for <strong>Importing Place Library Object Buttons</strong> to finish. If prompted, choose <strong>Select All New</strong>, then choose <strong>Done</strong>.</p></div>' +
-      '<aside class="simple-step-images">' +
-        shot('../images/install-update/pdf-image-23.jpg','Open Customize Toolbars','Open Tools, Toolbars and Hotkeys, Customize Toolbars.') +
-        shot('../images/install-update/pdf-image-3.jpg','Import the toolbar configurations','Navigate to the PPX18 Step 3 folder and select all TOOLBAR files.') +
-        shot('../images/install-update/pdf-image-4.jpg','Toolbar import progress','Allow the library-object button import to finish.') +
-        shot('../images/install-update/pdf-image-5.jpg','Select all new buttons','Choose Select All New, then Done.') +
-      '</aside>' +
-    '</section>' +
+      '<details open><summary><span>02</span><div><strong>Replace Toolbar Configurations</strong><small>Import every TOOLBAR file from the PPX18 Step 3 folder</small></div></summary>' +
+      '<div class="detail-body"><div class="install-guide-layout"><div class="install-procedure">' +
+        '<p>In Chief Architect, open <strong>Tools &gt; Toolbars and Hotkeys &gt; Customize Toolbars</strong>. Open <strong>Configurations</strong> and choose <strong>Import</strong>.</p>' +
+        '<p>When the Import dialog box opens, navigate to the <strong>Step 3</strong> folder inside your downloaded PPX18 installation files. Chief Architect normally opens its own toolbar folder first; that is not the correct folder. Select every <strong>TOOLBAR</strong> file in the PPX18 Step 3 folder and choose <strong>Replace All</strong>.</p>' +
+        '<p>Wait for <strong>Importing Place Library Object Buttons</strong> to finish. If prompted, choose <strong>Select All New</strong>, then choose <strong>Done</strong>.</p>' +
+      '</div><aside class="install-images" aria-label="Toolbar installation screenshots">' +
+        shot('../images/install-update/pdf-image-23.jpg','Open Customize Toolbars','Open Customize Toolbars','Open Tools, Toolbars and Hotkeys, Customize Toolbars.') +
+        shot('../images/install-update/pdf-image-3.jpg','Import the toolbar configurations','Import toolbar configurations','Navigate to the PPX18 Step 3 folder and select all TOOLBAR files.') +
+        shot('../images/install-update/pdf-image-4.jpg','Toolbar import progress','Wait for the import','Allow the library-object button import to finish.') +
+        shot('../images/install-update/pdf-image-5.jpg','Select all new buttons','Complete the import','Choose Select All New, then Done.') +
+      '</aside></div></div></details>' +
 
-    '<section class="simple-update-step simple-project-step"><div class="simple-step-copy">' +
-      '<h2>3. Install the Pro Plan Project</h2>' +
-      '<p>Open the <strong>Step 4</strong> folder in your downloaded PPX18 installation files. Double-click the <strong>Pro Plan CA Project</strong> file to install it in Chief Architect X18.</p>' +
-    '</div></section>' +
+      '<details open><summary><span>03</span><div><strong>Install the Pro Plan Project</strong><small>Open the Pro Plan CA Project file from Step 4</small></div></summary>' +
+      '<div class="detail-body"><p>Open the <strong>Step 4</strong> folder in your downloaded PPX18 installation files. Double-click the <strong>Pro Plan CA Project</strong> file to install it in Chief Architect X18.</p></div></details>' +
 
-    '<section class="download-files-chapter">' +
-      '<div class="kicker">CURRENT PRODUCT FILES</div><h2>How to Find Your Current PPX18 Downloads</h2>' +
-      '<p>Sign in at <a href="https://www.rabbittdesign.net" target="_blank" rel="noreferrer"><strong>rabbittdesign.net</strong></a> and open the <strong>Accounts</strong> tab to find your product.</p>' +
-      '<p>If the original PPX18 installation files are still on your computer, open the <strong>Step 5</strong> folder. The link inside that folder opens the live Dropbox files. Download the newest files to your computer before installing the update.</p>' +
-    '</section>' +
+      '<details><summary><span>04</span><div><strong>How to Find Your Current PPX18 Downloads</strong><small>Use your account or the live link stored in the Step 5 folder</small></div></summary>' +
+      '<div class="detail-body"><p>Sign in at <a href="https://www.rabbittdesign.net" target="_blank" rel="noreferrer"><strong>rabbittdesign.net</strong></a> and open the <strong>Accounts</strong> tab to find your product.</p><p>If the original PPX18 installation files are still on your computer, open the <strong>Step 5</strong> folder. The link inside that folder opens the live Dropbox files. Download the newest files to your computer before installing the update.</p></div></details>' +
+    '</div>' +
 
-    '<p class="release-check"><strong>Not every release includes a Library or Toolbar update. Check the release notes for your exact version to see which files were updated.</strong></p>' +
+    '<p class="release-summary release-check"><strong>Not every release includes a Library or Toolbar update.</strong> Check the release notes for your exact version to see which files were updated.</p>' +
   '</article>';
 
   window.updateChapterClear = buildUpdateGuide;
 
-  const css = [
-    '.simple-update-guide{max-width:1200px}',
-    '.simple-update-guide h2{margin:0 0 12px;padding:0;border:0!important;background:transparent!important;color:#111!important;font:800 19px/1.35 Arial,Helvetica,sans-serif;letter-spacing:.035em;text-transform:uppercase}',
-    '.simple-update-guide p{font:18px/1.65 Georgia,serif;color:#2b2a29}',
-    '.simple-update-guide .assisted-install{margin:20px 0 32px;padding:16px 18px;background:#f7f2fb;border-left:5px solid #111;font:18px/1.65 Georgia,serif}',
-    '.simple-update-step{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,.75fr);gap:32px;margin:0;padding:28px 0;border-top:1px solid #bbb}',
-    '.simple-project-step{grid-template-columns:1fr}',
-    '.simple-step-images{display:grid;gap:14px;align-content:start}',
-    '.simple-step-images figure{margin:0;min-width:0}',
-    '.simple-step-images a{display:block}',
-    '.simple-step-images img{display:block;width:100%;height:auto;max-height:300px;object-fit:contain;border:1px solid #bbb;background:#fff}',
-    '.simple-step-images figcaption{padding:7px 2px 0;font:16px/1.5 Georgia,serif;color:#2b2a29}',
-    '.download-files-chapter{margin-top:12px;padding:28px 0;border-top:2px solid #111}',
-    '.download-files-chapter .kicker{margin-bottom:8px}',
-    '.release-check{margin:16px 0 0;padding:18px;background:#f7f2fb;border-left:5px solid #111}',
-    '@media(max-width:850px){.simple-update-step{grid-template-columns:1fr}.simple-step-images{grid-template-columns:1fr 1fr}}',
-    '@media(max-width:580px){.simple-step-images{grid-template-columns:1fr}}'
-  ].join('');
-
   const style = document.createElement('style');
   style.id = 'simple-update-guide-styles';
-  style.textContent = css;
+  style.textContent = [
+    '.simple-update-guide .update-instruction-stack{max-width:none}',
+    '.simple-update-guide .release-summary a{color:#111;font-weight:800}',
+    '.simple-update-guide .install-guide-layout{margin:0}',
+    '.simple-update-guide .install-procedure p:last-child{margin-bottom:0}',
+    '.simple-update-guide .install-images{position:static}',
+    '.simple-update-guide .release-check{margin-top:28px;margin-bottom:0}',
+    '@media(max-width:900px){.simple-update-guide .install-guide-layout{grid-template-columns:1fr}.simple-update-guide .install-images{grid-template-columns:repeat(2,minmax(0,1fr))}}',
+    '@media(max-width:580px){.simple-update-guide .install-images{grid-template-columns:1fr}}'
+  ].join('');
+
+  document.getElementById('simple-update-guide-styles')?.remove();
   document.head.appendChild(style);
 
   const replaceVisibleGuide = () => {
