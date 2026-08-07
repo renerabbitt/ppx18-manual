@@ -1,14 +1,14 @@
 :root {
   --canvas: #080d13;
   --canvas-top: #0d1625;
-  --panel: #141b23;
+  --panel: #17202a;
   --panel-soft: #19212b;
   --panel-deep: #0c1421;
   --stroke: #2b3541;
   --stroke-strong: #3b4756;
   --text: #f4f7f9;
   --text-soft: #c3cad2;
-  --text-muted: #84909e;
+  --text-muted: #9ca8b6;
   --lime: #91d438;
   --lime-soft: #b3ed67;
   --cat-plan: #ff7898;
@@ -23,8 +23,10 @@
 * { scrollbar-color: #5c6672 var(--panel-deep); }
 body {
   background:
-    radial-gradient(circle at 12% 0%, rgba(29,70,65,.26), transparent 28rem),
-    linear-gradient(180deg, var(--canvas-top) 0, var(--canvas) 31rem);
+    radial-gradient(ellipse 54rem 38rem at -7% -3%, rgba(47,104,84,.38) 0%, rgba(25,71,69,.2) 44%, transparent 72%),
+    radial-gradient(ellipse 70rem 46rem at 68% -14%, rgba(24,43,82,.45) 0%, transparent 70%),
+    linear-gradient(180deg, #0d1729 0%, #0a111a 36rem, var(--canvas) 100%);
+  background-attachment: fixed;
   color: var(--text);
   font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 }
@@ -58,9 +60,14 @@ button, input, a { font-family: inherit; }
   color: var(--text) !important; background: var(--panel-deep) !important;
   border: 1px solid var(--stroke); border-left: 3px solid var(--category,var(--stroke-strong)); border-radius: 10px;
 }
-.rail button.current, .rail button.current-release { --category: var(--lime); background: linear-gradient(90deg,rgba(145,212,56,.12),var(--panel-deep) 34%) !important; }
-.rail button.unreleased { --category: var(--cat-plan); background: linear-gradient(90deg,rgba(255,120,152,.12),var(--panel-deep) 34%) !important; }
-.rail button.install { --category: var(--cat-general); }
+.rail button.current, .rail button.current-release, .rail button.previous, .rail button.install {
+  --category: var(--stroke-strong);
+  background: var(--panel-deep) !important;
+}
+.rail button.unreleased {
+  --category: #f15f71;
+  background: linear-gradient(90deg,rgba(241,95,113,.16),var(--panel-deep) 38%) !important;
+}
 .rail button.cat-plan { --category: var(--cat-plan); }
 .rail button.cat-spec { --category: var(--cat-spec); }
 .rail button.cat-layout { --category: var(--cat-layout); }
@@ -72,7 +79,7 @@ button, input, a { font-family: inherit; }
 .rail button *, .rail button.current *, .rail button.unreleased * { color: var(--text) !important; }
 .rail button > span { color: var(--category,var(--text-muted)) !important; font-size: 10px; font-weight: 800; }
 .rail strong { font-size: 12px; letter-spacing: .01em; text-transform: none; }
-.rail small, .rail button.current small { color: var(--text-muted) !important; font-size: 10px; }
+.rail small, .rail button.current small { color: #b4bdc8 !important; font-size: 10px; }
 
 .workspace { margin-left: 326px; padding-top: 64px; }
 .workspace-head { min-height: 214px; padding: 52px clamp(24px,5vw,74px) 30px; align-items: end; }
@@ -89,6 +96,9 @@ button, input, a { font-family: inherit; }
   padding: clamp(28px,4.2vw,58px); color: var(--text); background: var(--panel);
   border: 1px solid var(--stroke); border-top: 3px solid var(--lime); border-radius: 16px;
   box-shadow: 0 24px 65px rgba(0,0,0,.26);
+}
+.chapter.update-chapter, .chapter.compare-chapter, .chapter.library-index-chapter {
+  background: #19222c;
 }
 .chapter h1 { color: var(--text); text-transform: none; font-size: clamp(38px,5vw,68px); }
 .deck, .chapter .deck { color: var(--text-soft); font-size: 17px !important; line-height: 1.55; }
