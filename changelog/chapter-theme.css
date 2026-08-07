@@ -1,0 +1,159 @@
+/* Shared visual system for every PPX18 changelog chapter. */
+:root{
+  --chapter-heading-font:Arial,Helvetica,sans-serif;
+  --chapter-body-font:Georgia,"Times New Roman",serif;
+  --chapter-body-size:18px;
+  --chapter-body-leading:1.65;
+  --chapter-accent:#f7f2fb;
+  --chapter-ink:#111;
+  --chapter-copy:#2b2a29;
+  --chapter-border:#111;
+}
+
+.chapter{
+  color:var(--chapter-ink);
+}
+
+.chapter h1,
+.chapter .kicker,
+.chapter .deck,
+.chapter .status-pill,
+.chapter .release-summary,
+.chapter .notice,
+.chapter .accordion-stack summary,
+.chapter .category-heading,
+.chapter button{
+  font-family:var(--chapter-heading-font);
+}
+
+.chapter .deck{
+  font-size:20px!important;
+  line-height:1.55;
+}
+
+.chapter .release-summary,
+.chapter .notice{
+  font-size:18px;
+  line-height:1.6;
+  color:var(--chapter-ink);
+}
+
+.chapter .detail-body,
+.chapter .detail-body p,
+.chapter .detail-body li,
+.chapter .update-list li,
+.chapter .compare-release p,
+.chapter .compare-release li{
+  font-family:var(--chapter-body-font);
+  font-size:var(--chapter-body-size)!important;
+  line-height:var(--chapter-body-leading)!important;
+  color:var(--chapter-copy);
+}
+
+.chapter .detail-body h2,
+.chapter .detail-body h3,
+.chapter .detail-body h4{
+  font-family:var(--chapter-heading-font);
+  color:var(--chapter-ink);
+}
+
+.chapter .accordion-stack details>summary{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  padding:17px 54px 17px 20px;
+  border:1px solid var(--chapter-border);
+  background:var(--chapter-accent);
+}
+
+.chapter .accordion-stack summary>span{
+  display:none!important;
+}
+
+.chapter .accordion-stack summary strong{
+  font-family:var(--chapter-heading-font);
+  font-size:18px!important;
+  font-weight:800;
+  line-height:1.35;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.chapter .accordion-stack summary small{
+  margin-top:5px;
+  font-family:var(--chapter-heading-font);
+  font-size:12px!important;
+  line-height:1.45;
+  color:#555!important;
+}
+
+.chapter .accordion-stack .detail-body{
+  border-top:1px solid var(--chapter-border);
+}
+
+.chapter .install-guide-layout{
+  margin:0;
+}
+
+.chapter .install-procedure p:last-child{
+  margin-bottom:0;
+}
+
+.chapter .install-images{
+  position:static;
+}
+
+.chapter .install-shot figcaption,
+.chapter .release-visuals figcaption{
+  font-family:var(--chapter-heading-font);
+}
+
+.chapter .release-summary a,
+.chapter .update-guide-link,
+.chapter a{
+  color:var(--chapter-ink);
+}
+
+.chapter .release-summary a,
+.chapter .update-guide-link{
+  font-weight:800;
+}
+
+.new-installation-chapter .new-installation-steps,
+.simple-update-guide .update-instruction-stack{
+  max-width:none;
+}
+
+.new-installation-chapter .update-guide-link{
+  display:inline;
+  padding:0;
+  border:0;
+  background:transparent;
+  text-transform:none;
+  letter-spacing:0;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+.new-installation-chapter .optional-install-detail{
+  margin:22px 0;
+  border:1px solid var(--chapter-border);
+}
+
+.new-installation-chapter .optional-install-detail>summary{
+  background:var(--chapter-accent)!important;
+}
+
+.simple-update-guide .release-check{
+  margin-top:28px;
+  margin-bottom:0;
+}
+
+@media(max-width:900px){
+  .chapter .install-guide-layout{grid-template-columns:1fr}
+  .chapter .install-images{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+@media(max-width:580px){
+  .chapter .install-images{grid-template-columns:1fr}
+}
