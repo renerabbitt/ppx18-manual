@@ -1,14 +1,14 @@
 :root {
   --canvas: #080d13;
   --canvas-top: #0d1625;
-  --panel: #141b23;
+  --panel: #161e27;
   --panel-soft: #19212b;
   --panel-deep: #0c1421;
   --stroke: #2b3541;
   --stroke-strong: #3b4756;
   --text: #f4f7f9;
   --text-soft: #c3cad2;
-  --text-muted: #84909e;
+  --text-muted: #9ca8b6;
   --lime: #91d438;
   --lime-soft: #b3ed67;
   --plan: #ff7898;
@@ -21,8 +21,10 @@
 * { scrollbar-color: #5c6672 var(--panel-deep); }
 body {
   background:
-    radial-gradient(circle at 12% 0%, rgba(29, 70, 65, .26), transparent 28rem),
-    linear-gradient(180deg, var(--canvas-top) 0, var(--canvas) 31rem);
+    radial-gradient(ellipse 54rem 38rem at -7% -3%, rgba(47, 104, 84, .38) 0%, rgba(25, 71, 69, .2) 44%, transparent 72%),
+    radial-gradient(ellipse 70rem 46rem at 68% -14%, rgba(24, 43, 82, .45) 0%, transparent 70%),
+    linear-gradient(180deg, #0d1729 0%, #0a111a 36rem, var(--canvas) 100%);
+  background-attachment: fixed;
   color: var(--text);
   font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 }
@@ -97,7 +99,7 @@ button, input, a { font-family: inherit; }
 .rail button.active { filter: none; background: var(--panel-soft) !important; border-color: var(--category); box-shadow: 0 0 0 2px color-mix(in srgb, var(--category) 15%, transparent); }
 .rail button > span { color: var(--category, var(--text-muted)) !important; font-size: 10px; font-weight: 800; }
 .rail strong { color: var(--text) !important; font-size: 12px; letter-spacing: .01em; text-transform: none; }
-.rail small { color: var(--text-muted) !important; font-size: 10px; }
+.rail small { color: #b4bdc8 !important; font-size: 10px; }
 
 .workspace { margin-left: 326px; padding-top: 64px; }
 .workspace-head {
@@ -132,6 +134,9 @@ button, input, a { font-family: inherit; }
 .chapter[data-category="spec-plan"] { --category: var(--spec); background: linear-gradient(145deg, rgba(145,215,93,.07), var(--panel) 38%); }
 .chapter[data-category="layout"] { --category: var(--layout); background: linear-gradient(145deg, rgba(99,183,255,.07), var(--panel) 38%); }
 .chapter[data-category="general"] { --category: var(--general); background: linear-gradient(145deg, rgba(194,148,255,.07), var(--panel) 38%); }
+.chapter.index {
+  background: linear-gradient(145deg, rgba(194,148,255,.075), #1a232d 38%);
+}
 .chapter-kicker { color: var(--category); }
 .chapter h1 { color: var(--text); text-transform: none; font-size: clamp(38px, 5vw, 68px); }
 .deck { color: var(--text-soft); font-size: 17px; line-height: 1.55; }
