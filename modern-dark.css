@@ -142,16 +142,19 @@ button, input, a { font-family: inherit; }
 .deck { color: var(--text-soft); font-size: 17px; line-height: 1.55; }
 .prose h2 { color: var(--text); border-top-color: var(--stroke); font-size: 18px; letter-spacing: .01em; text-transform: none; }
 .prose h3 { color: var(--text); }
-.prose > p, .step p { color: var(--text-soft); font-family: inherit; font-size: 16px; line-height: 1.72; }
-.step {
-  margin: 10px 0;
-  padding: 14px 16px;
-  background: var(--panel-soft);
-  border: 1px solid var(--stroke);
-  border-left: 3px solid var(--category);
-  border-radius: 9px;
+.prose > p, .steps { color: var(--text-soft); font-family: inherit; font-size: 16px; line-height: 1.72; }
+.steps {
+  margin: 12px 0 24px;
+  padding-left: 1.45rem;
 }
-.step b { color: var(--category); }
+.steps li {
+  margin: 5px 0;
+  padding-left: 5px;
+}
+.steps li::marker {
+  color: var(--category);
+  font-size: 1.05em;
+}
 .chapter-link {
   border: 1px solid var(--stroke);
   border-radius: 999px;
