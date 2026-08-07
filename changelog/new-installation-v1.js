@@ -62,7 +62,4 @@
     '</div>' +
   '</article>';
 
-  const style=document.createElement('style');
-  style.textContent='.new-installation-chapter .new-installation-steps{max-width:none}.new-installation-chapter .release-summary a,.new-installation-chapter .update-guide-link{color:#111;font-weight:800}.new-installation-chapter .update-guide-link{display:inline;padding:0;border:0;background:transparent;text-transform:none;letter-spacing:0;text-decoration:underline;cursor:pointer}.new-installation-chapter .install-images{position:static}.new-installation-chapter .optional-install-detail{margin:22px 0;border:1px solid #111}.new-installation-chapter .optional-install-detail>summary{background:var(--cat-general)!important}@media(max-width:900px){.new-installation-chapter .install-guide-layout{grid-template-columns:1fr}.new-installation-chapter .install-images{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:580px){.new-installation-chapter .install-images{grid-template-columns:1fr}}';
-  document.head.appendChild(style);
 })();
