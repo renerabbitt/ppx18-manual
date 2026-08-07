@@ -19,6 +19,6 @@
     '<p class="final-update-note"><strong>Check the release notes for your exact version to see whether a Library update was included.</strong></p></article>';
   const css = '.simplified-update h2{margin:28px 0 8px;border:0!important;padding:0!important;font:800 24px/1.35 Arial,sans-serif;color:#111}.simplified-update p{font-size:18px;line-height:1.6}.simplified-update .assisted-install{padding:14px 16px;background:#f7f2fb;border-left:5px solid #111}.simple-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:16px 0 26px}.simple-images figure{margin:0;max-width:100%}.simple-images img{display:block;width:100%;max-height:260px;object-fit:contain}.simple-images figcaption{font-size:14px;line-height:1.35}.simplified-update .final-update-note{margin-top:30px;padding-top:16px;border-top:1px solid #111}@media(max-width:760px){.simple-images{grid-template-columns:1fr}}';
   const style = document.createElement('style'); style.textContent = css; document.head.appendChild(style);
-  const replace = () => { const old = document.querySelector('#reader .update-chapter:not(.simplified-update)'); if (old) old.outerHTML = guide; };
+  const replace = () => { const old = document.querySelector('#reader .chapter:not(.simplified-update)'); if (old) old.outerHTML = guide; };
   new MutationObserver(replace).observe(document.querySelector('#reader') || document.body,{childList:true,subtree:true}); replace();
 })();
