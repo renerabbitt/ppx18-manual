@@ -142,16 +142,27 @@ button, input, a { font-family: inherit; }
 .cat-general { --category: var(--cat-general); }
 .cat-library { --category: var(--cat-library); }
 .cat-toolbar { --category: var(--cat-toolbar); }
-.rail button.current,
-.rail button.current-release,
-.rail button.previous,
+/* Version tabs are color-coded by status, independent of content category. */
 .rail button.install {
-  --category: var(--stroke-strong) !important;
-  border-left-color: var(--stroke-strong) !important;
+  --category: var(--cat-general) !important;
+  border-left-color: var(--cat-general) !important;
+  background: linear-gradient(90deg, rgba(194,148,255,.15), var(--panel-deep) 38%) !important;
 }
 .rail button.unreleased {
   --category: #f15f71 !important;
   border-left-color: #f15f71 !important;
+  background: linear-gradient(90deg, rgba(241,95,113,.16), var(--panel-deep) 38%) !important;
+}
+.rail button.current,
+.rail button.current-release {
+  --category: var(--lime) !important;
+  border-left-color: var(--lime) !important;
+  background: linear-gradient(90deg, rgba(145,212,56,.16), var(--panel-deep) 38%) !important;
+}
+.rail button.previous {
+  --category: var(--cat-layout) !important;
+  border-left-color: var(--cat-layout) !important;
+  background: linear-gradient(90deg, rgba(99,183,255,.14), var(--panel-deep) 38%) !important;
 }
 .rail button small,
 .rail button.current small,
