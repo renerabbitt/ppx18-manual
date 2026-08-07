@@ -83,7 +83,7 @@
     };
     const release260729 = {
       version: "PPX18 260729",
-      status: "Current release",
+      status: "Previous release",
       groups: {
         "Plan Template": [
           "Added a Floor Joists Reference Display Layer Set for objects configured to cut the floor and affect floor framing.",
@@ -132,11 +132,59 @@
       safe: [],
       avoid: []
     };
+    const release260803 = {
+      version: "PPX18 260803",
+      status: "Current release",
+      groups: {
+        "Plan Template": [
+          "Added direct chapter links to Detail panels in PPX18 files when the Details window is enabled in the Project Browser.",
+          "Added the YouTube Index tool to the Help and Information section of the PPX18 project file.",
+          "Added a hatch fill to the Demo layer so Layer Painter applies a demolition hatch to as-built items. This also creates the TBR condition used by window and door labels.",
+          "Added AI context sections to all plan macros and implemented a breadcrumb system so related macro systems can be understood and modified more reliably."
+        ],
+        "Spec Plan and Layout Files": [
+          "Updated the Project Browser preview thumbnails for the Spec Plan and ProArch Layouts."
+        ],
+        "Library": [
+          "Updated both the Full Library and Pro Plan Library.",
+          "Added a new stackable-detail section for floor trusses and continuous insulation, including new floor-truss and continuous-insulation stackable details."
+        ],
+        "Toolbars": [
+          "Reconfigured most toolbar configurations with a new Saved Plan View and Tab dropdown toolbar alongside Tool Search.",
+          "Removed several toolbar-configuration links from the two primary Rabbitt Design toolbar configurations. Other configurations remain available from the dropdown menu."
+        ],
+        "Help and Manual": [
+          "Expanded the replacement Help package with additional sections and updates for the official Chief Architect X18 release."
+        ]
+      },
+      changes: {
+        "New Features": [
+          "Added direct manual-chapter links to Detail panels in PPX18 files when the Details window is enabled in the Project Browser.",
+          "Added the YouTube Index tool to the Help and Information section of the PPX18 project file.",
+          "Added a Saved Plan View and Tab dropdown toolbar to most toolbar configurations alongside Tool Search.",
+          "Added a hatch fill to the Demo layer so Layer Painter applies a demolition hatch to as-built items and creates the TBR condition used by window and door labels.",
+          "Added AI context sections to all plan macros and implemented a breadcrumb system so related macro systems can be understood and modified more reliably.",
+          "Added a stackable-detail section for floor trusses and continuous insulation, including new floor-truss and continuous-insulation stackable details."
+        ],
+        "Patches and Improvements": [
+          "Expanded the replacement Help package with additional sections and updates for the official Chief Architect X18 release.",
+          "Updated the Project Browser preview thumbnails for the Spec Plan and ProArch Layouts.",
+          "Updated both the Full Library and Pro Plan Library."
+        ],
+        "Removed or Replaced": [
+          "Removed several toolbar-configuration links from the two primary Rabbitt Design toolbar configurations. Other configurations remain available from the dropdown menu."
+        ]
+      },
+      downloads: ["Pro Plan", "Spec Plan", "ProArch Layouts", "Full Library", "Pro Plan Library", "Toolbars", "Interactive Help Package"],
+      safe: [],
+      avoid: []
+    };
     const previous = data.find(item => item.version === "PPX18 260720");
     if (previous) previous.status = "Previous release";
     const withoutOldDevelopment = data.filter(item => item.version !== "PPX18 260722");
     const patched = [
-      {version:"PPX18 260803",status:"Unreleased development",groups:{},changes:{},downloads:[],safe:[],avoid:[]},
+      {version:"PPX18 260807",status:"Unreleased development",groups:{},changes:{},downloads:[],safe:[],avoid:[]},
+      release260803,
       release260729,
       release260722,
       ...withoutOldDevelopment
