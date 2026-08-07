@@ -193,8 +193,13 @@ button, input, a { font-family: inherit; }
 .new-installation-chapter .optional-install-detail > summary::after {
   border-color: var(--text);
 }
-.new-installation-chapter .detail-body h3 {
+.chapter.new-installation-chapter .accordion-stack .detail-body h2,
+.chapter.new-installation-chapter .accordion-stack .detail-body h3,
+.chapter.new-installation-chapter .accordion-stack .detail-body h4 {
   color: var(--text) !important;
+}
+.chapter.new-installation-chapter .release-summary a:not(.update-guide-link) {
+  color: var(--lime-soft) !important;
 }
 .new-installation-chapter .release-summary .update-guide-link {
   display: flex !important;
