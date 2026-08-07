@@ -165,6 +165,47 @@ button, input, a { font-family: inherit; }
 .library-choice-grid a, .update-guide-link, .library-index-link {
   color: #17230b !important; background: var(--lime) !important; border: 0 !important; border-radius: 999px;
 }
+
+/* Form controls and nested installation options use the same dark surface language. */
+.compare-controls label { color: var(--text-soft) !important; }
+.compare-controls select,
+.compare-controls input {
+  color: var(--text) !important;
+  background: var(--panel-deep) !important;
+  border: 1px solid var(--stroke-strong) !important;
+  border-radius: 8px;
+  color-scheme: dark;
+}
+.compare-controls select:focus,
+.compare-controls input:focus {
+  border-color: var(--lime) !important;
+  outline: 3px solid rgba(145,212,56,.12);
+}
+.compare-controls select option {
+  color: var(--text);
+  background: var(--panel-deep);
+}
+.new-installation-chapter .accordion-stack .optional-install-detail > summary {
+  color: var(--text) !important;
+  background: var(--panel-soft) !important;
+  border-left-color: var(--cat-general) !important;
+}
+.new-installation-chapter .optional-install-detail > summary::after {
+  border-color: var(--text);
+}
+.new-installation-chapter .detail-body h3 {
+  color: var(--text) !important;
+}
+.new-installation-chapter .release-summary .update-guide-link {
+  display: flex !important;
+  width: fit-content !important;
+  max-width: 100%;
+  margin: 12px 0 2px !important;
+  padding: 9px 14px !important;
+  line-height: 1.2;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 footer { border-top-color: var(--stroke); color: var(--text-muted); }
 footer a { color: var(--lime-soft); }
 
