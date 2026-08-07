@@ -44,21 +44,6 @@
 
   window.updateChapterClear = buildUpdateGuide;
 
-  const style = document.createElement('style');
-  style.id = 'simple-update-guide-styles';
-  style.textContent = [
-    '.simple-update-guide .update-instruction-stack{max-width:none}',
-    '.simple-update-guide .release-summary a{color:#111;font-weight:800}',
-    '.simple-update-guide .install-guide-layout{margin:0}',
-    '.simple-update-guide .install-procedure p:last-child{margin-bottom:0}',
-    '.simple-update-guide .install-images{position:static}',
-    '.simple-update-guide .release-check{margin-top:28px;margin-bottom:0}',
-    '@media(max-width:900px){.simple-update-guide .install-guide-layout{grid-template-columns:1fr}.simple-update-guide .install-images{grid-template-columns:repeat(2,minmax(0,1fr))}}',
-    '@media(max-width:580px){.simple-update-guide .install-images{grid-template-columns:1fr}}'
-  ].join('');
-
-  document.getElementById('simple-update-guide-styles')?.remove();
-  document.head.appendChild(style);
 
   const replaceVisibleGuide = () => {
     const current = document.querySelector('#reader .update-chapter:not(.simple-update-guide)');
