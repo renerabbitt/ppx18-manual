@@ -157,3 +157,24 @@
 @media(max-width:580px){
   .chapter .install-images{grid-template-columns:1fr}
 }
+
+
+/* Plain in-content subheadings: no category boxes. */
+.chapter .detail-body h2.category-heading,
+.chapter .detail-body h3.category-heading,
+.chapter .detail-body h4.category-heading,
+.chapter .detail-body .category-heading{
+  display:block;
+  width:auto;
+  margin:26px 0 9px;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  color:var(--chapter-ink)!important;
+  font-family:var(--chapter-heading-font);
+  font-size:16px!important;
+  font-weight:800;
+  line-height:1.35;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
