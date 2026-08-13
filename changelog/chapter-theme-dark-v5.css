@@ -323,3 +323,90 @@
   color:var(--chapter-copy)!important;
 }
 
+/* AUTHORITATIVE CHANGE LOG THEME
+   Every chapter, comparison panel, and sidebar card inherits these shared tokens.
+   No page-specific palette may replace these surface or text colors. */
+.chapter,
+.chapter.update-chapter,
+.chapter.new-installation-chapter,
+.chapter.compare-chapter,
+.chapter.library-index-chapter{
+  color:var(--chapter-ink)!important;
+  background:var(--chapter-panel)!important;
+  border-color:var(--chapter-border)!important;
+}
+
+/* Generated Compare Versions content uses the same dark chapter surfaces. */
+.compare-chapter .compare-results,
+.compare-chapter .compare-summary,
+.compare-chapter .compare-release,
+.compare-chapter .advanced-warning{
+  color:var(--chapter-copy)!important;
+  background:var(--chapter-panel-deep)!important;
+  border-color:var(--chapter-border)!important;
+}
+
+.compare-chapter .compare-summary h2,
+.compare-chapter .compare-summary h3,
+.compare-chapter .compare-summary h4,
+.compare-chapter .compare-release h2,
+.compare-chapter .compare-release h3,
+.compare-chapter .compare-release h4,
+.compare-chapter .advanced-warning>strong{
+  color:var(--chapter-ink)!important;
+}
+
+.compare-chapter .compare-summary p,
+.compare-chapter .compare-summary li,
+.compare-chapter .compare-release p,
+.compare-chapter .compare-release li,
+.compare-chapter .advanced-warning p,
+.compare-chapter .advanced-warning li,
+.compare-chapter .compare-summary .downloads li{
+  color:var(--chapter-copy)!important;
+}
+
+.compare-chapter .compare-summary .downloads li{
+  background:transparent!important;
+  border:0!important;
+}
+
+/* Sidebar version cards inherit one light-text rule.
+   Status and category colors are accents only; they never change text to black. */
+.rail button,
+.rail button.install,
+.rail button.current,
+.rail button.current-release,
+.rail button.previous,
+.rail button.unreleased{
+  color:var(--chapter-ink)!important;
+  background-color:var(--chapter-panel-deep)!important;
+  border-color:var(--chapter-border)!important;
+  border-left-color:var(--category,var(--chapter-border))!important;
+}
+
+.rail button strong,
+.rail button small,
+.rail button em,
+.rail button div,
+.rail button.current strong,
+.rail button.current small,
+.rail button.current em,
+.rail button.current-release strong,
+.rail button.current-release small,
+.rail button.previous strong,
+.rail button.previous small,
+.rail button.unreleased strong,
+.rail button.unreleased small{
+  color:var(--chapter-ink)!important;
+}
+
+.rail button small,
+.rail button em{
+  color:var(--chapter-muted)!important;
+}
+
+.rail button>span{
+  color:var(--category,var(--chapter-muted))!important;
+}
+
