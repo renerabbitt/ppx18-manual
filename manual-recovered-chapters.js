@@ -14,6 +14,12 @@
     const after = chapters.findIndex(item => item.title === afterTitle);
     chapters.splice(after >= 0 ? after + 1 : chapters.length, 0, chapter);
   }
+  const specIndex = chapters.findIndex(chapter => chapter.title === "Spec Plan: Project Information");
+  if (specIndex >= 0) {
+    const [specChapter] = chapters.splice(specIndex, 1);
+    const helpIndex = chapters.findIndex(chapter => chapter.title === "Help Folder");
+    chapters.splice(helpIndex >= 0 ? helpIndex + 1 : 1, 0, specChapter);
+  }
   chapters.forEach((chapter, index) => { chapter.id = index + 1; });
   const idByTitle = new Map(chapters.map(chapter => [chapter.title, chapter.id]));
   for (const chapter of chapters) {
