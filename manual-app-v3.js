@@ -7,7 +7,7 @@ const asset=s=>String(s||'').replace(/^\//,'');
 const esc=s=>String(s||'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const layoutTitles=new Set(['Pro Layout','Layout User Options']);
 const detailsTitles=new Set(['Details Plan','Detail designations','Details','Stackable details']);
-const generalTitles=new Set(['Index','Limited use agreement','Tech Support and Training','Update or Install Instructions','Transfer to Pro Plan','Pre-built showers','Performance Optimizations','Glossary','Troubleshooting']);
+const generalTitles=new Set(['Index','Why the Pro Plan?','Limited use agreement','Tech Support and Training','Help Folder','Update or Install Instructions','Transfer to Pro Plan','Pre-built showers','Performance Optimizations','Glossary','Troubleshooting']);
 const category=t=>t==='Spec Plan: Project Information'?'spec-plan':detailsTitles.has(t)?'details-plan':generalTitles.has(t)?'general':layoutTitles.has(t)?'layout':'pro-plan';
 
 function setChapterURL(){const url=new URL(location.href);url.searchParams.set('chapter',chapterSlug(chapters[active].title));url.searchParams.delete('restore');url.searchParams.delete('verify');history.replaceState({chapter:active},'',url)}
