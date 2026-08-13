@@ -57,6 +57,7 @@
 
 /* Dark chapter tabs and expanded panels always use light text. */
 .chapter .accordion-stack details{
+  color:var(--chapter-copy)!important;
   background:var(--chapter-panel-deep)!important;
   border-color:var(--chapter-border)!important;
 }
