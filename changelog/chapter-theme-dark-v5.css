@@ -187,3 +187,104 @@
 @media(max-width:580px){
   .chapter .install-images{grid-template-columns:1fr}
 }
+
+/* Library Update Index: keep all body copy readable on dark cards. */
+.library-index-chapter .library-choice-grid section,
+.library-index-chapter .library-choice-grid h2,
+.library-index-chapter .library-choice-grid p,
+.library-index-chapter .library-choice-grid strong,
+.library-index-chapter .notice,
+.library-index-chapter .notice p,
+.library-index-chapter .full-library-reminder,
+.library-index-chapter .full-library-reminder p,
+.library-index-chapter .tip,
+.library-index-chapter .tip strong{
+  color:var(--chapter-copy)!important;
+}
+
+.library-index-chapter .library-choice-grid h2{
+  width:auto;
+  margin:0 0 10px;
+  padding:0!important;
+  color:var(--chapter-ink)!important;
+  background:transparent!important;
+  border:0!important;
+}
+
+/* Give the two version-history links comfortable, senior-friendly spacing. */
+.library-index-chapter .library-choice-grid a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:auto;
+  max-width:100%;
+  min-height:48px;
+  margin:10px 0 0;
+  padding:12px 18px!important;
+  box-sizing:border-box;
+  line-height:1.45!important;
+  text-align:center;
+  white-space:normal;
+  border-radius:999px!important;
+}
+
+/* Each arrow follows its own details element, including nested accordions. */
+.chapter .accordion-stack details>summary::after{
+  transform:translateY(-70%) rotate(45deg)!important;
+  transition:transform .18s ease;
+}
+.chapter .accordion-stack details[open]>summary::after{
+  transform:translateY(-30%) rotate(225deg)!important;
+}
+
+/* Magazine-style screenshot rail for How to Update PPX18.
+   Two smaller complete images balance the text instead of creating a tall empty column. */
+.simple-update-guide .install-guide-layout{
+  grid-template-columns:minmax(0,1fr) minmax(340px,420px);
+  gap:30px;
+  align-items:start;
+}
+.simple-update-guide .install-images{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:14px!important;
+  align-content:start;
+  position:static!important;
+}
+.simple-update-guide .install-shot{
+  min-width:0;
+  margin:0;
+}
+.simple-update-guide .install-shot a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:180px;
+  background:#fff;
+}
+.simple-update-guide .install-shot img{
+  display:block;
+  width:100%!important;
+  height:clamp(160px,16vw,230px)!important;
+  max-height:230px!important;
+  object-fit:contain!important;
+}
+.simple-update-guide .install-shot figcaption{
+  padding:10px 11px;
+  font-size:13px!important;
+  line-height:1.4;
+}
+.simple-update-guide .install-shot figcaption strong{font-size:14px}
+
+@media(max-width:1180px){
+  .simple-update-guide .install-guide-layout{grid-template-columns:1fr}
+  .simple-update-guide .install-images{
+    grid-template-columns:repeat(2,minmax(220px,1fr))!important;
+    margin-top:22px;
+  }
+}
+@media(max-width:620px){
+  .simple-update-guide .install-images{grid-template-columns:1fr!important}
+  .simple-update-guide .install-shot img{height:auto!important;max-height:none!important}
+}
+
