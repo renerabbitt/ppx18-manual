@@ -288,3 +288,38 @@
   .simple-update-guide .install-shot img{height:auto!important;max-height:none!important}
 }
 
+/* Library guidance is body copy, not another layer of chapter cards. */
+.library-index-chapter .notice,
+.library-index-chapter .full-library-reminder,
+.library-index-chapter .tip{
+  display:list-item!important;
+  list-style:disc outside;
+  margin:0 0 20px 1.45rem!important;
+  padding:0!important;
+  color:var(--chapter-copy)!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  font-family:var(--chapter-body-font)!important;
+  font-size:var(--chapter-body-size)!important;
+  line-height:var(--chapter-body-leading)!important;
+}
+
+.library-index-chapter .notice>strong,
+.library-index-chapter .full-library-reminder>strong{
+  display:inline;
+  color:var(--chapter-copy)!important;
+  font-family:var(--chapter-body-font)!important;
+  font-size:var(--chapter-body-size)!important;
+  line-height:var(--chapter-body-leading)!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+}
+
+.library-index-chapter .notice p,
+.library-index-chapter .full-library-reminder p{
+  margin:.3rem 0 0!important;
+  color:var(--chapter-copy)!important;
+}
+
