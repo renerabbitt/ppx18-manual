@@ -1,0 +1,188 @@
+/* Shared chapter presentation for the PPX18 Change Log.
+   Typography and colors inherit from /shared-design-system.css. */
+:root{
+  --chapter-heading-font:var(--rd-font-interface,Arial,Helvetica,sans-serif);
+  --chapter-body-font:var(--rd-font-reading,Georgia,"Times New Roman",serif);
+  --chapter-body-size:18px;
+  --chapter-body-leading:1.65;
+  --chapter-panel:var(--rd-dark-panel,#17202a);
+  --chapter-panel-soft:var(--rd-dark-panel-soft,#19212b);
+  --chapter-panel-deep:var(--rd-dark-panel-deep,#0c1421);
+  --chapter-border:var(--rd-dark-border,#2b3541);
+  --chapter-ink:var(--rd-dark-text,#f4f7f9);
+  --chapter-copy:var(--rd-dark-text-soft,#d7dee7);
+  --chapter-muted:var(--rd-dark-text-muted,#aeb8c4);
+  --chapter-accent:var(--rd-accent,#91d438);
+}
+
+.chapter{color:var(--chapter-ink)}
+
+.chapter h1,
+.chapter .kicker,
+.chapter .deck,
+.chapter .status-pill,
+.chapter .release-summary,
+.chapter .notice,
+.chapter .accordion-stack summary,
+.chapter .category-heading,
+.chapter button{font-family:var(--chapter-heading-font)}
+
+.chapter .deck{font-size:20px!important;line-height:1.55}
+
+.chapter .release-summary,
+.chapter .notice{
+  font-size:18px;
+  line-height:1.6;
+  color:var(--chapter-ink)!important;
+}
+
+.chapter .detail-body,
+.chapter .detail-body p,
+.chapter .detail-body li,
+.chapter .update-list li,
+.chapter .compare-release p,
+.chapter .compare-release li{
+  font-family:var(--chapter-body-font);
+  font-size:var(--chapter-body-size)!important;
+  line-height:var(--chapter-body-leading)!important;
+  color:var(--chapter-copy)!important;
+}
+
+.chapter .detail-body h2,
+.chapter .detail-body h3,
+.chapter .detail-body h4{
+  font-family:var(--chapter-heading-font);
+  color:var(--chapter-ink)!important;
+}
+
+/* Dark chapter tabs and expanded panels always use light text. */
+.chapter .accordion-stack details{
+  background:var(--chapter-panel-deep)!important;
+  border-color:var(--chapter-border)!important;
+}
+
+.chapter .accordion-stack details>summary{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  padding:17px 54px 17px 20px;
+  color:var(--chapter-ink)!important;
+  background:var(--chapter-panel-soft)!important;
+  border:0!important;
+  border-left:4px solid var(--category,var(--chapter-accent))!important;
+}
+
+.chapter .accordion-stack summary>span{display:none!important}
+
+.chapter .accordion-stack summary strong{
+  font-family:var(--chapter-heading-font);
+  font-size:18px!important;
+  font-weight:800;
+  line-height:1.35;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--chapter-ink)!important;
+}
+
+.chapter .accordion-stack summary small{
+  margin-top:5px;
+  font-family:var(--chapter-heading-font);
+  font-size:12px!important;
+  line-height:1.45;
+  color:var(--chapter-muted)!important;
+}
+
+.chapter .accordion-stack summary::after{border-color:var(--chapter-ink)!important}
+
+.chapter .accordion-stack .detail-body{
+  color:var(--chapter-copy)!important;
+  background:var(--chapter-panel-deep)!important;
+  border-top:1px solid var(--chapter-border)!important;
+}
+
+/* Release notes are readable bulleted lists, not individual cards. */
+.chapter .update-list{
+  margin:0;
+  padding-left:1.45rem;
+  list-style:disc outside;
+}
+
+.chapter .update-list li{
+  display:list-item!important;
+  margin:.55rem 0!important;
+  padding:0!important;
+  color:var(--chapter-copy)!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+
+.chapter .update-list li::marker{color:var(--chapter-copy)}
+
+/* Plain in-content subheadings. */
+.chapter .detail-body h2.category-heading,
+.chapter .detail-body h3.category-heading,
+.chapter .detail-body h4.category-heading,
+.chapter .detail-body .category-heading{
+  display:block;
+  width:auto;
+  margin:26px 0 9px;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  color:var(--chapter-ink)!important;
+  font-family:var(--chapter-heading-font);
+  font-size:16px!important;
+  font-weight:800;
+  line-height:1.35;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+
+.chapter .release-summary a,
+.chapter .update-guide-link,
+.chapter a{color:var(--lime-soft,#b3ed67)}
+
+.chapter .release-summary a,
+.chapter .update-guide-link{font-weight:800}
+
+.chapter .install-guide-layout{margin:0}
+.chapter .install-procedure p:last-child{margin-bottom:0}
+.chapter .install-images{position:static}
+.chapter .install-shot figcaption,
+.chapter .release-visuals figcaption{font-family:var(--chapter-heading-font)}
+
+.new-installation-chapter .new-installation-steps,
+.simple-update-guide .update-instruction-stack{max-width:none}
+
+.new-installation-chapter .update-guide-link{
+  display:inline;
+  padding:0;
+  border:0;
+  background:transparent;
+  text-transform:none;
+  letter-spacing:0;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+.new-installation-chapter .optional-install-detail{
+  margin:22px 0;
+  border:1px solid var(--chapter-border);
+}
+
+.new-installation-chapter .optional-install-detail>summary{
+  color:var(--chapter-ink)!important;
+  background:var(--chapter-panel-soft)!important;
+}
+
+.simple-update-guide .release-check{margin-top:28px;margin-bottom:0}
+
+@media(max-width:900px){
+  .chapter .install-guide-layout{grid-template-columns:1fr}
+  .chapter .install-images{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:580px){
+  .chapter .install-images{grid-template-columns:1fr}
+}
