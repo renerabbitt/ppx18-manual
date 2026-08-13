@@ -178,3 +178,41 @@
   letter-spacing:.05em;
   text-transform:uppercase;
 }
+
+
+/* Expanded chapter content always uses the established light category palette. */
+.chapter .accordion-stack details,
+.chapter .accordion-stack details .detail-body{
+  background:var(--cat-general,#f7f2fb)!important;
+}
+
+.chapter .accordion-stack details.cat-plan,
+.chapter .accordion-stack details.cat-plan .detail-body{
+  background:var(--cat-plan,#fff3f5)!important;
+}
+
+.chapter .accordion-stack details.cat-spec,
+.chapter .accordion-stack details.cat-spec .detail-body{
+  background:var(--cat-spec,#f2faef)!important;
+}
+
+.chapter .accordion-stack details.cat-layout,
+.chapter .accordion-stack details.cat-layout .detail-body{
+  background:var(--cat-layout,#f0f7fc)!important;
+}
+
+.chapter .accordion-stack details.cat-library,
+.chapter .accordion-stack details.cat-library .detail-body{
+  background:var(--cat-library,#fff7ed)!important;
+}
+
+.chapter .accordion-stack details.cat-toolbar,
+.chapter .accordion-stack details.cat-toolbar .detail-body{
+  background:var(--cat-toolbar,#f3f5ff)!important;
+}
+
+.chapter .detail-body,
+.chapter .detail-body p,
+.chapter .detail-body li{
+  color:var(--chapter-copy,#2b2a29)!important;
+}
