@@ -1,0 +1,16 @@
+/* Rabbitt Design shared typography and surface tokens.
+   Both the PPX18 User Manual and Change Log inherit these values. */
+:root{
+  --rd-font-interface:Arial,Helvetica,sans-serif;
+  --rd-font-reading:Georgia,"Times New Roman",serif;
+  --rd-reading-size:17px;
+  --rd-reading-leading:1.65;
+  --rd-dark-panel:#17202a;
+  --rd-dark-panel-soft:#19212b;
+  --rd-dark-panel-deep:#0c1421;
+  --rd-dark-border:#2b3541;
+  --rd-dark-text:#f4f7f9;
+  --rd-dark-text-soft:#d7dee7;
+  --rd-dark-text-muted:#aeb8c4;
+  --rd-accent:#91d438;
+}
