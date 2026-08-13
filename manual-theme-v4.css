@@ -471,3 +471,26 @@ dialog button { border-radius: 999px; background: var(--panel); border-color: va
   .chapter { padding: 26px 18px 34px; border: 1px solid var(--stroke); border-top: 3px solid var(--category); border-radius: 13px; }
   .rail { width: min(326px, 90vw); }
 }
+
+/* Permanent media invariant: chapter screenshots must never be cropped. */
+.chapter .media,
+.chapter .media button {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  clip: auto !important;
+  clip-path: none !important;
+}
+.chapter .media img {
+  position: static !important;
+  inset: auto !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  clip: auto !important;
+  clip-path: none !important;
+}
