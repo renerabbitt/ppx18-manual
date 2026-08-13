@@ -1,6 +1,3 @@
-Exit code: 0
-Wall time: 0.6 seconds
-Output:
 const chapters=window.MANUAL_CHAPTERS;
 const chapterSlug=t=>String(t||'').toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const requestedSlug=new URLSearchParams(location.search).get('chapter');
@@ -61,4 +58,4 @@ function normalizeSearch(value){return String(value||'').toLowerCase().replace(/
 function chapterMatches(chapter,query){const haystack=normalizeSearch(JSON.stringify(chapter));const tokens=normalizeSearch(query).split(' ').filter(Boolean);return tokens.every(token=>{const singular=token.endsWith('s')?token.slice(0,-1):token;const variants=searchAliases[token]||searchAliases[singular]||[token,singular];return variants.some(value=>haystack.includes(normalizeSearch(value)))})}
 function render(){nav.querySelectorAll('button').forEach((b,i)=>b.classList.toggle('active',i===active));reader.innerHTML=mode==='flip'?chapterHTML(chapters[active],active):chapters.map(chapterHTML).join('');groupIndexLinks();wire()}
 chapters.forEach((c,i)=>{let b=document.createElement('button');b.dataset.category=category(c.title);b.innerHTML='<span>'+String(i+1).padStart(2,'0')+'</span><div><strong>'+esc(c.title)+'</strong><small>'+esc(c.description)+'</small></div>';b.onclick=()=>go(i);nav.append(b)});document.querySelector('#count').textContent=chapters.length;document.querySelector('#menu').onclick=()=>rail.classList.toggle('open');document.querySelector('#flip').onclick=()=>{mode='flip';document.querySelector('#flip').classList.add('active');document.querySelector('#scroll').classList.remove('active');render()};document.querySelector('#scroll').onclick=()=>{mode='scroll';document.querySelector('#scroll').classList.add('active');document.querySelector('#flip').classList.remove('active');render()};document.querySelector('#search').oninput=e=>{const q=e.target.value;[...nav.children].forEach((b,i)=>b.hidden=q&&!chapterMatches(chapters[i],q))};document.querySelector('#lightbox button').onclick=()=>document.querySelector('#lightbox').close();addEventListener('popstate',()=>{const slug=new URLSearchParams(location.search).get('chapter');const i=chapters.findIndex(c=>chapterSlug(c.title)===slug);if(i>=0)go(i,false)});if(!requestedSlug)setChapterURL();render();
-
+
