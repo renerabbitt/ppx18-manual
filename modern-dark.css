@@ -12,6 +12,7 @@
   --lime: #91d438;
   --lime-soft: #b3ed67;
   --plan: #ff7898;
+  --details: #fff1a8;
   --spec: #91d75d;
   --layout: #63b7ff;
   --general: #c294ff;
@@ -97,6 +98,16 @@ button, input, a { font-family: inherit; }
 .rail button[data-category="general"] { --category: var(--general); background: linear-gradient(90deg, rgba(194,148,255,.11), var(--panel-deep) 34%) !important; }
 .rail button:hover { border-color: #4b5868; transform: translateX(2px); }
 .rail button.active { filter: none; background: var(--panel-soft) !important; border-color: var(--category); box-shadow: 0 0 0 2px color-mix(in srgb, var(--category) 15%, transparent); }
+.rail button[data-category="details-plan"],
+.rail button[data-category="details-plan"].active {
+  --category: var(--details);
+  background: var(--details) !important;
+  border-color: #d7c86f;
+}
+.rail button[data-category="details-plan"],
+.rail button[data-category="details-plan"] > span,
+.rail button[data-category="details-plan"] strong,
+.rail button[data-category="details-plan"] small { color: #181510 !important; }
 .rail button > span { color: var(--category, var(--text-muted)) !important; font-size: 10px; font-weight: 800; }
 .rail strong { color: var(--text) !important; font-size: 12px; letter-spacing: .01em; text-transform: none; }
 .rail small { color: #b4bdc8 !important; font-size: 10px; }
@@ -134,6 +145,7 @@ button, input, a { font-family: inherit; }
 .chapter[data-category="spec-plan"] { --category: var(--spec); background: linear-gradient(145deg, rgba(145,215,93,.07), var(--panel) 38%); }
 .chapter[data-category="layout"] { --category: var(--layout); background: linear-gradient(145deg, rgba(99,183,255,.07), var(--panel) 38%); }
 .chapter[data-category="general"] { --category: var(--general); background: linear-gradient(145deg, rgba(194,148,255,.07), var(--panel) 38%); }
+.chapter[data-category="details-plan"] { --category: var(--details); background: var(--panel); color: var(--text); }
 .chapter.index {
   background: linear-gradient(145deg, rgba(194,148,255,.075), #1a232d 38%);
 }
@@ -142,19 +154,29 @@ button, input, a { font-family: inherit; }
 .deck { color: var(--text-soft); font-size: 17px; line-height: 1.55; }
 .prose h2 { color: var(--text); border-top-color: var(--stroke); font-size: 18px; letter-spacing: .01em; text-transform: none; }
 .prose h3 { color: var(--text); }
-.prose > p, .steps { color: var(--text-soft); font-family: inherit; font-size: 16px; line-height: 1.72; }
-.steps {
-  margin: 12px 0 24px;
-  padding-left: 1.45rem;
+.prose > p, .step p { color: var(--text-soft); font-family: inherit; font-size: 16px; line-height: 1.72; }
+.step {
+  margin: 10px 0;
+  padding: 14px 16px;
+  background: var(--panel-soft);
+  border: 1px solid var(--stroke);
+  border-left: 3px solid var(--category);
+  border-radius: 9px;
 }
-.steps li {
-  margin: 5px 0;
-  padding-left: 5px;
+.step b { color: var(--category); }
+.prose .step {
+  display: list-item;
+  list-style: disc outside;
+  margin: 8px 0 8px 1.7rem;
+  padding: 0 0 0 .15rem;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
 }
-.steps li::marker {
-  color: var(--category);
-  font-size: 1.05em;
-}
+.prose .step::marker { color: var(--category); font-size: 1.05em; }
+.prose .step p { margin: 0; color: var(--text-soft) !important; font: 16px/1.65 inherit; }
+.prose .step b { display: none; }
+.chapter[data-category="details-plan"] .prose .step p { color: var(--text) !important; }
 .chapter-link {
   border: 1px solid var(--stroke);
   border-radius: 999px;
@@ -189,6 +211,12 @@ button, input, a { font-family: inherit; }
 .index .prose > h2[data-category="spec-plan"] { --category: var(--spec); }
 .index .prose > h2[data-category="layout"] { --category: var(--layout); }
 .index .prose > h2[data-category="general"] { --category: var(--general); }
+.index .prose > h2[data-category="details-plan"] {
+  --category: var(--details);
+  color: #181510 !important;
+  background: var(--details) !important;
+  border-color: #d7c86f !important;
+}
 .index .chapter-link, .index .chapter-link[data-category] {
   color: var(--text) !important;
   background: var(--panel-deep) !important;
@@ -217,4 +245,3 @@ dialog button { border-radius: 999px; background: var(--panel); border-color: va
   .chapter { padding: 26px 18px 34px; border: 1px solid var(--stroke); border-top: 3px solid var(--category); border-radius: 13px; }
   .rail { width: min(326px, 90vw); }
 }
-
