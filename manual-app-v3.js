@@ -10,7 +10,7 @@ const asset=s=>String(s||'').replace(/^\//,'');
 const esc=s=>String(s||'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const layoutTitles=new Set(['Pro Layout','Layout User Options']);
 const detailsTitles=new Set(['Details Plan','Detail designations','Details','Stackable details']);
-const generalTitles=new Set(['Index','Why the Pro Plan?','Limited use agreement','Tech Support and Training','Help Folder','Update or Install Instructions','Transfer to Pro Plan','Pre-built showers','Performance Optimizations','Glossary','Troubleshooting']);
+const generalTitles=new Set(['Index','Why the Pro Plan?','Limited use agreement','Tech Support and Training','Help Folder','Update or Install Instructions','Transfer to Pro Plan','Pre-built showers','Pro Plan Custom Font','Performance Optimizations','Glossary','Troubleshooting']);
 const category=t=>t==='Spec Plan: Project Information'?'spec-plan':detailsTitles.has(t)?'details-plan':generalTitles.has(t)?'general':layoutTitles.has(t)?'layout':'pro-plan';
 
 function setChapterURL(){const slug=chapterSlug(chapters[active].title),url=new URL(location.href);url.searchParams.delete('restore');url.searchParams.delete('verify');url.searchParams.delete('deploy');url.searchParams.delete('audit');if(linkMode==='hash'){url.searchParams.delete('chapter');url.hash=slug}else{url.searchParams.set('chapter',slug);url.hash=''}history.replaceState({chapter:active},'',url)}
