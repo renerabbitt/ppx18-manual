@@ -1,4 +1,4 @@
-# PPX18 260812 - Unreleased Development
+# Current Unreleased Development
 
 ## New Features
 
@@ -8,4 +8,4 @@
 
 ## Removed or Replaced
 
-## Known Issue
+## Known Issues
