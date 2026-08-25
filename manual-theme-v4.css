@@ -527,4 +527,52 @@ dialog button { border-radius: 999px; background: var(--panel); border-color: va
   clip: auto !important;
   clip-path: none !important;
 }
-
+
+
+/* Shared Essentials Plan compatibility footer: one source of truth for every chapter. */
+.essentials-compat{
+  --essentials-accent:#7dbd72;
+  margin:clamp(2.25rem,5vw,4.5rem) 0 0;
+  padding:clamp(1rem,2.2vw,1.5rem);
+  border:1px solid color-mix(in srgb,var(--essentials-accent) 55%,transparent);
+  border-left:5px solid var(--essentials-accent);
+  border-radius:12px;
+  background:color-mix(in srgb,var(--essentials-accent) 10%,transparent);
+  color:inherit;
+}
+.essentials-heading{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:1rem;
+  margin-bottom:.65rem;
+}
+.essentials-heading span{
+  font-family:Arial,sans-serif;
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:.14em;
+}
+.essentials-heading strong{
+  color:var(--essentials-accent);
+  font-family:Arial,sans-serif;
+  font-size:1rem;
+}
+.essentials-compat p{
+  max-width:none;
+  margin:.45rem 0 0;
+  color:inherit;
+  font-size:1rem;
+  line-height:1.55;
+}
+.essentials-scope{
+  margin-top:.85rem!important;
+  padding-top:.85rem;
+  border-top:1px solid color-mix(in srgb,var(--essentials-accent) 35%,transparent);
+  opacity:.88;
+}
+.essentials-partial{--essentials-accent:#d2a640}
+.essentials-excluded{--essentials-accent:#cf6c73}
+@media(max-width:620px){
+  .essentials-heading{align-items:flex-start;flex-direction:column;gap:.25rem}
+}
