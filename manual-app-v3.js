@@ -13,6 +13,63 @@ const detailsTitles=new Set(['Details Plan','Detail designations','Details','Sta
 const generalTitles=new Set(['Index','Why the Pro Plan?','Limited use agreement','Tech Support and Training','Help Folder','Update or Install Instructions','Transfer to Pro Plan','Pre-built showers','Pro Plan Custom Font','Performance Optimizations','Glossary','Troubleshooting']);
 const category=t=>t==='Spec Plan: Project Information'?'spec-plan':detailsTitles.has(t)?'details-plan':generalTitles.has(t)?'general':layoutTitles.has(t)?'layout':'pro-plan';
 
+const essentialsExcluded=new Map([
+  ['Tags & library search','Not included: Essentials has no supplied library items, so the PPX18 tagging and Library Browser organization system is not part of this plan.'],
+  ['Toolbars','Not included: Essentials does not include the PPX18 toolbar configurations.'],
+  ['Toolbar Icons','Not included: Essentials does not include PPX18 toolbars or their specialized tools.'],
+  ['Area analysis','Not included: the Area Analysis system and Area Analysis library tools are removed from Essentials.'],
+  ['Annotation tool','Not included: the automatic Annotation Tool and its specialized object-linking workflow are removed from Essentials.'],
+  ['Braced Wall Panel System','Not included: the Braced Wall Panel system is removed from Essentials.'],
+  ['Roof Vent NFA Calculator','Not included: the Roof Vent NFA system is removed from Essentials.'],
+  ['Foundation Vent System','Not included: the Foundation Vent system is removed from Essentials.'],
+  ['Electrical Panel Schedule Tools','Not included: these circuit tools are supplied as toolbar and library tools, neither of which is included with Essentials.'],
+  ['Callout Rose','Not included: the specialized linked Callout Rose tool is not supplied with Essentials.'],
+  ['Details Plan','Not included: Essentials does not include the All Details plan or the PPX18 detail system.'],
+  ['Detail designations','Not included: the Detail Designations system is removed from Essentials.'],
+  ['Details','Not included: the PPX18 detail warehouse, global detail annotations, and related library items are removed from Essentials.'],
+  ['Stackable details','Not included: the stackable detail and cross-section detail system is removed from Essentials.'],
+  ['Pre-built showers','Not included: Essentials has no supplied library items, including the pre-built shower tools.']
+]);
+const essentialsPartial=new Map([
+  ['Why the Pro Plan?','Partially applicable: the core plan, Spec Plan, title block, and layout concepts remain relevant, but Essentials intentionally omits the advanced automation and tool systems described in this overview.'],
+  ['Help Folder','Partially applicable: general help and support references remain useful, but files or instructions for omitted toolbars, library items, and detail systems do not apply.'],
+  ['New construction','Partially applicable: the core template, plan, and dimension setup guidance applies; the Area Analysis package and its library tools do not.'],
+  ['Project preferences','Partially applicable: preferences controlling functions present in Essentials still apply. Settings dedicated to omitted tools, Area Analysis, or detail systems do not.'],
+  ['Macro Modification','Partially applicable: this export, AI-edit, import, restart, and testing workflow applies only to macros that are actually included in Essentials.'],
+  ['Walkout Basements','Partially applicable: the floor structure, modeling, and automatic layout-naming concepts apply, but Essentials does not include the supplied toolbar wall tool or any library item.'],
+  ['Layout User Options','Partially applicable: floor naming, view naming, and scale-label settings apply to the included layouts. Detail-grid and stackable cross-section settings do not because those systems are removed.'],
+  ['Transfer to Pro Plan','Partially applicable: this chapter is useful when moving from Essentials into PPX18, but Essentials does not include the Pro Plan Transfer toolbar or library tool.'],
+  ['JobTread / Buildertrend / Spreadsheet Linking','Partially applicable: the general CSV and schedule-column concepts may be useful, but Essentials does not include specialized PPX18 library tools.'],
+  ['Troubleshooting','Partially applicable: core macro, font, plan, Spec Plan, and layout troubleshooting applies. Troubleshooting for omitted toolbar, library, Area Analysis, ventilation, BWP, annotation, and detail systems does not.']
+]);
+const essentialsApplicable=new Map([
+  ['Index','Applicable: use this index to navigate the manual, then check the Essentials Plan note at the bottom of each chapter.'],
+  ['Limited use agreement','Applicable: the product license and use agreement applies to Essentials.'],
+  ['Tech Support and Training','Applicable: support and training resources are available for Essentials users.'],
+  ['Managed mode','Applicable: Managed Mode applies to the Essentials project, its stripped-down plan and As-Built file, and its two included layouts.'],
+  ['Remodel Workflow, As-Built vs Proposed','Applicable: Essentials includes both an As-Built file and a stripped-down working plan, so the As-Built versus proposed workflow applies.'],
+  ['Automatic object labels','Applicable: the core automatic labels included in the stripped-down plan remain relevant.'],
+  ['Label replacement','Applicable: Label Replacement remains useful for preserving smart labels while customizing their reported text.'],
+  ['Walls','Applicable: the wall setup and layer-based wall guidance remains relevant to the Essentials plan.'],
+  ['Framing','Applicable: core Chief Architect framing guidance remains relevant to the Essentials plan.'],
+  ['Spec Plan: Project Information','Applicable: Essentials includes the Title Block and Spec Plan, including its Project Information workflow.'],
+  ['Pro Layout','Applicable with the included layouts: Essentials provides Rexel ANSI B (11 × 17) and Rexel ARCH D. References to other PPX18 layouts do not apply.'],
+  ['Update or Install Instructions','Applicable: use the current change log and the instructions supplied for the Essentials package.'],
+  ['Pro Plan Custom Font','Applicable: the custom font supports the included smart-label and schedule formatting.'],
+  ['Performance Optimizations','Applicable: these general plan and rendering performance recommendations remain useful.'],
+  ['Glossary','Applicable: use the glossary for terms that appear in the Essentials files and in relevant manual chapters.']
+]);
+function essentialsCompatibility(title){
+  if(essentialsExcluded.has(title))return {state:'excluded',label:'Not included',detail:essentialsExcluded.get(title)};
+  if(essentialsPartial.has(title))return {state:'partial',label:'Partially applicable',detail:essentialsPartial.get(title)};
+  return {state:'applicable',label:'Applicable',detail:essentialsApplicable.get(title)||'Applicable where this chapter describes core Chief Architect, plan, Spec Plan, title block, or layout features included with Essentials.'};
+}
+function essentialsFooterHTML(title){
+  const info=essentialsCompatibility(title);
+  return '<section class="essentials-compat essentials-'+info.state+'" aria-label="Essentials Plan compatibility"><div class="essentials-heading"><span>ESSENTIALS PLAN</span><strong>'+esc(info.label)+'</strong></div><p>'+esc(info.detail)+'</p><p class="essentials-scope"><strong>Essentials package:</strong> a stripped-down working plan, companion As-Built file, Title Block and Spec Plan, plus Rexel ANSI B (11 × 17) and Rexel ARCH D layouts. It includes no PPX18 toolbars or library items.</p></section>';
+}
+
+
 function setChapterURL(){const slug=chapterSlug(chapters[active].title),url=new URL(location.href);url.searchParams.delete('restore');url.searchParams.delete('verify');url.searchParams.delete('deploy');url.searchParams.delete('audit');if(linkMode==='hash'){url.searchParams.delete('chapter');url.hash=slug}else{url.searchParams.set('chapter',slug);url.hash=''}history.replaceState({chapter:active},'',url)}
 function go(i,updateURL=true){active=Math.max(0,Math.min(chapters.length-1,i));if(updateURL)setChapterURL();render();rail.classList.remove('open');if(mode==='scroll')document.querySelector('#chapter-'+active)?.scrollIntoView({behavior:'smooth'});else scrollTo({top:0,behavior:'smooth'})}
 
@@ -50,7 +107,7 @@ function chapterHTML(c,i){
   if(c.icons)body+=iconCatalogHTML(c);
   if(!media.length&&c.imageRequest)body+='<div class="placeholder"><span>IMAGE PLACEHOLDER</span><strong>'+esc(c.imageRequest)+'</strong><p>A current screenshot will be added when it improves this instruction.</p></div>';
   const special=c.title==='Index'?'index':c.title==='Toolbar Icons'?'toolbar-icons':'';
-  return '<article id="chapter-'+i+'" data-category="'+category(c.title)+'" class="chapter '+special+'"><div class="chapter-kicker">CHAPTER '+String(i+1).padStart(2,'0')+'</div><h1>'+esc(c.title)+'</h1><p class="deck">'+esc(c.description)+'</p><div class="lesson"><div class="prose">'+body+'</div></div></article>';
+  return '<article id="chapter-'+i+'" data-category="'+category(c.title)+'" class="chapter '+special+'"><div class="chapter-kicker">CHAPTER '+String(i+1).padStart(2,'0')+'</div><h1>'+esc(c.title)+'</h1><p class="deck">'+esc(c.description)+'</p><div class="lesson"><div class="prose">'+body+'</div></div>'+essentialsFooterHTML(c.title)+'</article>';
 }
 
 function showTool(button){const chapter=button.closest('.chapter'),catalog=button.closest('.tool-catalog'),c=chapters[Number(chapter.id.replace('chapter-',''))],x=c.icons[Number(button.dataset.toolIndex)];catalog.querySelectorAll('.tool-tile').forEach(b=>b.classList.toggle('active',b===button));catalog.querySelector('[data-tool-image]').src='toolbar-icons/'+x.file;catalog.querySelector('[data-tool-name]').textContent=x.name;catalog.querySelector('[data-tool-source]').textContent=x.sourceName||x.name;catalog.querySelector('[data-tool-description]').textContent=x.description;catalog.querySelector('[data-tool-type]').textContent=x.toolType||'PPX18 toolbar tool';catalog.querySelector('[data-tool-works]').textContent=x.worksWith||'See tool description'}
