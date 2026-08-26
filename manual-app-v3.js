@@ -10,8 +10,9 @@ const asset=s=>String(s||'').replace(/^\//,'');
 const esc=s=>String(s||'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const layoutTitles=new Set(['Pro Layout','Layout User Options']);
 const detailsTitles=new Set(['Details Plan','Detail designations','Details','Stackable details']);
+const specTitles=new Set(['Spec Plan: Project Information','Modifying Spec Notes']);
 const generalTitles=new Set(['Index','Why the Pro Plan?','Limited use agreement','Tech Support and Training','Help Folder','Update or Install Instructions','Transfer to Pro Plan','Pre-built showers','Pro Plan Custom Font','Performance Optimizations','Glossary','Troubleshooting']);
-const category=t=>t==='Spec Plan: Project Information'?'spec-plan':detailsTitles.has(t)?'details-plan':generalTitles.has(t)?'general':layoutTitles.has(t)?'layout':'pro-plan';
+const category=t=>specTitles.has(t)?'spec-plan':detailsTitles.has(t)?'details-plan':generalTitles.has(t)?'general':layoutTitles.has(t)?'layout':'pro-plan';
 
 const essentialsExcluded=new Map([
   ['Tags & library search','Not included: Essentials has no supplied library items, so the PPX18 tagging and Library Browser organization system is not part of this plan.'],
@@ -53,6 +54,7 @@ const essentialsApplicable=new Map([
   ['Walls','Applicable: the wall setup and layer-based wall guidance remains relevant to the Essentials plan.'],
   ['Framing','Applicable: core Chief Architect framing guidance remains relevant to the Essentials plan.'],
   ['Spec Plan: Project Information','Applicable: Essentials includes the Title Block and Spec Plan, including its Project Information workflow.'],
+  ['Modifying Spec Notes','Applicable: Essentials includes the Title Block and Spec Plan, and its supplied specification macros can be exported, adapted for the selected jurisdiction, and reimported using this workflow.'],
   ['Pro Layout','Applicable with the included layouts: Essentials provides Rexel ANSI B (11 × 17) and Rexel ARCH D. References to other PPX18 layouts do not apply.'],
   ['Update or Install Instructions','Applicable: use the current change log and the instructions supplied for the Essentials package.'],
   ['Pro Plan Custom Font','Applicable: the custom font supports the included smart-label and schedule formatting.'],
