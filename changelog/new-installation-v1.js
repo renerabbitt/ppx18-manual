@@ -34,6 +34,13 @@
         '<ol><li>Close Chief Architect.</li><li>Open the <strong>Step 1</strong> folder in the PPX18 X18 installation package.</li><li>Locate the packaged replacement <strong>Help</strong> folder.</li><li>Copy that Help folder into the installed location you opened from Preferences. Replace the installed Help folder only after confirming that your original backup is safely stored elsewhere.</li></ol>' +
         '<p>This replacement injects Rabbitt Design Systems information and PPX18-specific instructions into Chief Architect\'s interactive Help system.</p>' +
 
+        '<h3>Allow Chief Architect to read the replacement Help folder</h3>' +
+        '<p><strong>Windows:</strong></p>' +
+        '<ol><li>Right-click the replacement <strong>Help</strong> folder and choose <strong>Properties</strong>.</li><li>Open <strong>Security</strong>, choose <strong>Edit</strong>, select your Windows user account, and allow <strong>Full control</strong>. Choose <strong>Apply</strong>.</li><li>Open the <strong>General</strong> tab, clear <strong>Read-only</strong>, and choose <strong>Apply</strong>.</li><li>When Windows asks where to apply the change, choose <strong>Apply changes to this folder, subfolders and files</strong>, then choose <strong>OK</strong>.</li></ol>' +
+        '<p><strong>Mac:</strong></p>' +
+        '<ol><li>In Finder, select the replacement <strong>Help</strong> folder and choose <strong>File &gt; Get Info</strong>.</li><li>Open <strong>Sharing &amp; Permissions</strong>. If the settings are locked, click the lock and enter the Mac administrator password.</li><li>Set your user account to <strong>Read &amp; Write</strong>.</li><li>Open the Action menu below the permissions list and choose <strong>Apply to enclosed items</strong>.</li><li>If macOS asks whether Chief Architect may access the folder, choose <strong>Allow</strong>. If access was previously denied, open <strong>System Settings &gt; Privacy &amp; Security &gt; Files &amp; Folders</strong> and enable the applicable folder access for Chief Architect.</li></ol>' +
+        '<p>These permissions allow Chief Architect to read the replacement Help files and every file inside that folder.</p>' +
+
         '<h3>Use the interactive Help menu</h3>' +
         '<ol><li>Open Chief Architect and work in the Pro Plan.</li><li>Open or select the element, dialog, or panel for which you need instructions, then press <strong>F1</strong>.</li><li>Move the Help window onto a side screen so the instructions remain visible while you work.</li></ol>' +
         '<p>The Help topic opens at the relevant PPX18 instructions when that topic has a Rabbitt Design Systems section. The rest of Chief Architect\'s standard Help remains available below it.</p>' +
