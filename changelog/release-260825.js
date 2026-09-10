@@ -5,8 +5,8 @@
     if (!String(input).includes("changelog-data-v4.json")) return response;
 
     const data = await response.json();
-    const release260825 = {
-      version: "PPX18 260825",
+    const release260826 = {
+      version: "PPX18 260826",
       status: "Current release",
       groups: {
         "Pro Plan Template": [
@@ -124,9 +124,9 @@
         "Direct upgrade from PPX18 260812 only: selected Pro Plan default settings, except Windows, Doors, Cabinets, and Default Sets."
       ],
       avoid: [
-        "Do not import defaults into the 260825 Title Block Plan or Spec Plan.",
-        "Do not import Windows, Doors, Cabinets, or Default Sets into the 260825 Pro Plan.",
-        "Do not reuse an older custom Spec Plan specification without adding the new specification macros required by 260825."
+        "Do not import defaults into the 260826 Title Block Plan or Spec Plan.",
+        "Do not import Windows, Doors, Cabinets, or Default Sets into the 260826 Pro Plan.",
+        "Do not reuse an older custom Spec Plan specification without adding the new specification macros required by 260826."
       ]
     };
 
@@ -134,7 +134,7 @@
       .filter(item =>
         item.version !== "Current Unreleased Development" &&
         item.version !== "PPX18 260909" &&
-        item.version !== "PPX18 260825" &&
+        item.version !== "PPX18 260826" &&
         item.version !== "PPX18 260812"
       )
       .map(item => ({...item, status: item.status === "Current release" ? "Previous release" : item.status}));
@@ -152,7 +152,7 @@
 
     return new Response(JSON.stringify([
       unreleased260909,
-      release260825,
+      release260826,
       ...(release260812 ? [{...release260812, status: "Previous release"}] : []),
       ...previous
     ]), {
