@@ -1,4 +1,6 @@
-# PPX18 260909 - Unreleased Development
+# Current Unreleased Development
+
+Add notes below as development continues. A version number will be assigned when the release date is known.
 
 ## New Features
 
