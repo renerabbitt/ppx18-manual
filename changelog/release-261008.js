@@ -21,6 +21,7 @@
           "New walls are now designated with the Layer Painter by applying the Walls, Exterior New layer.",
           "Applying the Demo layer to a window now changes it to a to-be-removed condition.",
           "Corrected a layer setting in the Furred Stem Wall for Stepped Foundation.",
+          "Updated the All Options macro with a 21-inch bathroom base-cabinet depth threshold. Base cabinets that are 21 inches deep no longer display 21 in the cabinet label.",
           "Removed obsolete layer sets, dimension defaults, and older settings."
         ],
         "Spec Plan": [
@@ -40,7 +41,8 @@
           "Added new cladding profiles to the Full Library."
         ],
         "Toolbars": [
-          "Added an optional toolbar update that corresponds with the renamed wall-layer system."
+          "Added an optional toolbar update that corresponds with the renamed wall-layer system.",
+          "Added a Depth to 21 tool to the Bathroom Fixtures toolbar."
         ],
         "User Manual": [
           "Corrected the Builder Trend lookup documentation after repairing the lookup system.",
@@ -58,7 +60,8 @@
           "Added Wildland-Urban Interface specification CAD details.",
           "Added new cladding profiles to the Full Library.",
           "New walls can now be designated by using the Layer Painter to apply the Walls, Exterior New layer.",
-          "Applying the Demo layer to a window now changes the window to a to-be-removed condition."
+          "Applying the Demo layer to a window now changes the window to a to-be-removed condition.",
+          "Added a Depth to 21 tool to the Bathroom Fixtures toolbar."
         ],
         "Patches and Improvements": [
           "Changed Adj. FF to Adj. FE in the room-label options.",
@@ -69,6 +72,7 @@
           "Corrected wall-framing behavior in material lists.",
           "Corrected the Working Kitchen window and door label text style.",
           "Corrected a layer setting in the Furred Stem Wall for Stepped Foundation.",
+          "Updated the All Options macro with a 21-inch bathroom base-cabinet depth threshold so a standard 21-inch cabinet does not display 21 in its base-cabinet label.",
           "Added missing rendering instructions to affected Layout files."
         ],
         "Removed or Replaced": [
