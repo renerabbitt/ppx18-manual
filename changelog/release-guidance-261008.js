@@ -3,7 +3,7 @@ window.PPX_RELEASE_GUIDANCE["PPX18 261008"] = `
 <section class="release-migration release-install-note">
   <h2>What to install for PPX18 261008</h2>
   <p><strong>This release requires the new Pro Plan files and a Library update.</strong> Download the current <strong>Pro Plan Template, Spec Plan, All Details Plan, Layout Files, and Library</strong>.</p>
-  <p><strong>The Toolbar update is optional.</strong> You may import it if you want the toolbar configuration that accompanies this release, but PPX18 261008 does not require it to operate.</p>
+  <p><strong>The Toolbar update is optional.</strong> Import it if you want the toolbar configuration that accompanies this release, including the new <strong>Depth to 21</strong> tool in the <strong>Bathroom Fixtures</strong> toolbar. PPX18 261008 does not require the Toolbar update to operate.</p>
   <p><strong>Custom walls require attention:</strong> Wall layers were renamed for the revised layer-based wall-display system. Any user-created wall types must be updated to follow the 261008 wall-layer convention. If you need Rabbitt Design to help conform custom walls, export and share them before continuing production work.</p>
   <p><strong>Full Library users:</strong> The Full Library also contains new cladding profiles. Install the updated Full Library package if you use that content.</p>
 </section>
