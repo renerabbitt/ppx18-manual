@@ -595,3 +595,37 @@ dialog button { border-radius: 999px; background: var(--panel); border-color: va
 .chapter.toolbar-icons .tool-detail dt {
   color: #4e4e4e;
 }
+
+
+/* Toolbar catalog groups */
+.chapter.toolbar-icons .tool-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.chapter.toolbar-icons .tool-group {
+  min-width: 0;
+}
+.chapter.toolbar-icons .tool-group-heading {
+  margin: 0 0 10px;
+  padding: 12px 14px;
+  border-left: 4px solid var(--category, var(--pink));
+  border-radius: 8px;
+  background: var(--panel-deep);
+}
+.chapter.toolbar-icons .tool-group-heading h3 {
+  margin: 0;
+  color: var(--text);
+  font: 700 17px/1.25 Arial, sans-serif;
+  text-transform: none;
+}
+.chapter.toolbar-icons .tool-group-heading p {
+  margin: 6px 0 0;
+  color: var(--text-soft);
+  font: 14px/1.45 Arial, sans-serif;
+}
+.chapter.toolbar-icons .tool-group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 8px;
+}

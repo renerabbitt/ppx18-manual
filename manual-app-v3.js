@@ -85,7 +85,20 @@ function iconCatalogHTML(c){
   const icons=c.icons||[];
   if(!icons.length)return '';
   const first=icons[0];
-  const buttons=icons.map((x,i)=>'<button class="tool-tile'+(i===0?' active':'')+'" data-tool-index="'+i+'" aria-label="'+esc(x.name)+'" title="'+esc(x.name)+'"><img src="toolbar-icons/'+esc(x.file)+'" alt="" onerror="this.closest(\'.tool-tile\').remove()"><span>'+esc(x.name)+'</span></button>').join('');
+  const groups=[];
+  const byGroup=new Map();
+  icons.forEach((x,i)=>{
+    const name=x.group||'Other PPX18 Toolbar Tools';
+    if(!byGroup.has(name)){
+      const group={name,description:x.groupDescription||'',items:[]};
+      byGroup.set(name,group);
+      groups.push(group);
+    }
+    const group=byGroup.get(name);
+    if(!group.description&&x.groupDescription)group.description=x.groupDescription;
+    group.items.push({x,i});
+  });
+  const buttons=groups.map(group=>'<section class="tool-group"><div class="tool-group-heading"><h3>'+esc(group.name)+'</h3>'+(group.description?'<p>'+esc(group.description)+'</p>':'')+'</div><div class="tool-group-grid">'+group.items.map(({x,i})=>'<button class="tool-tile'+(i===0?' active':'')+'" data-tool-index="'+i+'" aria-label="'+esc(x.name)+'" title="'+esc(x.name)+'"><img src="toolbar-icons/'+esc(x.file)+'" alt="" onerror="this.closest(\'.tool-tile\').remove()"><span>'+esc(x.name)+'</span></button>').join('')+'</div></section>').join('');
   return '<div class="tool-catalog"><div class="tool-grid" aria-label="PPX18 toolbar tools">'+buttons+'</div><aside class="tool-detail" aria-live="polite"><img data-tool-image src="toolbar-icons/'+esc(first.file)+'" alt=""><p class="tool-source" data-tool-source>'+esc(first.sourceName||first.name)+'</p><h2 data-tool-name>'+esc(first.name)+'</h2><p data-tool-description>'+esc(first.description)+'</p><dl><div><dt>Tool type</dt><dd data-tool-type>'+esc(first.toolType||'PPX18 toolbar tool')+'</dd></div><div><dt>Works with</dt><dd data-tool-works>'+esc(first.worksWith||'See tool description')+'</dd></div></dl></aside></div>';
 }
 
