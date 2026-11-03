@@ -576,3 +576,22 @@ dialog button { border-radius: 999px; background: var(--panel); border-color: va
 @media(max-width:620px){
   .essentials-heading{align-items:flex-start;flex-direction:column;gap:.25rem}
 }
+
+
+/* Toolbar catalog contrast repair */
+.chapter.toolbar-icons .tool-tile {
+  color: #111 !important;
+}
+.chapter.toolbar-icons .tool-detail {
+  background: #f1f1ef;
+  color: #111;
+}
+.chapter.toolbar-icons .tool-detail h2,
+.chapter.toolbar-icons .tool-detail > p:not(.tool-source),
+.chapter.toolbar-icons .tool-detail dd {
+  color: #111;
+}
+.chapter.toolbar-icons .tool-source,
+.chapter.toolbar-icons .tool-detail dt {
+  color: #4e4e4e;
+}
