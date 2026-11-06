@@ -33,6 +33,7 @@ The generated application file was accidentally uploaded with command-runner out
 
 ## Current recovery commits
 
+- Last known-good before the November 6 troubleshooting update: `3023b1689d86d90904924c740fca83ac104a6071`
 - Loader repair: `f853f8fc0189a07d5be2e7f44cc5a0552c60c2d7`
 - Cache-bypass index: `3fa80d0caef423939a322f328c44173d12d70020`
 - Restored chapters: `e1e98ad73b1d76fa3584c131349e544a83cca262`
