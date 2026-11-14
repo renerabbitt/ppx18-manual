@@ -67,7 +67,7 @@
       '<div class="detail-body"><p>Open the <strong>Step 4</strong> folder in the downloaded PPX18 installation files. Right-click the supplied <strong>Pro Plan CA Project</strong> file and open it with <strong>Chief Architect X18</strong>.</p></div></details>' +
 
       '<details><summary><span>05</span><div><strong>Step 5 — Bonus and Additional Items</strong><small>Optional files and links that are not required for the main PPX18 installation</small></div></summary>' +
-      '<div class="detail-body"><p>The <strong>Step 5</strong> folder contains bonus and additional items. These files do not need to be opened or installed for the main PPX18 system to work.</p><p>Step 5 also contains the live product link that can be used later to return to the newest Dropbox-hosted installation files.</p></div></details>' +
+      '<div class="detail-body"><p>The <strong>Step 5</strong> folder contains bonus and additional items. These files do not need to be opened or installed for the main PPX18 system to work.</p><p><strong>Important download notice:</strong> The product download link in the Step 5 folder no longer works because of a security breach. Sign in at <a href="https://www.rabbittdesign.net" target="_blank" rel="noreferrer"><strong>rabbittdesign.net</strong></a> and open the <strong>Accounts</strong> tab to find your product and current downloads.</p></div></details>' +
     '</div>' +
   '</article>';
 

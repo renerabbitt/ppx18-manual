@@ -8,6 +8,7 @@
     '<p class="deck">Clear instructions for installing the files included with your PPX18 release.</p>' +
     '<p class="release-summary"><strong>Would you prefer help?</strong> <a href="https://www.rabbittdesign.net/shop/p/assisted-install-or-modification-on-any-package" target="_blank" rel="noreferrer">Purchase an assisted installation from Rabbitt Design.</a></p>' +
 
+    '<p class="release-summary"><strong>Important download notice:</strong> The product download link in the Step 5 folder no longer works because of a security breach. Sign in at <a href="https://www.rabbittdesign.net" target="_blank" rel="noreferrer"><strong>rabbittdesign.net</strong></a> and open the <strong>Accounts</strong> tab to find your product and current downloads.</p>' +
     '<div class="accordion-stack update-instruction-stack">' +
       '<details open><summary><span>01</span><div><strong>Replace the PPX18 Library</strong><small>Delete the previous Pro Plan Library and install the CALIBZ file from Step 2</small></div></summary>' +
       '<div class="detail-body"><div class="install-guide-layout"><div class="install-procedure">' +
@@ -35,8 +36,8 @@
       '<details open><summary><span>03</span><div><strong>Install the Pro Plan Project</strong><small>Open the Pro Plan CA Project file from Step 4</small></div></summary>' +
       '<div class="detail-body"><p>Open the <strong>Step 4</strong> folder in your downloaded PPX18 installation files. Double-click the <strong>Pro Plan CA Project</strong> file to install it in Chief Architect X18.</p></div></details>' +
 
-      '<details><summary><span>04</span><div><strong>How to Find Your Current PPX18 Downloads</strong><small>Use your account or the live link stored in the Step 5 folder</small></div></summary>' +
-      '<div class="detail-body"><p>Sign in at <a href="https://www.rabbittdesign.net" target="_blank" rel="noreferrer"><strong>rabbittdesign.net</strong></a> and open the <strong>Accounts</strong> tab to find your product.</p><p>If the original PPX18 installation files are still on your computer, open the <strong>Step 5</strong> folder. The link inside that folder opens the live Dropbox files. Download the newest files to your computer before installing the update.</p></div></details>' +
+      '<details><summary><span>04</span><div><strong>How to Find Your Current PPX18 Downloads</strong><small>Use your Rabbitt Design account for current downloads</small></div></summary>' +
+      '<div class="detail-body"><p>Sign in at <a href="https://www.rabbittdesign.net" target="_blank" rel="noreferrer"><strong>rabbittdesign.net</strong></a> and open the <strong>Accounts</strong> tab to find your product.</p><p>The product download link in the Step 5 folder no longer works because of a security breach. Download the newest files through your account before installing the update.</p></div></details>' +
     '</div>' +
 
     '<p class="release-summary release-check"><strong>Not every release includes a Library or Toolbar update.</strong> Check the release notes for your exact version to see which files were updated.</p>' +

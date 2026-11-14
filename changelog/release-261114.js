@@ -40,6 +40,7 @@
         "Cleared existing Time Tracker entries from all four PPX18 plans and all sixteen layouts."
       ],
       "Installation and Help": [
+        "The product download link in the Step 5 folder no longer works because of a security breach. Sign in to your Rabbitt Design account and open Accounts for current downloads.",
         "Updated the Help menu replacement for the newest Chief Architect version.",
         "Added agentic AI instructions for installing Pro Plan.",
         "Added the topography skills package to the Pro Plan installation package."
