@@ -1,0 +1,13 @@
+const fs=require('fs'),vm=require('vm'),path=require('path'),assert=require('assert');
+const root=path.resolve(__dirname,'..');const html=fs.readFileSync(path.join(root,'index.html'),'utf8');const scripts=[...html.matchAll(/<script src="([^"?]+)(?:\?[^" ]*)?"/g)].map(m=>m[1]);
+for(const f of scripts)new vm.Script(fs.readFileSync(path.join(root,f),'utf8'),{filename:f});
+const data=scripts.filter(f=>f.includes('manual-content')||f==='manual-recovered-chapters.js'||f==='manual-ai-skills.js');const ctx={window:{MANUAL_CHAPTERS:[]}};vm.createContext(ctx);for(const f of data)vm.runInContext(fs.readFileSync(path.join(root,f),'utf8'),ctx,{filename:f});
+const chapters=ctx.window.MANUAL_CHAPTERS,manifest=JSON.parse(fs.readFileSync(path.join(root,'manual-chapters-manifest.json'),'utf8'));
+assert.equal(chapters.length,manifest.count);assert.equal(chapters.length,43);assert.equal(new Set(chapters.map(c=>c.id)).size,43);assert.equal(new Set(chapters.map(c=>c.title)).size,43);
+assert.deepEqual(JSON.parse(JSON.stringify(chapters.map(({id,title})=>({id,title})))),manifest.chapters);
+const titles=new Set(chapters.map(c=>c.title));for(const c of chapters)for(const l of c.chapterLinks||[])assert(titles.has(l.targetTitle),`Broken chapter target ${c.title}: ${l.targetTitle}`);
+const index=chapters.find(c=>c.title==='Index');for(const c of chapters.filter(c=>c.title!=='Index'))assert(index.chapterLinks.some(l=>l.targetTitle===c.title),`Missing index link: ${c.title}`);
+for(const title of ['Why the Pro Plan?','Help Folder','Walkout Basements','Electrical Panel Schedule Tools','Foundation Vent System','AI Skills and Integrations'])assert(titles.has(title));
+const ai=chapters.find(c=>c.title==='AI Skills and Integrations');const text=ai.blocks.map(b=>b.text).join(' ');for(const token of ['ppx18-tab-wall-drawing','ppx18-pdf-cad-to-walls','DXF-only','Chief Preferences Setup','Chief-MCP-Setup','ppx18-agent-installation','ppx18-project-information','Lot Topography Skill','Group Similar Objects','Inner Surface'])assert(text.includes(token),`Missing add-on information: ${token}`);
+assert(html.includes('manual-ai-skills.js?v=20261119-ai-skills-v1'));assert(html.includes('manual-app-v3.js?v=20261119-ai-skills-v1'));
+console.log(JSON.stringify({ok:true,chapters:chapters.length,allExistingChaptersPreserved:true,indexLinks:index.chapterLinks.length,newChapter:ai.title}));

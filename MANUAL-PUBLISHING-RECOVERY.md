@@ -41,4 +41,9 @@ The generated application file was accidentally uploaded with command-runner out
 
 ## Last known validation target
 
-The live manual must show 38 chapters after the five recovered chapters are loaded.
+The live manual must show the full current chapter manifest (43 chapters after the November 19, 2026 AI skills addition). The historical recovery restored 38 chapters; later additions must not be omitted.
+
+
+## November 19, 2026 AI skills chapter
+
+Last known-good commit before this change: `53c1f95411582582fd4d78ea815dfb3c9ee25a50`. The assembled current manual contained 42 chapters before the addition; the current target is 43, not the historical recovery target of 38. `manual-chapters-manifest.json` records every current chapter ID/title. Preserve all 42 existing chapters and the AI Skills and Integrations chapter, including index/direct-link navigation. Validate loaded bundles, DOM rendering and cache-busted production assets before reporting publication complete.
