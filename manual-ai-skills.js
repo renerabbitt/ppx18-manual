@@ -28,15 +28,15 @@
     },
     {
       "type": "list",
-      "text": "Have the agent discover your AI client’s actual skills/configuration location. For the new PDF-to-DXF and Tab-input packages, the included install.py accepts an explicit skills directory and can create an isolated Python environment. Existing installations require an update option and receive a dated backup. Other add-ons have their own setup steps."
+      "text": "Have the agent discover your AI clientâ€™s actual skills/configuration location. For the new PDF-to-DXF and Tab-input packages, the included install.py accepts an explicit skills directory and can create an isolated Python environment. Existing installations require an update option and receive a dated backup. Other add-ons have their own setup steps."
     },
     {
       "type": "list",
-      "text": "Choose the task and operating mode. Installing a skill does not authorize changes to an open plan or allow keyboard/mouse input. Authorize screen control for the relevant task when needed. A permission granted on another customer’s computer does not transfer to yours."
+      "text": "Choose the task and operating mode. Installing a skill does not authorize changes to an open plan or allow keyboard/mouse input. Authorize screen control for the relevant task when needed. A permission granted on another customerâ€™s computer does not transfer to yours."
     },
     {
       "type": "list",
-      "text": "Use the included synthetic examples and offline tests first. They verify file generation or input planning, not your live Chief interface. On a new machine the agent must discover actual controls, wall types, paths and hotkeys; it must not reuse another computer’s screen coordinates."
+      "text": "Use the included synthetic examples and offline tests first. They verify file generation or input planning, not your live Chief interface. On a new machine the agent must discover actual controls, wall types, paths and hotkeys; it must not reuse another computerâ€™s screen coordinates."
     },
     {
       "type": "heading",
@@ -48,7 +48,7 @@
     },
     {
       "type": "paragraph",
-      "text": "DXF-only mode prepares the file and import instructions, then stops. It needs file/image access and the package’s Python dependencies, but no Chief installation, MCP connection or screen control. You handle import and conversion. Example request: Create a checked DXF from this floor plan; I will import and convert it myself."
+      "text": "DXF-only mode prepares the file and import instructions, then stops. It needs file/image access and the packageâ€™s Python dependencies, but no Chief installation, MCP connection or screen control. You handle import and conversion. Example request: Create a checked DXF from this floor plan; I will import and convert it myself."
     },
     {
       "type": "paragraph",
@@ -72,7 +72,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Tab-input lengths follow the inside finished surface. For equal opposing walls, outside span = inside span + 2 × total finished wall thickness; for unequal walls add the two actual thicknesses. With 7 13/16-inch walls, a 24-foot by 15-foot outside envelope has an inside envelope of 22 feet 8 3/8 inches by 13 feet 8 3/8 inches. Derive an L-shaped inside polygon from the whole outside shape; do not subtract twice the thickness from every short notch leg."
+      "text": "Tab-input lengths follow the inside finished surface. For equal opposing walls, outside span = inside span + 2 Ã— total finished wall thickness; for unequal walls add the two actual thicknesses. With 7 13/16-inch walls, a 24-foot by 15-foot outside envelope has an inside envelope of 22 feet 8 3/8 inches by 13 feet 8 3/8 inches. Derive an L-shaped inside polygon from the whole outside shape; do not subtract twice the thickness from every short notch leg."
     },
     {
       "type": "list",
@@ -80,11 +80,11 @@
     },
     {
       "type": "list",
-      "text": "For continuous drawing, hold the right mouse button, move precisely in the intended direction, and press Tab while the button is still held. Release it after Enter Coordinates opens. In verified Relative Polar input, enter the distance and an explicit angle; in Relative Cartesian input, enter exact X/Y offsets. Press Enter to commit. Move in the next direction and repeat Tab/input/Enter without restarting the run. A selected wall’s diamond continuation handle can start an extension."
+      "text": "For continuous drawing, hold the right mouse button, move precisely in the intended direction, and press Tab while the button is still held. Release it after Enter Coordinates opens. In verified Relative Polar input, enter the distance and an explicit angle; in Relative Cartesian input, enter exact X/Y offsets. Press Enter to commit. Move in the next direction and repeat Tab/input/Enter without restarting the run. A selected wallâ€™s diamond continuation handle can start an extension."
     },
     {
       "type": "list",
-      "text": "Terminate with a combined left-plus-right click or by connecting to another wall. Enter alone does not necessarily finish the tool. Recalibrate after pan, zoom or changed dialog state, and verify actual native geometry after a connected batch. The scripts’ success messages are not proof that a wall was drawn correctly."
+      "text": "Terminate with a combined left-plus-right click or by connecting to another wall. Enter alone does not necessarily finish the tool. Recalibrate after pan, zoom or changed dialog state, and verify actual native geometry after a connected batch. The scriptsâ€™ success messages are not proof that a wall was drawn correctly."
     },
     {
       "type": "paragraph",
@@ -104,11 +104,11 @@
     },
     {
       "type": "paragraph",
-      "text": "Location: Agentic Ai Add Ons > Chief-MCP-Setup. This contains a Windows setup guide and PowerShell installer for the included supported Claude Desktop/Claude Code configurations. The agent must check the customer’s actual client and Chief build. Other clients require their own supported MCP registration; do not assume this installer configures every AI app."
+      "text": "Location: Agentic Ai Add Ons > Chief-MCP-Setup. This contains a Windows setup guide and PowerShell installer for the included supported Claude Desktop/Claude Code configurations. The agent must check the customerâ€™s actual client and Chief build. Other clients require their own supported MCP registration; do not assume this installer configures every AI app."
     },
     {
       "type": "paragraph",
-      "text": "Chief must be installed/licensed and the compatible build must include the MCP bridge. Enable Chief MCP Server in Chief’s Agentic AI preferences and use Project Management where required. The package does not install/license Chief, grant agent permissions or automatically enable the preference. Verify the connection using application status, documents and discovered tool capabilities before drawing. No separate cloud API key is required for the basic Chief drafting server."
+      "text": "Chief must be installed/licensed and the compatible build must include the MCP bridge. Enable Chief MCP Server in Chiefâ€™s Agentic AI preferences and use Project Management where required. The package does not install/license Chief, grant agent permissions or automatically enable the preference. Verify the connection using application status, documents and discovered tool capabilities before drawing. No separate cloud API key is required for the basic Chief drafting server."
     },
     {
       "type": "heading",
@@ -136,7 +136,7 @@
     },
     {
       "type": "paragraph",
-      "text": "The workflow preserves the existing field schema and leaves Applicable Codes CRC, IRC and NBC owner panels untouched. The Project panel’s Code Criteria selector is separate. Automatic climate-zone behavior is preserved unless a specific verified value is authorized. It does not rewrite spec macros or replace CAD macro calls with text. Unknown client contact, parcel, zoning or load values must be reported, not fabricated. Example request: Complete the existing title-block and spec Project Information for this client and address, using verified sources and leaving the code-owner panels unchanged."
+      "text": "The workflow preserves the existing field schema and leaves Applicable Codes CRC, IRC and NBC owner panels untouched. The Project panelâ€™s Code Criteria selector is separate. Automatic climate-zone behavior is preserved unless a specific verified value is authorized. It does not rewrite spec macros or replace CAD macro calls with text. Unknown client contact, parcel, zoning or load values must be reported, not fabricated. Example request: Complete the existing title-block and spec Project Information for this client and address, using verified sources and leaving the code-owner panels unchanged."
     },
     {
       "type": "heading",
@@ -144,7 +144,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Location: Agentic Ai Add Ons > Lot Topography Skill. This gathers recorded parcel geometry and existing-ground elevation data, preserves true-north orientation and prepares major contour polylines for Chief/CAD. Its coverage, elevation interval, segment limits, units and datum follow that skill’s instructions and the specific request. Do not apply the architectural DXF package’s inch-unit rule blindly to geographic data; use the topography output’s declared units when importing."
+      "text": "Location: Agentic Ai Add Ons > Lot Topography Skill. This gathers recorded parcel geometry and existing-ground elevation data, preserves true-north orientation and prepares major contour polylines for Chief/CAD. Its coverage, elevation interval, segment limits, units and datum follow that skillâ€™s instructions and the specific request. Do not apply the architectural DXF packageâ€™s inch-unit rule blindly to geographic data; use the topography outputâ€™s declared units when importing."
     },
     {
       "type": "paragraph",
@@ -184,11 +184,22 @@
 };
   const existing = chapters.find(c => c.title === chapter.title);
   if (existing) Object.assign(existing, chapter); else chapters.push(chapter);
+  // Display AI setup immediately after Help without changing stable chapter IDs/URLs.
+  const aiPosition = chapters.findIndex(c => c.title === chapter.title);
+  const [aiChapter] = chapters.splice(aiPosition, 1);
+  const helpPosition = chapters.findIndex(c => c.title === 'Help Folder');
+  chapters.splice(helpPosition + 1, 0, aiChapter);
   const index = chapters.find(c => c.title === 'Index');
   if (index) {
     index.chapterLinks ||= [];
     if (!index.chapterLinks.some(l => l.targetTitle === chapter.title))
       index.chapterLinks.push({label: chapter.title, targetTitle: chapter.title, targetId: chapter.id});
+  }
+  if (index?.chapterLinks) {
+    const aiLinkPosition = index.chapterLinks.findIndex(l => l.targetTitle === chapter.title);
+    const [aiLink] = index.chapterLinks.splice(aiLinkPosition, 1);
+    const helpLinkPosition = index.chapterLinks.findIndex(l => l.targetTitle === 'Help Folder');
+    index.chapterLinks.splice(helpLinkPosition + 1, 0, aiLink);
   }
   for (const title of ['Walls', 'Spec Plan: Project Information', 'Update or Install Instructions']) {
     const parent = chapters.find(c => c.title === title);

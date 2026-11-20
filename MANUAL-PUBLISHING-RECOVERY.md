@@ -47,3 +47,6 @@ The live manual must show the full current chapter manifest (43 chapters after t
 ## November 19, 2026 AI skills chapter
 
 Last known-good commit before this change: `53c1f95411582582fd4d78ea815dfb3c9ee25a50`. The assembled current manual contained 42 chapters before the addition; the current target is 43, not the historical recovery target of 38. `manual-chapters-manifest.json` records every current chapter ID/title. Preserve all 42 existing chapters and the AI Skills and Integrations chapter, including index/direct-link navigation. Validate loaded bundles, DOM rendering and cache-busted production assets before reporting publication complete.
+
+
+AI chapter ordering update: last known-good commit `0c888ed3d6d4e5b9fce35eb9190d7d51b5189755`. AI Skills and Integrations now displays immediately after Help Folder (chapter 6), while internal IDs and existing chapter URLs stay stable. The index order must match.

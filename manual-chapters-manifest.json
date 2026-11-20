@@ -22,6 +22,10 @@
       "title": "Help Folder"
     },
     {
+      "id": 43,
+      "title": "AI Skills and Integrations"
+    },
+    {
       "id": 6,
       "title": "Spec Plan: Project Information"
     },
@@ -168,10 +172,6 @@
     {
       "id": 42,
       "title": "Completely Remove Chief Architect X18 for a Fresh Install"
-    },
-    {
-      "id": 43,
-      "title": "AI Skills and Integrations"
     }
   ]
 }
