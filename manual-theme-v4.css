@@ -635,3 +635,12 @@ dialog button { border-radius: 999px; background: var(--panel); border-color: va
 .chapter.toolbar-icons .tool-chapter-link[hidden] {
   display: none !important;
 }
+
+/* Match the homepage flip-card typography: regular Arial, lighter reading weight. */
+body,button,input,textarea,select{font-family:Arial,Helvetica,sans-serif!important;font-weight:400}
+.prose p,.prose li,.deck,.step p,.notes p,.notes li,.package-card p,.package-meta,.search input{font-family:Arial,Helvetica,sans-serif!important;font-weight:400!important}
+.chapter h1,.workspace-head h1{font-family:Arial,Helvetica,sans-serif!important;font-weight:400!important;letter-spacing:-.035em}
+.prose h2,.prose h3,.package-card h3{font-weight:500!important;letter-spacing:0}
+.rail strong{font-family:Arial,Helvetica,sans-serif!important;font-weight:500!important}
+.rail small,.rail button>span{font-family:Arial,Helvetica,sans-serif!important;font-weight:400!important}
+.brand b,.chapter-kicker,.nav-group{font-weight:600}
