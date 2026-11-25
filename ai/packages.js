@@ -119,7 +119,11 @@ window.AI_CATALOG = {
       "tier": "full",
       "summary": "Keep your camera presentation centered and adjustable.",
       "description": "A Windows virtual-camera utility with automatic head tracking and picture controls for meetings and recordings.",
-      "use": "Useful for presenting your work on camera. Requires a physical webcam and compatible OBS Virtual Camera setup. No AI agent connection is needed for everyday use."
+      "use": "Useful for presenting your work on camera. Requires a physical webcam and compatible OBS Virtual Camera setup. No AI agent connection is needed for everyday use.",
+      "contributor": {
+        "name": "Sharon Mitchell",
+        "email": "sharonm_mitchell@yahoo.com"
+      }
     }
   ],
   "releases": [
