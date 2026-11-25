@@ -13,3 +13,7 @@ For every release, update the package version and append a release record with p
 ## Verification
 
 Run `node --check app.js` and `node --check packages.js`. Serve the folder with a static HTTP server. Check chapter navigation, search, release filters, expand/collapse controls and the narrow-screen chapter menu.
+
+## Public content boundary
+The public guide describes benefits, capabilities and general prerequisites. Keep proprietary procedures, source code, implementation details and customer download URLs out of all deployed HTML and JavaScript. The original manual CSS is copied verbatim to manual-base.css and manual-theme.css; use its markup and classes. Specific AI UI additions live in styles.css.
+
